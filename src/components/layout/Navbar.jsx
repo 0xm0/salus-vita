@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom"
 import { motion, AnimatePresence } from "framer-motion"
 import { ChevronDown, Menu, X } from "lucide-react"
 import { navigation, utilityNav } from "../../data/navigation"
+import FangMark from "../ui/FangMark"
 
 export default function Navbar() {
   const [openMenu, setOpenMenu] = useState(null)
@@ -37,7 +38,7 @@ export default function Navbar() {
       <div className="sv-navbar-inner">
         {/* Brand */}
         <Link to="/" className="sv-brand">
-          <span className="sv-brand-icon" aria-hidden="true">SV</span>
+          <FangMark size={32} />
           <span className="sv-brand-text">Salus Vita</span>
         </Link>
 

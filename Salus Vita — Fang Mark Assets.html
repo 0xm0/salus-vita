@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Salus Vita — Logo Assets</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Cormorant+Garamond:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --dark: #0f3d22;
+  --green: #2d8a56;
+  --mint: #c5e8d4;
+  --gold: #c5a054;
+  --bg: #fafcfb;
+  --card: #ffffff;
+  --text: #0c1f14;
+  --muted: #5a7a68;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0a0f0c;
+    --card: #111a14;
+    --text: #e8f0ec;
+    --muted: #7a9a88;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0a0f0c;
+  --card: #111a14;
+  --text: #e8f0ec;
+  --muted: #7a9a88;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  padding: 60px 24px;
+  min-height: 100vh;
+}
+
+.page {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+.header h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.35em;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+
+.header p {
+  font-size: 13px;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+}
+
+.section {
+  margin-bottom: 80px;
+}
+
+.section-label {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  color: var(--muted);
+  margin-bottom: 32px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid color-mix(in srgb, var(--muted) 20%, transparent);
+}
+
+/* === ICON GRID === */
+.icon-row {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.icon-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.icon-cell span {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+}
+
+/* Checkerboard for transparency */
+.icon-bg {
+  background-image:
+    linear-gradient(45deg, #e8e8e8 25%, transparent 25%),
+    linear-gradient(-45deg, #e8e8e8 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #e8e8e8 75%),
+    linear-gradient(-45deg, transparent 75%, #e8e8e8 75%);
+  background-size: 12px 12px;
+  background-position: 0 0, 0 6px, 6px -6px, -6px 0px;
+  border-radius: 20px;
+  padding: 4px;
+  display: inline-block;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .icon-bg {
+    background-image:
+      linear-gradient(45deg, #1a1a1a 25%, transparent 25%),
+      linear-gradient(-45deg, #1a1a1a 25%, transparent 25%),
+      linear-gradient(45deg, transparent 75%, #1a1a1a 75%),
+      linear-gradient(-45deg, transparent 75%, #1a1a1a 75%);
+  }
+}
+
+/* === WATERMARK === */
+.watermark-row {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.watermark-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.watermark-cell span {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+}
+
+.watermark-dark-bg {
+  background: #0c1f14;
+  border-radius: 12px;
+  padding: 32px;
+  display: inline-block;
+}
+
+.watermark-light-bg {
+  background: #f6f9f7;
+  border-radius: 12px;
+  padding: 32px;
+  display: inline-block;
+  border: 1px solid #e4ebe7;
+}
+
+/* === USAGE STRIP === */
+.usage-strip {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 48px;
+}
+
+.usage-card {
+  background: var(--card);
+  border: 1px solid color-mix(in srgb, var(--muted) 15%, transparent);
+  border-radius: 12px;
+  padding: 28px 20px;
+  width: 180px;
+  text-align: center;
+}
+
+.usage-card .use-label {
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  color: var(--muted);
+  margin-top: 16px;
+}
+
+.usage-card .use-desc {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 6px;
+  line-height: 1.5;
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <h1>SALUS VITA</h1>
+    <p>Logo assets — The fang mark</p>
+  </div>
+
+  <!-- APP ICONS -->
+  <div class="section">
+    <div class="section-label">App icons</div>
+    <div class="icon-row">
+
+      <!-- Dark green -->
+      <div class="icon-cell">
+        <div class="icon-bg">
+          <svg width="120" height="120" viewBox="0 0 120 120">
+            <rect width="120" height="120" rx="26" fill="#0f3d22"/>
+            <g transform="translate(60, 56)">
+              <path d="M -18,-28 C -18,-28 -22,0 -7,18 C 0,26 10,28 10,28" fill="none" stroke="#c5e8d4" stroke-width="4.5" stroke-linecap="round"/>
+              <path d="M 18,-28 C 18,-28 22,0 7,18 C 0,26 -10,28 -10,28" fill="none" stroke="#c5e8d4" stroke-width="4.5" stroke-linecap="round"/>
+              <circle cx="0" cy="34" r="3" fill="#2d8a56"/>
+            </g>
+          </svg>
+        </div>
+        <span>Dark</span>
+      </div>
+
+      <!-- Light / white -->
+      <div class="icon-cell">
+        <div class="icon-bg">
+          <svg width="120" height="120" viewBox="0 0 120 120">
+            <rect width="120" height="120" rx="26" fill="#f0f5f2" stroke="#dce6df" stroke-width="1"/>
+            <g transform="translate(60, 56)">
+              <path d="M -18,-28 C -18,-28 -22,0 -7,18 C 0,26 10,28 10,28" fill="none" stroke="#0f3d22" stroke-width="4.5" stroke-linecap="round"/>
+              <path d="M 18,-28 C 18,-28 22,0 7,18 C 0,26 -10,28 -10,28" fill="none" stroke="#0f3d22" stroke-width="4.5" stroke-linecap="round"/>
+              <circle cx="0" cy="34" r="3" fill="#2d8a56"/>
+            </g>
+          </svg>
+        </div>
+        <span>Light</span>
+      </div>
+
+      <!-- Gold on black -->
+      <div class="icon-cell">
+        <div class="icon-bg">
+          <svg width="120" height="120" viewBox="0 0 120 120">
+            <rect width="120" height="120" rx="26" fill="#0c0c0c"/>
+            <g transform="translate(60, 56)">
+              <path d="M -18,-28 C -18,-28 -22,0 -7,18 C 0,26 10,28 10,28" fill="none" stroke="#c5a054" stroke-width="4.5" stroke-linecap="round"/>
+              <path d="M 18,-28 C 18,-28 22,0 7,18 C 0,26 -10,28 -10,28" fill="none" stroke="#c5a054" stroke-width="4.5" stroke-linecap="round"/>
+              <circle cx="0" cy="34" r="3" fill="#c5a054"/>
+            </g>
+          </svg>
+        </div>
+        <span>Prestige</span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- WATERMARK / STAMP -->
+  <div class="section">
+    <div class="section-label">Watermark / stamp</div>
+    <div class="watermark-row">
+
+      <!-- On light -->
+      <div class="watermark-cell">
+        <div class="watermark-light-bg">
+          <svg width="180" height="180" viewBox="0 0 180 180">
+            <g transform="translate(90, 90)">
+              <!-- Outer rings -->
+              <circle cx="0" cy="0" r="75" fill="none" stroke="#2d8a56" stroke-width="1.2" opacity="0.35"/>
+              <circle cx="0" cy="0" r="71" fill="none" stroke="#2d8a56" stroke-width="0.5" opacity="0.25"/>
+
+              <!-- Fang -->
+              <path d="M -24,-38 C -24,-38 -29,0 -8,24 C 2,35 14,38 14,38" fill="none" stroke="#0f3d22" stroke-width="5" stroke-linecap="round"/>
+              <path d="M 24,-38 C 24,-38 29,0 8,24 C -2,35 -14,38 -14,38" fill="none" stroke="#0f3d22" stroke-width="5" stroke-linecap="round"/>
+              <circle cx="0" cy="47" r="3.5" fill="#2d8a56"/>
+
+              <!-- Curved text — top -->
+              <path id="topArcL" d="M -62,-28 A 68 68 0 0 1 62,-28" fill="none"/>
+              <text font-family="'DM Sans', sans-serif" font-size="9.5" fill="#0f3d22" letter-spacing="0.35em" font-weight="500">
+                <textPath href="#topArcL" startOffset="50%" text-anchor="middle">SALUS VITA</textPath>
+              </text>
+
+              <!-- Curved text — bottom -->
+              <path id="botArcL" d="M -58,35 A 68 68 0 0 0 58,35" fill="none"/>
+              <text font-family="'DM Sans', sans-serif" font-size="7.5" fill="#2d8a56" letter-spacing="0.3em">
+                <textPath href="#botArcL" startOffset="50%" text-anchor="middle">PHARMA CDMO</textPath>
+              </text>
+
+              <!-- Small dots as separators -->
+              <circle cx="-58" cy="2" r="2" fill="#2d8a56" opacity="0.4"/>
+              <circle cx="58" cy="2" r="2" fill="#2d8a56" opacity="0.4"/>
+            </g>
+          </svg>
+        </div>
+        <span>On light</span>
+      </div>
+
+      <!-- On dark -->
+      <div class="watermark-cell">
+        <div class="watermark-dark-bg">
+          <svg width="180" height="180" viewBox="0 0 180 180">
+            <g transform="translate(90, 90)">
+              <!-- Outer rings -->
+              <circle cx="0" cy="0" r="75" fill="none" stroke="#2d8a56" stroke-width="1.2" opacity="0.4"/>
+              <circle cx="0" cy="0" r="71" fill="none" stroke="#2d8a56" stroke-width="0.5" opacity="0.3"/>
+
+              <!-- Fang -->
+              <path d="M -24,-38 C -24,-38 -29,0 -8,24 C 2,35 14,38 14,38" fill="none" stroke="#c5e8d4" stroke-width="5" stroke-linecap="round"/>
+              <path d="M 24,-38 C 24,-38 29,0 8,24 C -2,35 -14,38 -14,38" fill="none" stroke="#c5e8d4" stroke-width="5" stroke-linecap="round"/>
+              <circle cx="0" cy="47" r="3.5" fill="#2d8a56"/>
+
+              <!-- Curved text — top -->
+              <path id="topArcD" d="M -62,-28 A 68 68 0 0 1 62,-28" fill="none"/>
+              <text font-family="'DM Sans', sans-serif" font-size="9.5" fill="#c5e8d4" letter-spacing="0.35em" font-weight="500">
+                <textPath href="#topArcD" startOffset="50%" text-anchor="middle">SALUS VITA</textPath>
+              </text>
+
+              <!-- Curved text — bottom -->
+              <path id="botArcD" d="M -58,35 A 68 68 0 0 0 58,35" fill="none"/>
+              <text font-family="'DM Sans', sans-serif" font-size="7.5" fill="#2d8a56" letter-spacing="0.3em">
+                <textPath href="#botArcD" startOffset="50%" text-anchor="middle">PHARMA CDMO</textPath>
+              </text>
+
+              <!-- Small dots as separators -->
+              <circle cx="-58" cy="2" r="2" fill="#2d8a56" opacity="0.5"/>
+              <circle cx="58" cy="2" r="2" fill="#2d8a56" opacity="0.5"/>
+            </g>
+          </svg>
+        </div>
+        <span>On dark</span>
+      </div>
+
+      <!-- Gold variant -->
+      <div class="watermark-cell">
+        <div class="watermark-dark-bg" style="background: #0c0c0c;">
+          <svg width="180" height="180" viewBox="0 0 180 180">
+            <g transform="translate(90, 90)">
+              <!-- Outer rings -->
+              <circle cx="0" cy="0" r="75" fill="none" stroke="#c5a054" stroke-width="1.2" opacity="0.3"/>
+              <circle cx="0" cy="0" r="71" fill="none" stroke="#c5a054" stroke-width="0.5" opacity="0.2"/>
+
+              <!-- Fang -->
+              <path d="M -24,-38 C -24,-38 -29,0 -8,24 C 2,35 14,38 14,38" fill="none" stroke="#c5a054" stroke-width="5" stroke-linecap="round"/>
+              <path d="M 24,-38 C 24,-38 29,0 8,24 C -2,35 -14,38 -14,38" fill="none" stroke="#c5a054" stroke-width="5" stroke-linecap="round"/>
+              <circle cx="0" cy="47" r="3.5" fill="#c5a054"/>
+
+              <!-- Curved text — top -->
+              <path id="topArcG" d="M -62,-28 A 68 68 0 0 1 62,-28" fill="none"/>
+              <text font-family="'DM Sans', sans-serif" font-size="9.5" fill="#c5a054" letter-spacing="0.35em" font-weight="500">
+                <textPath href="#topArcG" startOffset="50%" text-anchor="middle">SALUS VITA</textPath>
+              </text>
+
+              <!-- Curved text — bottom -->
+              <path id="botArcG" d="M -58,35 A 68 68 0 0 0 58,35" fill="none"/>
+              <text font-family="'DM Sans', sans-serif" font-size="7.5" fill="#8a7a50" letter-spacing="0.3em">
+                <textPath href="#botArcG" startOffset="50%" text-anchor="middle">PHARMA CDMO</textPath>
+              </text>
+
+              <!-- Small dots as separators -->
+              <circle cx="-58" cy="2" r="2" fill="#c5a054" opacity="0.35"/>
+              <circle cx="58" cy="2" r="2" fill="#c5a054" opacity="0.35"/>
+            </g>
+          </svg>
+        </div>
+        <span>Gold</span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- USAGE SUGGESTIONS -->
+  <div class="section">
+    <div class="section-label">Usage</div>
+    <div class="usage-strip">
+
+      <div class="usage-card">
+        <svg width="48" height="48" viewBox="0 0 48 48">
+          <rect width="48" height="48" rx="10" fill="#0f3d22"/>
+          <g transform="translate(24, 22)">
+            <path d="M -7,-11 C -7,-11 -9,0 -3,7 C 0,10 4,11 4,11" fill="none" stroke="#c5e8d4" stroke-width="2" stroke-linecap="round"/>
+            <path d="M 7,-11 C 7,-11 9,0 3,7 C 0,10 -4,11 -4,11" fill="none" stroke="#c5e8d4" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="0" cy="14" r="1.2" fill="#2d8a56"/>
+          </g>
+        </svg>
+        <div class="use-label">App icon</div>
+        <div class="use-desc">Platforms, portals, internal tools</div>
+      </div>
+
+      <div class="usage-card">
+        <svg width="48" height="48" viewBox="0 0 120 120">
+          <g transform="translate(60, 60)">
+            <circle cx="0" cy="0" r="50" fill="none" stroke="#0f3d22" stroke-width="1" opacity="0.3"/>
+            <path d="M -14,-22 C -14,-22 -17,0 -5,14 C 1,20 8,22 8,22" fill="none" stroke="#0f3d22" stroke-width="3" stroke-linecap="round"/>
+            <path d="M 14,-22 C 14,-22 17,0 5,14 C -1,20 -8,22 -8,22" fill="none" stroke="#0f3d22" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="0" cy="28" r="2" fill="#2d8a56"/>
+          </g>
+        </svg>
+        <div class="use-label">Stamp</div>
+        <div class="use-desc">COAs, cGMP docs, certificates</div>
+      </div>
+
+      <div class="usage-card">
+        <svg width="48" height="48" viewBox="0 0 48 48">
+          <g transform="translate(24, 22)">
+            <path d="M -10,-16 C -10,-16 -12,0 -4,10 C 0,15 6,16 6,16" fill="none" stroke="#c5a054" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M 10,-16 C 10,-16 12,0 4,10 C 0,15 -6,16 -6,16" fill="none" stroke="#c5a054" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="0" cy="20" r="1.5" fill="#c5a054"/>
+          </g>
+        </svg>
+        <div class="use-label">Prestige</div>
+        <div class="use-desc">Investor decks, formal correspondence</div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import { navigation, legalLinks } from "../../data/navigation"
+import FangMark from "../ui/FangMark"
 
 export default function Footer() {
   // Build footer columns from the new subMenus structure
@@ -19,7 +20,7 @@ export default function Footer() {
           {/* Brand column */}
           <div className="sv-footer-brand">
             <Link to="/" className="sv-brand">
-              <span className="sv-brand-icon" aria-hidden="true">SV</span>
+              <FangMark size={28} />
               Salus Vita
             </Link>
             <p>
