@@ -876,8 +876,8 @@ html.lenis, html.lenis body { height: auto; }
   display: block;
   z-index: 0;
   pointer-events: none;
-  opacity: 0.15;
-  filter: saturate(0.6) brightness(0.85);
+  opacity: 0.55;
+  filter: saturate(0.7) brightness(1.1);
 }
 
 /* Home page light hero */
