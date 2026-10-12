@@ -108,10 +108,9 @@ const PATHWAYS = [
 export default function Home() {
   return (
     <>
-      <Planet />
-
       {/* ---- SECTION 1: HERO ---- */}
       <header className="home-hero">
+        <Planet />
         <div style={{ flex: 1, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: "96px 0 0" }}>
           <span className="eyebrow" data-reveal style={rd(60)}>
             AUSTRALIAN-HEADQUARTERED | INTERNATIONAL PHARMACEUTICAL SUPPLY
@@ -159,7 +158,7 @@ export default function Home() {
       </section>
 
       {/* ---- SECTION 3: SHOWCASE / OPERATING MODEL ---- */}
-      <section className="home-section">
+      <section className="home-section home-section--white">
         <div className="section">
           <div className="showcase-grid">
             <div className="showcase-copy">
@@ -205,7 +204,13 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="stats" style={{ marginTop: "clamp(48px, 6vw, 72px)" }}>
+        </div>
+      </section>
+
+      {/* ---- SECTION 3B: STATS ---- */}
+      <section className="home-section home-section--pale">
+        <div className="section">
+          <div className="stats">
             {STATS.map((s, i) => (
               <div className="stat" key={s.label} data-reveal style={rd(i * 80)}>
                 <span className="stat-value">{s.value}</span>

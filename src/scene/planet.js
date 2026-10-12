@@ -214,18 +214,9 @@ export function initPlanet(canvas) {
   const ENTRY_DUR = 1.9
   const ENTRY_START_Y = -6.5
 
-  /* ---------- SCROLL STORYTELLING ----------
-     Scroll progress (0..1 down the page) drives the planet's position + scale
-     through keyframe stops. Beat 0 = hero: a huge globe, low, half below the
-     fold. Then it zooms out and swings side to side (left → right) before
-     settling near the final CTA. Targets are damped per-frame for smoothness. */
-  const STOPS_X = [{ p: 0, v: 0 }, { p: 0.32, v: -3.1 }, { p: 0.64, v: 3.2 }, { p: 1, v: 0 }]
-  // hero globe sits low (more sky above it); nudged a further ~5% of the viewport down
-  const STOPS_Y = [{ p: 0, v: -4.5 }, { p: 0.32, v: 0.55 }, { p: 0.64, v: 0.45 }, { p: 1, v: 0.15 }]
-  const STOPS_S = [{ p: 0, v: 2.15 }, { p: 0.32, v: 1.0 }, { p: 0.64, v: 0.92 }, { p: 1, v: 1.12 }]
-  let curX = STOPS_X[0].v, curY = STOPS_Y[0].v, curS = STOPS_S[0].v, curP = 0
-  worldGroup.position.set(curX, curY, 0)
-  worldGroup.scale.setScalar(curS)
+  /* Planet sits as a decorative accent in the hero, offset to the right */
+  worldGroup.position.set(2.5, -1.2, 0)
+  worldGroup.scale.setScalar(1.6)
 
   function firstMesh(obj) {
     let found = null
@@ -623,7 +614,8 @@ export function initPlanet(canvas) {
 
   /* ---------- RESIZE ---------- */
   function resize() {
-    const w = window.innerWidth, h = window.innerHeight, dpr = window.devicePixelRatio
+    const rect = canvas.parentElement ? canvas.parentElement.getBoundingClientRect() : { width: window.innerWidth, height: window.innerHeight }
+    const w = rect.width || window.innerWidth, h = rect.height || window.innerHeight, dpr = window.devicePixelRatio
     renderer.setPixelRatio(dpr); renderer.setSize(w, h, false)
     camera.aspect = w / h; camera.updateProjectionMatrix()
     for (const c of [torusComposer, bloomComposer, finalComposer]) { c.setPixelRatio(dpr); c.setSize(w, h) }
@@ -649,30 +641,14 @@ export function initPlanet(canvas) {
     spinPhase += dt * CONFIG.spin
     for (const cl of cloudMeshes) { cl.phase += dt * CONFIG[cl.layer.sKey]; cl.mesh.rotation.y = cl.phase }
 
-    // --- scroll-driven framing ---
-    const maxScroll = Math.max(1, document.documentElement.scrollHeight - window.innerHeight)
-    const pTarget = clamp(window.scrollY / maxScroll, 0, 1)
-    curP += (pTarget - curP) * Math.min(1, dt * 4.5)
-    // less lateral travel on narrow screens so the planet never leaves frame entirely
-    const sideScale = clamp(window.innerWidth / 1200, 0.5, 1)
-    const tx = sample(STOPS_X, curP) * sideScale
-    const ty = sample(STOPS_Y, curP)
-    const ts = sample(STOPS_S, curP)
-    const k = Math.min(1, dt * 3.2)
-    curX += (tx - curX) * k; curY += (ty - curY) * k; curS += (ts - curS) * k
-
-    // one-time float-up entrance, applied on top of the scroll target
-    let entryY = 0
+    // one-time float-up entrance animation
     if (entryActive) {
       entryT = Math.min(1, entryT + dt / ENTRY_DUR)
       const e = 1 - Math.pow(1 - entryT, 3)
-      entryY = Lerp(ENTRY_START_Y, 0, e)
+      worldGroup.position.y = Lerp(-1.2 + ENTRY_START_Y, -1.2, e)
       if (entryT >= 1) entryActive = false
     }
-    worldGroup.position.set(curX, curY + entryY, 0)
-    worldGroup.scale.setScalar(curS)
-    // base auto-spin + extra rotation coupled to scroll progress (the "turn")
-    planetGroup.rotation.y = CONFIG.initRotation + spinPhase + curP * Math.PI * 1.6
+    planetGroup.rotation.y = CONFIG.initRotation + spinPhase
 
     controls.update()
     if (glowMesh) glowMesh.quaternion.copy(camera.quaternion)
