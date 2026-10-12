@@ -7,7 +7,7 @@ export default function InternationalProcurement() {
       <PageHero
         eyebrow="CAPABILITIES"
         title="International Procurement"
-        description="Salus Vita coordinates the commercial and operational elements of international pharmaceutical procurement, from initial quotation through to contract execution and supply coordination."
+        description="Coordinating quotations, commercial negotiations, contract structuring, and supply coordination for international pharmaceutical procurement."
         breadcrumbs={[
           { label: "Capabilities", path: "/capabilities" },
           { label: "International Procurement" },
@@ -166,7 +166,7 @@ export default function InternationalProcurement() {
       {/* Related Capabilities */}
       <section className="content-section" data-reveal>
         <h3>Related Capabilities</h3>
-        <div className="feature-grid" style={{ marginTop: 16 }}>
+        <div className="feature-grid" style={{ marginTop: 24 }}>
           <Link to="/capabilities/global-sourcing" className="card" style={{ textDecoration: "none", color: "inherit" }}>
             <h3 style={{ color: "var(--teal)" }}>Global Sourcing</h3>
             <p>Identifying and evaluating pharmaceutical manufacturers and CDMOs across international markets.</p>
@@ -193,7 +193,6 @@ export default function InternationalProcurement() {
           </p>
           <div className="hero-actions" style={{ justifyContent: "center" }}>
             <Link to="/contact/sourcing-enquiry" className="btn btn-primary">Submit a Procurement Enquiry</Link>
-            <Link to="/contact" className="btn btn-outline">Contact Us</Link>
           </div>
         </div>
       </section>

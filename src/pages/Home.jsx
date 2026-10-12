@@ -91,17 +91,14 @@ const STATS = [
 
 const PATHWAYS = [
   {
-    step: "01",
     title: "Australian Importation",
     desc: "Salus Vita coordinates the importation of pharmaceutical products into Australia on behalf of buyers, managing regulatory documentation, supplier engagement, and logistics through to delivery.",
   },
   {
-    step: "02",
     title: "Cross-Border Facilitation",
     desc: "We facilitate direct manufacturer-to-buyer transactions across international borders, coordinating documentation, quality assurance requirements, and freight logistics between jurisdictions.",
   },
   {
-    step: "03",
     title: "Manufacturer-to-Distributor",
     desc: "Salus Vita connects overseas manufacturers with established distributors in target markets, coordinating the commercial and regulatory framework to enable ongoing supply relationships.",
   },
@@ -115,7 +112,7 @@ export default function Home() {
 
       {/* ---- SECTION 1: HERO ---- */}
       <header className="home-hero">
-        <div style={{ flex: 1, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: "120px 0 0" }}>
+        <div style={{ flex: 1, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: "96px 0 0" }}>
           <span className="eyebrow" data-reveal style={rd(60)}>
             AUSTRALIAN-HEADQUARTERED | INTERNATIONAL PHARMACEUTICAL SUPPLY
           </span>
@@ -139,10 +136,9 @@ export default function Home() {
       </header>
 
       {/* ---- SECTION 2: CAPABILITIES ---- */}
-      <section className="section-dark">
+      <section className="home-section">
         <div className="section" id="capabilities">
           <div className="section-head">
-            <span className="eyebrow" data-reveal>Our capabilities</span>
             <h2 data-reveal style={rd(80)}>Pharmaceutical Sourcing and Supply Coordination</h2>
             <p data-reveal style={rd(160)}>
               From manufacturer identification and assessment through to procurement coordination,
@@ -163,7 +159,7 @@ export default function Home() {
       </section>
 
       {/* ---- SECTION 3: SHOWCASE / OPERATING MODEL ---- */}
-      <section className="section-dark">
+      <section className="home-section">
         <div className="section">
           <div className="showcase-grid">
             <div className="showcase-copy">
@@ -177,12 +173,9 @@ export default function Home() {
               </p>
 
               {PATHWAYS.map((item, i) => (
-                <div key={item.step} data-reveal style={{ ...rd(220 + i * 90), marginBottom: i < 2 ? 24 : 0, display: "flex", alignItems: "flex-start", gap: 16 }}>
-                  <span style={{ fontSize: 32, fontWeight: 800, color: "#5df0a8", opacity: 0.35, lineHeight: 1, flexShrink: 0 }}>{item.step}</span>
-                  <div>
-                    <h3 style={{ fontSize: 17, fontWeight: 700, color: "#f3f6ff", marginBottom: 6 }}>{item.title}</h3>
-                    <p style={{ fontSize: 15, lineHeight: 1.65 }}>{item.desc}</p>
-                  </div>
+                <div key={item.title} data-reveal style={{ ...rd(220 + i * 90), marginBottom: i < 2 ? 16 : 0, paddingLeft: 16, borderLeft: "3px solid rgba(23, 110, 121, 0.25)" }}>
+                  <h3 style={{ fontSize: 17, fontWeight: 700, color: "#15324A", marginBottom: 8 }}>{item.title}</h3>
+                  <p style={{ fontSize: 15, lineHeight: 1.65 }}>{item.desc}</p>
                 </div>
               ))}
 
@@ -212,7 +205,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="stats" style={{ marginTop: "clamp(56px, 8vw, 96px)" }}>
+          <div className="stats" style={{ marginTop: "clamp(48px, 6vw, 72px)" }}>
             {STATS.map((s, i) => (
               <div className="stat" key={s.label} data-reveal style={rd(i * 80)}>
                 <span className="stat-value">{s.value}</span>
@@ -224,10 +217,9 @@ export default function Home() {
       </section>
 
       {/* ---- SECTION 4: CTA ---- */}
-      <section className="section-dark">
+      <section className="home-section">
         <div className="section">
           <div className="cta-card" data-reveal>
-            <span className="eyebrow" data-reveal style={rd(60)}>Looking for a Pharmaceutical Sourcing Partner?</span>
             <h2 data-reveal style={rd(140)}>Discuss Your Requirements with Salus Vita</h2>
             <p data-reveal style={rd(220)}>
               Whether you are a manufacturer seeking access to new markets or a buyer seeking
@@ -237,7 +229,7 @@ export default function Home() {
             </p>
             <div className="hero-actions" data-reveal style={rd(300)}>
               <Link to="/contact/sourcing-enquiry" className="btn btn-primary">
-                Discuss Your Requirements {Icon.arrow}
+                Submit a Sourcing Enquiry {Icon.arrow}
               </Link>
               <Link to="/capabilities" className="btn btn-outline">
                 Explore Capabilities

@@ -39,7 +39,7 @@ export default function AustraliaNewZealand() {
       <PageHero
         eyebrow="GLOBAL MARKETS"
         title="Australia & New Zealand"
-        description="As Salus Vita's home market, Australia and New Zealand anchor our operations. We bring deep expertise in TGA and Medsafe regulatory frameworks, established relationships with licensed distribution partners, and proven import pathways for pharmaceutical products."
+        description="Our home market, with deep TGA and Medsafe expertise, established distribution partnerships, and proven import pathways."
         breadcrumbs={[
           { label: "Global Markets", path: "/global-markets" },
           { label: "Australia & New Zealand" },
@@ -204,7 +204,7 @@ export default function AustraliaNewZealand() {
           alignment initiatives between the TGA and Medsafe create opportunities to streamline
           product registration and reduce time to market across both jurisdictions. Salus Vita
           monitors these bilateral developments closely, advising clients on where mutual
-          recognition or harmonised assessment pathways can be leveraged.
+          recognition or harmonised assessment pathways can be applied.
         </p>
         <p>
           Our team assesses each product against both frameworks simultaneously, identifying

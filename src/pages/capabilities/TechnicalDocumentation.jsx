@@ -7,7 +7,7 @@ export default function TechnicalDocumentation() {
       <PageHero
         eyebrow="CAPABILITIES"
         title="Technical Documentation"
-        description="Salus Vita coordinates the compilation, review, and management of technical and regulatory documentation required for pharmaceutical market access, working with manufacturers to ensure that documentation packages meet the requirements of target regulatory authorities."
+        description="Compiling, reviewing, and managing technical and regulatory documentation to meet the requirements of target regulatory authorities."
         breadcrumbs={[
           { label: "Capabilities", path: "/capabilities" },
           { label: "Technical Documentation" },
@@ -174,7 +174,7 @@ export default function TechnicalDocumentation() {
       {/* Related Capabilities */}
       <section className="content-section" data-reveal>
         <h3>Related Capabilities</h3>
-        <div className="feature-grid" style={{ marginTop: 16 }}>
+        <div className="feature-grid" style={{ marginTop: 24 }}>
           <Link to="/capabilities/global-sourcing" className="card" style={{ textDecoration: "none", color: "inherit" }}>
             <h3 style={{ color: "var(--teal)" }}>Global Sourcing</h3>
             <p>Identifying and evaluating manufacturers whose documentation capabilities match your regulatory requirements.</p>
@@ -201,7 +201,6 @@ export default function TechnicalDocumentation() {
           </p>
           <div className="hero-actions" style={{ justifyContent: "center" }}>
             <Link to="/contact/sourcing-enquiry" className="btn btn-primary">Submit a Documentation Enquiry</Link>
-            <Link to="/contact" className="btn btn-outline">Contact Us</Link>
           </div>
         </div>
       </section>

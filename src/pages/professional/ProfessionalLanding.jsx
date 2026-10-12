@@ -126,14 +126,14 @@ export default function ProfessionalLanding() {
       {/* Portal Features */}
       <section className="content-section">
         <h2 data-reveal>Portal Capabilities</h2>
-        <p data-reveal style={{ marginBottom: 24 }}>
+        <p data-reveal>
           The Professional Portal centralises the resources and communication channels that pharmaceutical
           professionals need to evaluate, procure, and manage pharmaceutical supply relationships.
         </p>
         <div className="feature-grid">
           {FEATURES.map((f, i) => (
             <div key={f.title} className="card" data-reveal style={{ "--rd": `${i * 80}ms` }}>
-              <div style={{ marginBottom: 12 }}>{f.icon}</div>
+              <div style={{ marginBottom: 16 }}>{f.icon}</div>
               <h3>{f.title}</h3>
               <p>{f.desc}</p>
             </div>
@@ -149,7 +149,7 @@ export default function ProfessionalLanding() {
           Salus Vita verifies all applications against regulatory databases and professional registries
           before granting access. The following categories of professionals are eligible to apply.
         </p>
-        <div className="feature-grid" style={{ marginTop: 24 }}>
+        <div className="feature-grid">
           {ELIGIBILITY.map((e, i) => (
             <div key={e.title} className="card" data-reveal style={{ "--rd": `${i * 80}ms` }}>
               <h3>{e.title}</h3>
@@ -157,7 +157,7 @@ export default function ProfessionalLanding() {
             </div>
           ))}
         </div>
-        <p data-reveal style={{ marginTop: 24, fontSize: 14, color: "var(--muted)" }}>
+        <p data-reveal style={{ marginTop: 24, marginBottom: 0, fontSize: 14, color: "var(--muted)" }}>
           If your organisation type is not listed above, please <Link to="/contact" style={{ color: "var(--teal)" }}>contact us</Link> to
           discuss eligibility. Salus Vita reserves the right to approve or decline any application at its discretion.
         </p>
@@ -166,7 +166,7 @@ export default function ProfessionalLanding() {
       {/* Verification Process */}
       <section className="content-section">
         <h2 data-reveal>Verification Process</h2>
-        <p data-reveal style={{ marginBottom: 24 }}>
+        <p data-reveal>
           Portal access is not instant. Every application undergoes a structured verification process
           to ensure the security and integrity of the platform.
         </p>
@@ -253,7 +253,7 @@ export default function ProfessionalLanding() {
 
       <section className="content-section">
         <h2 data-reveal>Quick Actions</h2>
-        <div className="feature-grid" style={{ marginTop: 16 }}>
+        <div className="feature-grid">
           {[
             {
               title: "Dashboard",

@@ -98,7 +98,7 @@ export default function Capabilities() {
       <PageHero
         eyebrow="OUR CAPABILITIES"
         title="Coordinating Pharmaceutical Procurement Across Borders"
-        description="From identifying qualified manufacturers through to coordinating delivery, we manage each step so buyers and suppliers can transact with confidence."
+        description="We coordinate each step of international pharmaceutical procurement so buyers and suppliers transact with confidence."
         primaryCTA={{ label: "Submit a Sourcing Enquiry", to: "/contact/sourcing-enquiry" }}
         secondaryCTA={{ label: "View Our Solutions", to: "/solutions" }}
       />
@@ -157,7 +157,7 @@ export default function Capabilities() {
               <div style={{ marginBottom: 16 }}>{c.icon}</div>
               <h3>{c.title}</h3>
               <p>{c.desc}</p>
-              <span style={{ display: "inline-block", marginTop: 14, fontSize: 14, fontWeight: 600, color: "var(--teal)" }}>
+              <span style={{ display: "inline-block", marginTop: 16, fontSize: 14, fontWeight: 600, color: "var(--teal)" }}>
                 Learn more &rarr;
               </span>
             </Link>
@@ -200,7 +200,6 @@ export default function Capabilities() {
           </p>
           <div className="hero-actions" style={{ justifyContent: "center" }}>
             <Link to="/contact/sourcing-enquiry" className="btn btn-primary">Submit an Enquiry</Link>
-            <Link to="/contact" className="btn btn-outline">Contact Us</Link>
           </div>
         </div>
       </section>

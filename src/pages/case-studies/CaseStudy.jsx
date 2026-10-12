@@ -240,8 +240,8 @@ export default function CaseStudy() {
           style={{
             display: "grid",
             gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
-            gap: 20,
-            marginTop: 16,
+            gap: 24,
+            marginTop: 24,
           }}
         >
           {study.stats.map((stat, i) => (
@@ -262,7 +262,7 @@ export default function CaseStudy() {
       {related.length > 0 && (
         <section className="content-section">
           <h2 data-reveal>Related Case Studies</h2>
-          <div className="feature-grid" style={{ marginTop: 16 }}>
+          <div className="feature-grid" style={{ marginTop: 24 }}>
             {related.map((cs, i) => (
               <Link
                 to={`/case-studies/${cs.slug}`}

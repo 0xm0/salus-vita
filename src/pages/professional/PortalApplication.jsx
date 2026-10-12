@@ -72,7 +72,7 @@ export default function PortalApplication() {
               background: "rgba(23, 110, 121, 0.06)",
               border: "1px solid rgba(23, 110, 121, 0.15)",
               borderRadius: 12,
-              marginBottom: 32,
+              marginBottom: 24,
             }}
           >
             <h3 style={{ color: "var(--teal)", marginBottom: 8 }}>Application Reference</h3>
@@ -83,7 +83,7 @@ export default function PortalApplication() {
           </div>
 
           <h2 data-reveal>What Happens Next</h2>
-          <div style={{ display: "flex", flexDirection: "column", gap: 16, marginTop: 16 }}>
+          <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
             {[
               {
                 step: "01",
@@ -151,7 +151,7 @@ export default function PortalApplication() {
       <PageHero
         eyebrow="REGISTRATION"
         title="Apply for Portal Access"
-        description="Complete the application below to request verified access to the Salus Vita Professional Portal. All fields marked with an asterisk are required."
+        description="Request verified access to the Salus Vita Professional Portal. Required fields are marked with an asterisk."
         breadcrumbs={[
           { label: "Professional", path: "/professional" },
           { label: "Apply" },
@@ -178,14 +178,14 @@ export default function PortalApplication() {
         <form
           onSubmit={handleSubmit}
           data-reveal
-          style={{ display: "flex", flexDirection: "column", gap: 20, marginTop: 24 }}
+          style={{ display: "flex", flexDirection: "column", gap: 20 }}
         >
           {/* Personal Details */}
           <h3 style={{ fontSize: 16, fontWeight: 600, color: "var(--navy)", margin: "8px 0 0" }}>
             Applicant Details
           </h3>
 
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+          <div className="grid-2-col">
             <label style={labelStyle}>
               Full Name *
               <input
@@ -238,7 +238,7 @@ export default function PortalApplication() {
             />
           </label>
 
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+          <div className="grid-2-col">
             <label style={labelStyle}>
               ABN / Registration Number *
               <input
@@ -282,7 +282,7 @@ export default function PortalApplication() {
             Professional Credentials
           </h3>
 
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+          <div className="grid-2-col">
             <label style={labelStyle}>
               Professional Role *
               <select

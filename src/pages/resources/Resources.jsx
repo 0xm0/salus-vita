@@ -91,19 +91,15 @@ export default function Resources() {
       <PageHero
         eyebrow="KNOWLEDGE HUB"
         title="Resources and Insights"
-        description="Industry analysis, regulatory updates, and practical guidance from the Salus Vita team. Explore our latest thinking on pharmaceutical sourcing, supply chain management, and market access."
+        description="Industry analysis, regulatory updates, and practical guidance on pharmaceutical sourcing and market access."
         primaryCTA={{ label: "Subscribe to Updates", to: "/contact" }}
       />
 
       <section className="content-section">
         <div
           data-reveal
-          style={{
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr",
-            gap: 16,
-            maxWidth: 480,
-          }}
+          className="grid-2-col"
+          style={{ maxWidth: 480 }}
         >
           <Link
             to="/resources/faqs"
@@ -122,7 +118,7 @@ export default function Resources() {
               strokeWidth="1.6"
               strokeLinecap="round"
               strokeLinejoin="round"
-              style={{ width: 28, height: 28, marginBottom: 10 }}
+              style={{ width: 28, height: 28, marginBottom: 8 }}
             >
               <circle cx="12" cy="12" r="10" />
               <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
@@ -147,7 +143,7 @@ export default function Resources() {
               strokeWidth="1.6"
               strokeLinecap="round"
               strokeLinejoin="round"
-              style={{ width: 28, height: 28, marginBottom: 10 }}
+              style={{ width: 28, height: 28, marginBottom: 8 }}
             >
               <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
               <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
@@ -168,7 +164,7 @@ export default function Resources() {
             flexWrap: "wrap",
             gap: 8,
             marginTop: 12,
-            marginBottom: 28,
+            marginBottom: 24,
           }}
         >
           {CATEGORIES.map((cat) => (
@@ -225,7 +221,7 @@ export default function Resources() {
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "space-between",
-                    marginBottom: 10,
+                    marginBottom: 8,
                   }}
                 >
                   <span

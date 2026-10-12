@@ -10,7 +10,7 @@ const PROCESS_STEPS = [
   },
   {
     title: "Source Identification",
-    desc: "Targeted search across qualified manufacturer networks, leveraging regulatory databases and industry intelligence to identify viable counterparties.",
+    desc: "Targeted search across qualified manufacturer networks, using regulatory databases and industry intelligence to identify viable counterparties.",
   },
   {
     title: "Risk Evaluation",
@@ -55,12 +55,12 @@ export default function SpecialistProcurement() {
           <div>
             <div className="card" data-reveal style={rd(100)}>
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#176E79" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-              <h3 style={{ marginTop: 12 }}>Enhanced Diligence</h3>
+              <h3 style={{ marginTop: 16 }}>Enhanced Diligence</h3>
               <p>Every specialist engagement includes additional verification steps beyond our standard supplier qualification process.</p>
             </div>
             <div className="card" data-reveal style={{ ...rd(200), marginTop: 16 }}>
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#176E79" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-              <h3 style={{ marginTop: 12 }}>Dedicated Coordination</h3>
+              <h3 style={{ marginTop: 16 }}>Dedicated Coordination</h3>
               <p>A named project lead manages each specialist engagement from initial scoping through to completed delivery.</p>
             </div>
           </div>
@@ -200,11 +200,11 @@ export default function SpecialistProcurement() {
           are established at the outset of each engagement and maintained through to delivery completion.
         </p>
 
-        <h3 style={{ marginTop: 32, marginBottom: 16, color: "var(--navy)" }}>Engagement Lifecycle</h3>
-        <div className="feature-grid" style={{ gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))" }}>
+        <h3 style={{ marginTop: 24, marginBottom: 16, color: "var(--navy)" }}>Engagement Lifecycle</h3>
+        <div className="feature-grid">
           {PROCESS_STEPS.map((step, i) => (
             <div key={step.title} className="card" data-reveal style={rd(i * 90)}>
-              <span style={{ display: "inline-block", width: 28, height: 28, borderRadius: "50%", background: "var(--teal)", color: "#fff", textAlign: "center", lineHeight: "28px", fontWeight: 700, fontSize: 14, marginBottom: 10 }}>
+              <span style={{ display: "inline-block", width: 28, height: 28, borderRadius: "50%", background: "var(--teal)", color: "#fff", textAlign: "center", lineHeight: "28px", fontWeight: 700, fontSize: 14, marginBottom: 8 }}>
                 {i + 1}
               </span>
               <h3>{step.title}</h3>
@@ -235,7 +235,6 @@ export default function SpecialistProcurement() {
           </p>
           <div className="hero-actions" style={{ justifyContent: "center" }}>
             <Link to="/contact/sourcing-enquiry" className="btn btn-primary">Discuss Your Requirement</Link>
-            <Link to="/contact" className="btn btn-outline">Contact Us</Link>
           </div>
         </div>
       </section>

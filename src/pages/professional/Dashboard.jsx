@@ -91,7 +91,7 @@ export default function Dashboard() {
         }}
       >
         <div className="page-hero-inner" style={{ maxWidth: 1120, margin: "0 auto", padding: "0 24px" }}>
-          <nav className="breadcrumbs" aria-label="Breadcrumb" style={{ marginBottom: 20, opacity: 0.7 }}>
+          <nav className="breadcrumbs" aria-label="Breadcrumb" style={{ marginBottom: 24, opacity: 0.7 }}>
             <Link to="/" style={{ color: "#fff", textDecoration: "none" }}>Home</Link>
             <span className="separator" style={{ margin: "0 6px", color: "rgba(255,255,255,0.5)" }}>/</span>
             <Link to="/professional" style={{ color: "#fff", textDecoration: "none" }}>Professional</Link>
@@ -129,7 +129,7 @@ export default function Dashboard() {
       <section className="content-section" style={{ marginTop: -24 }}>
         <div
           className="stats"
-          style={{ gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))" }}
+
           data-reveal
         >
           {STATS.map((s, i) => (
@@ -151,7 +151,7 @@ export default function Dashboard() {
 
       {/* Recent Enquiries */}
       <section className="content-section">
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 12, marginBottom: 20 }}>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 12, marginBottom: 16 }}>
           <h2 data-reveal style={{ margin: 0 }}>Recent Enquiries</h2>
           <Link
             to="/contact/sourcing-enquiry"
@@ -163,7 +163,7 @@ export default function Dashboard() {
           </Link>
         </div>
 
-        <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+        <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
           {ENQUIRIES.map((enq, i) => {
             const badge = statusStyle(enq.status)
             return (
@@ -212,7 +212,6 @@ export default function Dashboard() {
         <h2 data-reveal>Quick Actions</h2>
         <div
           className="feature-grid"
-          style={{ gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", marginTop: 16 }}
         >
           {QUICK_ACTIONS.map((action, i) => {
             const inner = (
@@ -227,13 +226,13 @@ export default function Dashboard() {
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
-                    marginBottom: 14,
+                    marginBottom: 16,
                     flexShrink: 0,
                   }}
                 >
                   {action.icon}
                 </div>
-                <h3 style={{ fontSize: 16, marginBottom: 6 }}>{action.title}</h3>
+                <h3 style={{ fontSize: 16, marginBottom: 8 }}>{action.title}</h3>
                 <p style={{ fontSize: 14, margin: 0 }}>{action.desc}</p>
               </>
             )
@@ -272,7 +271,7 @@ export default function Dashboard() {
                 }}
               >
                 {inner}
-                <span style={{ fontSize: 12, color: "var(--muted-2, #8c9bab)", marginTop: 10 }}>Coming soon</span>
+                <span style={{ fontSize: 12, color: "var(--muted-2, #8c9bab)", marginTop: 8 }}>Coming soon</span>
               </div>
             )
           })}
@@ -282,8 +281,8 @@ export default function Dashboard() {
       {/* Account Overview */}
       <section className="content-section">
         <h2 data-reveal>Account Overview</h2>
-        <div className="card" data-reveal style={{ display: "flex", flexDirection: "column", gap: 14 }}>
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+        <div className="card" data-reveal style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+          <div className="grid-2-col">
             <div>
               <span style={{ fontSize: 12, fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.05em", color: "var(--muted-2, #8c9bab)" }}>
                 Account Holder
@@ -297,7 +296,7 @@ export default function Dashboard() {
               <p style={{ margin: "4px 0 0", fontSize: 15 }}>{user?.primaryEmailAddress?.emailAddress || "Not available"}</p>
             </div>
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+          <div className="grid-2-col">
             <div>
               <span style={{ fontSize: 12, fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.05em", color: "var(--muted-2, #8c9bab)" }}>
                 Account Status

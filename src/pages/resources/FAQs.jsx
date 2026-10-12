@@ -171,7 +171,7 @@ export default function FAQs() {
       {FAQ_CATEGORIES.map((cat, catIdx) => (
         <section className="content-section" key={catIdx} id={`faq-${catIdx}`}>
           <h2 data-reveal>{cat.category}</h2>
-          <div style={{ display: "flex", flexDirection: "column", gap: 12, marginTop: 16 }}>
+          <div style={{ display: "flex", flexDirection: "column", gap: 12, marginTop: 24 }}>
             {cat.questions.map((faq, qIdx) => (
               <details
                 key={qIdx}
@@ -229,9 +229,9 @@ export default function FAQs() {
       ))}
 
       {/* Still Have Questions CTA */}
-      <section className="content-section" style={{ textAlign: "center", paddingTop: 40, paddingBottom: 40 }}>
+      <section className="content-section" style={{ textAlign: "center" }}>
         <h2 data-reveal>Still Have Questions?</h2>
-        <p data-reveal style={{ maxWidth: 560, margin: "12px auto 24px" }}>
+        <p data-reveal style={{ maxWidth: 560, margin: "16px auto 24px" }}>
           Our team is available to discuss your specific requirements, answer technical questions, or explore how Salus Vita can support your pharmaceutical supply needs.
         </p>
         <div data-reveal style={{ display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap" }}>

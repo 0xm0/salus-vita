@@ -28,7 +28,7 @@ export default function ManagedAccess() {
       <PageHero
         eyebrow="PHARMACEUTICAL SOLUTIONS"
         title="Managed Access Programs"
-        description="Coordinating regulatory pathways that connect prescribers and patients with therapeutic goods through established legal frameworks, including the TGA Special Access Scheme, Section 19A provisions, and international named-patient programs."
+        description="Regulatory pathway coordination for TGA Special Access, Section 19A provisions, and international named-patient programs."
         breadcrumbs={[
           { label: "Solutions", path: "/solutions" },
           { label: "Managed Access Programs" },
@@ -39,7 +39,7 @@ export default function ManagedAccess() {
 
       {/* Regulatory Pathways */}
       <section className="content-section" data-reveal>
-        <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 20 }}>
+        <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" style={{ flexShrink: 0, marginTop: 4 }}>
             <rect width="40" height="40" rx="8" fill="#E9F0F2" />
             <path d="M12 14h16M12 20h16M12 26h10" stroke="#176E79" strokeWidth="2" strokeLinecap="round" />
@@ -61,7 +61,7 @@ export default function ManagedAccess() {
           completed in accordance with the applicable legislation. We do not assess or make
           representations regarding the therapeutic merit of any product accessed through these schemes.
         </p>
-        <div className="feature-grid" style={{ marginTop: 28 }}>
+        <div className="feature-grid" style={{ marginTop: 24 }}>
           {PATHWAYS.map((p, i) => (
             <div key={p.title} className="card" data-reveal style={rd(i * 90)}>
               <h3>{p.title}</h3>
@@ -73,7 +73,7 @@ export default function ManagedAccess() {
 
       {/* Access Frameworks */}
       <section className="content-section" data-reveal>
-        <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 20 }}>
+        <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" style={{ flexShrink: 0, marginTop: 4 }}>
             <rect width="40" height="40" rx="8" fill="#E9F0F2" />
             <path d="M20 10v6l4 2" stroke="#176E79" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -126,7 +126,7 @@ export default function ManagedAccess() {
 
       {/* Patient Access Coordination */}
       <section className="content-section" data-reveal>
-        <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 20 }}>
+        <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" style={{ flexShrink: 0, marginTop: 4 }}>
             <rect width="40" height="40" rx="8" fill="#E9F0F2" />
             <circle cx="20" cy="15" r="5" stroke="#15324A" strokeWidth="2" />
@@ -160,7 +160,7 @@ export default function ManagedAccess() {
 
       {/* Compliance & Documentation */}
       <section className="content-section" data-reveal>
-        <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 20 }}>
+        <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" style={{ flexShrink: 0, marginTop: 4 }}>
             <rect width="40" height="40" rx="8" fill="#E9F0F2" />
             <path d="M14 10h12a2 2 0 012 2v16a2 2 0 01-2 2H14a2 2 0 01-2-2V12a2 2 0 012-2z" stroke="#15324A" strokeWidth="2" />
@@ -225,7 +225,7 @@ export default function ManagedAccess() {
       {/* Related Solutions */}
       <section className="content-section" data-reveal>
         <h3>Related Solutions</h3>
-        <div className="feature-grid" style={{ marginTop: 16 }}>
+        <div className="feature-grid" style={{ marginTop: 24 }}>
           {[
             {
               title: "Active Pharmaceutical Ingredients",
@@ -257,7 +257,7 @@ export default function ManagedAccess() {
             >
               <h3>{s.title}</h3>
               <p>{s.desc}</p>
-              <span style={{ marginTop: 14, display: "inline-block", fontSize: 14, fontWeight: 600, color: "var(--teal)" }}>
+              <span style={{ marginTop: 16, display: "inline-block", fontSize: 14, fontWeight: 600, color: "var(--teal)" }}>
                 Learn more →
               </span>
             </Link>
@@ -275,7 +275,6 @@ export default function ManagedAccess() {
           </p>
           <div className="hero-actions" style={{ justifyContent: "center" }}>
             <Link to="/contact/sourcing-enquiry" className="btn btn-primary">Discuss Access Pathways</Link>
-            <Link to="/contact" className="btn btn-outline">Contact Us</Link>
           </div>
         </div>
       </section>

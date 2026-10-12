@@ -7,7 +7,7 @@ export default function CrossBorderSupply() {
       <PageHero
         eyebrow="CAPABILITIES"
         title="Cross-Border Supply"
-        description="Salus Vita coordinates pharmaceutical transactions where products move between overseas markets without entering Australia, structuring supply pathways that satisfy the regulatory and commercial requirements of each jurisdiction involved."
+        description="Structuring pharmaceutical supply pathways between overseas markets, with regulatory and commercial assessment for each jurisdiction involved."
         breadcrumbs={[
           { label: "Capabilities", path: "/capabilities" },
           { label: "Cross-Border Supply" },
@@ -116,7 +116,7 @@ export default function CrossBorderSupply() {
               market, export licensing requirements in the origin country, GMP certification
               recognition between jurisdictions, and any specific documentation or labelling
               requirements that apply. Where mutual recognition arrangements exist between
-              regulatory authorities, we identify opportunities to leverage these to streamline
+              regulatory authorities, we identify opportunities to use these to streamline
               the compliance process.
             </p>
             <p>
@@ -177,7 +177,7 @@ export default function CrossBorderSupply() {
       {/* Related Capabilities */}
       <section className="content-section" data-reveal>
         <h3>Related Capabilities</h3>
-        <div className="feature-grid" style={{ marginTop: 16 }}>
+        <div className="feature-grid" style={{ marginTop: 24 }}>
           <Link to="/capabilities/australian-importation" className="card" style={{ textDecoration: "none", color: "inherit" }}>
             <h3 style={{ color: "var(--teal)" }}>Australian Importation</h3>
             <p>Facilitating TGA regulatory assessment, import permits, and customs coordination for goods entering Australia.</p>
@@ -204,7 +204,6 @@ export default function CrossBorderSupply() {
           </p>
           <div className="hero-actions" style={{ justifyContent: "center" }}>
             <Link to="/contact/sourcing-enquiry" className="btn btn-primary">Submit an Enquiry</Link>
-            <Link to="/contact" className="btn btn-outline">Contact Us</Link>
           </div>
         </div>
       </section>

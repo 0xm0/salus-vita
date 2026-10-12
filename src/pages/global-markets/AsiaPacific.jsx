@@ -43,7 +43,7 @@ export default function AsiaPacific() {
       <PageHero
         eyebrow="GLOBAL MARKETS"
         title="Asia Pacific"
-        description="The Asia-Pacific region presents significant opportunity for pharmaceutical market entry and growth. Salus Vita facilitates access across ASEAN, Japan, South Korea, and Greater China, coordinating regulatory navigation and distribution partnerships tailored to each jurisdiction."
+        description="Facilitating pharmaceutical market access across ASEAN, Japan, South Korea, and Greater China with tailored regulatory and distribution support."
         breadcrumbs={[{ label: "Global Markets", path: "/global-markets" }, { label: "Asia Pacific" }]}
         primaryCTA={{ label: "Explore APAC Opportunities", to: "/contact/sourcing-enquiry" }}
         secondaryCTA={{ label: "All Markets", to: "/global-markets" }}
@@ -51,7 +51,7 @@ export default function AsiaPacific() {
 
       {/* Regional Landscape */}
       <section className="content-section" data-reveal>
-        <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 20 }}>
+        <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" style={{ flexShrink: 0, marginTop: 2 }}>
             <circle cx="20" cy="20" r="18" stroke="#176E79" strokeWidth="2" fill="none" />
             <path d="M12 20c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8" stroke="#176E79" strokeWidth="1.5" fill="none" />
@@ -66,7 +66,7 @@ export default function AsiaPacific() {
         <p>
           However, the regulatory and commercial landscape varies significantly between jurisdictions. A market entry strategy that succeeds in Singapore may bear little resemblance to the approach required in Vietnam or Japan. Salus Vita provides clients with the regional perspective needed to make informed decisions about where and how to pursue APAC opportunities.
         </p>
-        <div className="two-col" style={{ marginTop: 28 }}>
+        <div className="two-col" style={{ marginTop: 24 }}>
           <div>
             <h3 style={{ fontSize: 18, fontWeight: 700, color: "var(--navy)", marginBottom: 8 }}>Southeast Asia</h3>
             <p>
@@ -90,7 +90,7 @@ export default function AsiaPacific() {
 
       {/* Regulatory Frameworks */}
       <section className="content-section" data-reveal>
-        <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 20 }}>
+        <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" style={{ flexShrink: 0, marginTop: 2 }}>
             <rect x="8" y="6" width="24" height="28" rx="3" stroke="#176E79" strokeWidth="2" fill="none" />
             <path d="M14 14h12M14 19h12M14 24h8" stroke="#176E79" strokeWidth="1.5" strokeLinecap="round" />
@@ -117,7 +117,7 @@ export default function AsiaPacific() {
 
       {/* Market Opportunities */}
       <section className="content-section" data-reveal>
-        <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 20 }}>
+        <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" style={{ flexShrink: 0, marginTop: 2 }}>
             <rect x="6" y="6" width="28" height="28" rx="4" stroke="#176E79" strokeWidth="2" fill="none" />
             <path d="M12 28l5-8 4 4 7-12" stroke="#176E79" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -134,7 +134,7 @@ export default function AsiaPacific() {
         <p>
           Salus Vita assesses these opportunities on behalf of clients, evaluating commercial feasibility, competitive landscape, and regulatory pathway complexity for specific product categories in target APAC jurisdictions. Our assessments consider both near-term viability and longer-term market trajectory.
         </p>
-        <div className="feature-grid" style={{ marginTop: 24, gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))" }}>
+        <div className="feature-grid" style={{ marginTop: 24 }}>
           {[
             { title: "Generic Expansion", desc: "Patent expiry timelines across key therapeutic areas are creating competitive openings for quality generic products in established APAC markets." },
             { title: "Hospital Procurement", desc: "Modernised hospital tender systems in markets such as China and Indonesia present volume opportunities for competitively positioned products." },
@@ -150,7 +150,7 @@ export default function AsiaPacific() {
 
       {/* Partnership Models */}
       <section className="content-section" data-reveal>
-        <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 20 }}>
+        <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" style={{ flexShrink: 0, marginTop: 2 }}>
             <circle cx="14" cy="14" r="6" stroke="#176E79" strokeWidth="2" fill="none" />
             <circle cx="26" cy="14" r="6" stroke="#176E79" strokeWidth="2" fill="none" />
@@ -207,7 +207,6 @@ export default function AsiaPacific() {
           </p>
           <div className="hero-actions" style={{ justifyContent: "center" }}>
             <Link to="/contact/sourcing-enquiry" className="btn btn-primary">Discuss APAC Opportunities</Link>
-            <Link to="/contact" className="btn btn-outline">Contact Us</Link>
           </div>
         </div>
       </section>

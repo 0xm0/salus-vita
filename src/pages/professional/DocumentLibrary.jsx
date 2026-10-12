@@ -24,7 +24,7 @@ const DOCUMENTS = [
   {
     category: "Regulatory Documents",
     docs: [
-      { title: "GMP Certificate - Manufacturing Partner Alpha", date: "2026-07-15", status: "Available" },
+      { title: "GMP Certificate - Manufacturing Partner Vorentis", date: "2026-07-15", status: "Available" },
       { title: "WHO Prequalification - Metformin HCl", date: "2026-06-20", status: "Available" },
       { title: "TGA Import Licence - Current Period", date: "2026-09-01", status: "Restricted" },
     ],
@@ -111,7 +111,7 @@ export default function DocumentLibrary() {
 
       {/* Summary Stats */}
       <section className="content-section">
-        <div className="stats" style={{ gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))" }}>
+        <div className="stats">
           {[
             { value: String(totalDocs), label: "Total Documents" },
             { value: String(availableCount), label: "Available for Download" },
@@ -138,7 +138,7 @@ export default function DocumentLibrary() {
             border: "1px solid var(--line-strong)",
             borderRadius: 8,
             background: "#fff",
-            marginBottom: 20,
+            marginBottom: 16,
           }}
         >
           <span style={{ color: "var(--muted)", flexShrink: 0 }}>
@@ -267,7 +267,7 @@ export default function DocumentLibrary() {
                 {cat.docs.length} {cat.docs.length === 1 ? "document" : "documents"}
               </span>
             </h2>
-            <div style={{ display: "flex", flexDirection: "column", gap: 10, marginTop: 16 }}>
+            <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
               {cat.docs.map((doc, di) => {
                 const sc = statusColor(doc.status)
                 return (
@@ -284,7 +284,7 @@ export default function DocumentLibrary() {
                       gap: 12,
                     }}
                   >
-                    <div style={{ display: "flex", alignItems: "center", gap: 14, flex: 1, minWidth: 0 }}>
+                    <div style={{ display: "flex", alignItems: "center", gap: 16, flex: 1, minWidth: 0 }}>
                       <span
                         style={{
                           display: "inline-flex",

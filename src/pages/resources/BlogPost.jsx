@@ -300,12 +300,12 @@ export default function BlogPost() {
           data-reveal
           style={{
             display: "flex",
-            gap: 20,
+            gap: 16,
             padding: 24,
             background: "var(--glass-2)",
             border: "1px solid var(--line)",
             borderRadius: "var(--radius)",
-            marginTop: 32,
+            marginTop: 24,
           }}
         >
           <div
@@ -348,7 +348,7 @@ export default function BlogPost() {
                 fontSize: 13,
                 color: "var(--teal)",
                 fontWeight: 600,
-                marginBottom: 6,
+                marginBottom: 8,
               }}
             >
               {post.author.role}

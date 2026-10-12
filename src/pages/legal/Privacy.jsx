@@ -315,7 +315,7 @@ export default function Privacy() {
           Email: privacy@salusvita.net<br />
           Melbourne, Victoria, Australia
         </div>
-        <p data-reveal style={{ marginTop: 20 }}>
+        <p data-reveal style={{ marginTop: 24 }}>
           If you are not satisfied with our response to your privacy complaint, you have the right
           to lodge a complaint with the Office of the Australian Information Commissioner (OAIC):
         </p>

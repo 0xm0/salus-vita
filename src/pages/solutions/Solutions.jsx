@@ -137,7 +137,7 @@ export default function Solutions() {
       <PageHero
         eyebrow="PHARMACEUTICAL SOLUTIONS"
         title="Pharmaceutical Sourcing Built Around Customer Requirements"
-        description="Salus Vita coordinates pharmaceutical sourcing, procurement and supply services across active ingredients, finished products, specialist categories and managed access pathways. Each engagement is structured around the specific requirements of the customer, their product and their target market."
+        description="Sourcing, procurement and supply services across active ingredients, finished products, specialist categories and managed access pathways."
         primaryCTA={{ label: "Submit a Sourcing Enquiry", to: "/contact/sourcing-enquiry" }}
         secondaryCTA={{ label: "Explore Capabilities", to: "/capabilities" }}
       />
@@ -189,7 +189,7 @@ export default function Solutions() {
               <div style={{ marginBottom: 16 }}>{s.icon}</div>
               <h3>{s.title}</h3>
               <p>{s.desc}</p>
-              <span style={{ marginTop: 14, display: "inline-block", fontSize: 14, fontWeight: 600, color: "var(--teal)" }}>
+              <span style={{ marginTop: 16, display: "inline-block", fontSize: 14, fontWeight: 600, color: "var(--teal)" }}>
                 Learn more &rarr;
               </span>
             </Link>
@@ -218,14 +218,14 @@ export default function Solutions() {
 
       <section className="content-section" data-reveal>
         <h2>Why Salus Vita</h2>
-        <p style={{ maxWidth: 720, marginBottom: 28 }}>
+        <p style={{ maxWidth: 720, marginBottom: 32 }}>
           Our value lies in the rigour of our assessment processes, the breadth of our manufacturer relationships
           and our understanding of the regulatory and commercial landscape across multiple markets.
         </p>
         <div className="feature-grid">
           {VALUE_PROPS.map((v, i) => (
             <div key={v.title} className="card" data-reveal style={rd(i * 90)}>
-              <div style={{ marginBottom: 12 }}>{v.icon}</div>
+              <div style={{ marginBottom: 16 }}>{v.icon}</div>
               <h3>{v.title}</h3>
               <p>{v.desc}</p>
             </div>
@@ -253,7 +253,6 @@ export default function Solutions() {
           </p>
           <div className="hero-actions" style={{ justifyContent: "center" }}>
             <Link to="/contact/sourcing-enquiry" className="btn btn-primary">Submit Enquiry</Link>
-            <Link to="/contact" className="btn btn-outline">Contact Us</Link>
           </div>
         </div>
       </section>

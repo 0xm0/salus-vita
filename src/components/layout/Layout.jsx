@@ -66,13 +66,9 @@ export default function Layout() {
     }
   }, [])
 
-  // Set body background to dark on home page for the planet canvas
+  // Home page uses the same light background as rest of site
   useEffect(() => {
-    if (isHome) {
-      document.body.style.background = "#04060f"
-    } else {
-      document.body.style.background = ""
-    }
+    document.body.style.background = ""
     return () => { document.body.style.background = "" }
   }, [isHome])
 
@@ -83,13 +79,7 @@ export default function Layout() {
       <main>
         <Outlet />
       </main>
-      {isHome ? (
-        <div className="home-footer">
-          <Footer />
-        </div>
-      ) : (
-        <Footer />
-      )}
+      <Footer />
     </div>
   )
 }

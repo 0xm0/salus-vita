@@ -69,7 +69,7 @@ export default function Partnerships() {
       <PageHero
         eyebrow="STRATEGIC PARTNERSHIPS"
         title="Commercial Partnerships Across the Pharmaceutical Supply Chain"
-        description="Salus Vita coordinates documented, transparent commercial partnerships with pharmaceutical manufacturers, institutional buyers, and authorised distributors. Each partnership is structured around clear agreements, defined responsibilities, and mutual accountability."
+        description="Documented commercial partnerships with pharmaceutical manufacturers, institutional buyers, and authorised distributors."
         primaryCTA={{ label: "Explore Partnership Opportunities", to: "/contact/sourcing-enquiry" }}
         secondaryCTA={{ label: "View Our Capabilities", to: "/capabilities" }}
       />
@@ -92,7 +92,7 @@ export default function Partnerships() {
             partnerships are structured and communicated.
           </p>
         </div>
-        <div className="feature-grid" style={{ marginTop: 32 }}>
+        <div className="feature-grid" style={{ marginTop: 24 }}>
           {PRINCIPLES.map((p, i) => (
             <div key={p.title} className="card" data-reveal style={rd(i * 80)}>
               <h3 style={{ color: "var(--navy)", marginBottom: 8 }}>{p.title}</h3>
@@ -110,7 +110,7 @@ export default function Partnerships() {
           Each partnership type is supported by a tailored engagement model designed to address the
           specific needs, regulatory context, and commercial objectives of that partner category.
         </p>
-        <div className="feature-grid" style={{ marginTop: 28 }}>
+        <div className="feature-grid" style={{ marginTop: 24 }}>
           {PARTNER_TYPES.map((p, i) => (
             <Link
               to={p.to}
@@ -158,7 +158,7 @@ export default function Partnerships() {
       {/* What Salus Vita Brings */}
       <section className="content-section" data-reveal style={rd(240)}>
         <h2>What Salus Vita Brings to Each Partnership</h2>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))", gap: 16, marginTop: 20 }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))", gap: 16, marginTop: 24 }}>
           {[
             { label: "Regulatory Knowledge", detail: "Understanding of TGA, PIC/S, WHO, and market-specific regulatory frameworks" },
             { label: "Sourcing Network", detail: "Assessed relationships with pharmaceutical manufacturers across multiple regions" },

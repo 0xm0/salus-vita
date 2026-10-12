@@ -277,7 +277,7 @@ export default function Glossary() {
           >
             {letter}
           </h2>
-          <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
+          <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
             {grouped[letter].map((t, i) => (
               <div
                 key={t.term}
@@ -343,7 +343,7 @@ export default function Glossary() {
 
       <section className="cta-banner" data-reveal>
         <div className="cta-card" style={{ background: "var(--navy)", color: "#fff", borderRadius: 16, padding: "48px 32px", textAlign: "center" }}>
-          <h2 style={{ color: "#fff", marginBottom: 12 }}>Need Help Understanding a Term?</h2>
+          <h2 style={{ color: "#fff", marginBottom: 16 }}>Need Help Understanding a Term?</h2>
           <p style={{ color: "var(--pale-blue)", maxWidth: 560, margin: "0 auto 24px" }}>
             If you have questions about pharmaceutical terminology or regulatory concepts, our team can provide guidance relevant to your specific requirements.
           </p>

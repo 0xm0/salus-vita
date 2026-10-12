@@ -138,7 +138,7 @@ export default function About() {
       {/* Values */}
       <section className="content-section" data-reveal style={rd(100)}>
         <h2>Our Values</h2>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: 20, marginTop: 24 }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: 24, marginTop: 24 }}>
           {VALUES.map((v, i) => (
             <div key={v.title} className="card" data-reveal style={rd(i * 80)}>
               <h3>{v.title}</h3>
@@ -155,7 +155,7 @@ export default function About() {
           Salus Vita operates across three principal transaction pathways, each adapted
           to the regulatory, commercial, and logistical context of the parties involved.
         </p>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: 20, marginTop: 24 }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: 24, marginTop: 24 }}>
           {[
             {
               title: "Australian Importation",
@@ -182,7 +182,7 @@ export default function About() {
       <section className="content-section" data-reveal style={rd(300)}>
         <h2>Explore</h2>
         <p>Learn more about who we are, how we operate, and why organisations choose Salus Vita.</p>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: 20, marginTop: 24 }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: 24, marginTop: 24 }}>
           {ABOUT_LINKS.map((item, i) => (
             <Link
               to={item.to}
@@ -211,7 +211,6 @@ export default function About() {
           </p>
           <div className="hero-actions" style={{ justifyContent: "center" }}>
             <Link to="/contact/sourcing-enquiry" className="btn btn-primary">Submit an Enquiry</Link>
-            <Link to="/contact" className="btn btn-outline">Contact Us</Link>
           </div>
         </div>
       </section>

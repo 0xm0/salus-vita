@@ -9,7 +9,7 @@ export default function Customers() {
       <PageHero
         eyebrow="STRATEGIC PARTNERSHIPS"
         title="For Institutional Buyers and Procurement Teams"
-        description="Salus Vita coordinates pharmaceutical sourcing for hospitals, pharmacy groups, wholesalers, government procurement agencies, and other institutional buyers who require quality-assessed products with documented provenance and transparent procurement processes."
+        description="Pharmaceutical sourcing for hospitals, pharmacy groups, wholesalers, and government procurement agencies requiring quality-assessed products."
         breadcrumbs={[{ label: "Partnerships", path: "/partnerships" }, { label: "Customers" }]}
         primaryCTA={{ label: "Submit a Sourcing Enquiry", to: "/contact/sourcing-enquiry" }}
       />
@@ -43,7 +43,7 @@ export default function Customers() {
           specific manufacturing sources that match documented requirements, reducing evaluation time
           and improving the relevance of each sourcing recommendation.
         </p>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: 16, marginTop: 20 }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: 16, marginTop: 24 }}>
           {[
             "Product specifications",
             "Volume and demand forecasts",
@@ -157,7 +157,7 @@ export default function Customers() {
           ensure that the partnership continues to deliver value aligned with the buyer's evolving
           needs.
         </p>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))", gap: 16, marginTop: 20 }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))", gap: 16, marginTop: 24 }}>
           {[
             { title: "Documentation Management", detail: "Ongoing coordination of quality and regulatory documentation" },
             { title: "Quality Communications", detail: "Timely notification of quality events and regulatory changes" },
@@ -175,7 +175,7 @@ export default function Customers() {
       {/* Related Pages */}
       <section className="content-section" data-reveal style={rd(320)}>
         <h3>Related Partnership Pages</h3>
-        <div className="feature-grid" style={{ marginTop: 16 }}>
+        <div className="feature-grid" style={{ marginTop: 24 }}>
           {[
             { title: "For Manufacturers and CDMOs", desc: "Market access coordination for pharmaceutical manufacturers seeking international distribution.", to: "/partnerships/manufacturers" },
             { title: "For Authorised Distributors", desc: "Territory-based sourcing partnerships with transparent commercial terms.", to: "/partnerships/distributors" },

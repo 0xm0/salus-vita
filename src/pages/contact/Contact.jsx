@@ -20,7 +20,7 @@ const labelStyle = {
   fontWeight: 600,
   color: "var(--navy)",
   display: "block",
-  marginBottom: 6,
+  marginBottom: 8,
 }
 
 const ENQUIRY_TYPES = [
@@ -114,7 +114,7 @@ export default function Contact() {
                   background: "#f0faf4",
                   border: "1px solid #b8e6c8",
                   borderRadius: "var(--radius)",
-                  marginTop: 20,
+                  marginTop: 24,
                 }}
               >
                 <div style={{ display: "flex", alignItems: "flex-start", gap: 12 }}>
@@ -131,7 +131,7 @@ export default function Contact() {
                     <path d="m9 11 3 3L22 4" />
                   </svg>
                   <div>
-                    <h3 style={{ fontSize: 16, fontWeight: 700, color: "#15803d", marginBottom: 6 }}>
+                    <h3 style={{ fontSize: 16, fontWeight: 700, color: "#15803d", marginBottom: 8 }}>
                       Message Received
                     </h3>
                     <p style={{ fontSize: 15, color: "#166534", lineHeight: 1.6, margin: 0 }}>
@@ -164,8 +164,8 @@ export default function Contact() {
                 style={{
                   display: "flex",
                   flexDirection: "column",
-                  gap: 18,
-                  marginTop: 20,
+                  gap: 16,
+                  marginTop: 24,
                 }}
               >
                 <div>
@@ -194,7 +194,7 @@ export default function Contact() {
                   />
                 </div>
 
-                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+                <div className="grid-2-col">
                   <div>
                     <label style={labelStyle} htmlFor="contact-email">Email Address *</label>
                     <input
@@ -286,7 +286,7 @@ export default function Contact() {
                   marginBottom: 16,
                 }}
               >
-                <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 10 }}>
+                <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 8 }}>
                   <svg
                     viewBox="0 0 24 24"
                     fill="none"
@@ -336,7 +336,7 @@ export default function Contact() {
                 borderRadius: "var(--radius)",
               }}
             >
-              <h3 style={{ fontSize: 16, fontWeight: 700, color: "var(--navy)", marginBottom: 10 }}>
+              <h3 style={{ fontSize: 16, fontWeight: 700, color: "var(--navy)", marginBottom: 8 }}>
                 Business Hours
               </h3>
               <p style={{ color: "var(--muted)", fontSize: 14, lineHeight: 1.7, margin: 0 }}>

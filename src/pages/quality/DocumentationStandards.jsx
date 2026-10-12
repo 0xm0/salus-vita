@@ -61,14 +61,14 @@ export default function DocumentationStandards() {
       <PageHero
         eyebrow="QUALITY & COMPLIANCE"
         title="Documentation Standards and Practices"
-        description="Salus Vita coordinates comprehensive documentation for every transaction, collating and verifying records from manufacturing partners to ensure audit readiness and full regulatory compliance across all destination markets."
+        description="Comprehensive documentation for every transaction, ensuring audit readiness and regulatory compliance across all markets."
         breadcrumbs={[{ label: "Quality", path: "/quality" }, { label: "Documentation Standards" }]}
         primaryCTA={{ label: "Request Documentation Overview", to: "/contact/sourcing-enquiry" }}
       />
 
       {/* Standard Documentation */}
       <section className="content-section" data-reveal>
-        <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 12 }}>
+        <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
             <rect x="8" y="4" width="24" height="32" rx="2" stroke="#15324A" strokeWidth="1.5" />
             <path d="M14 14h12M14 20h12M14 26h8" stroke="#15324A" strokeWidth="1.5" strokeLinecap="round" />
@@ -103,7 +103,7 @@ export default function DocumentationStandards() {
 
       {/* Market-Specific Requirements */}
       <section className="content-section" data-reveal style={rd(80)}>
-        <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 12 }}>
+        <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
             <circle cx="20" cy="20" r="14" stroke="#15324A" strokeWidth="1.5" />
             <ellipse cx="20" cy="20" rx="7" ry="14" stroke="#15324A" strokeWidth="1.5" />
@@ -126,10 +126,10 @@ export default function DocumentationStandards() {
           Where documents require legalisation, apostille, or notarised translation, Salus Vita
           facilitates these processes to prevent delays at the point of importation.
         </p>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 20, marginTop: 24 }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 24, marginTop: 24 }}>
           {MARKET_REQS.map((m, i) => (
             <div key={m.market} className="card" data-reveal style={{ ...rd(i * 90), padding: "24px" }}>
-              <h4 style={{ color: "var(--navy)", marginBottom: 12 }}>{m.market}</h4>
+              <h4 style={{ color: "var(--navy)", marginBottom: 8 }}>{m.market}</h4>
               <ul style={{ margin: 0, paddingLeft: 18, lineHeight: 1.8 }}>
                 {m.items.map((item) => (
                   <li key={item} style={{ fontSize: "0.93rem" }}>{item}</li>
@@ -142,7 +142,7 @@ export default function DocumentationStandards() {
 
       {/* Document Management */}
       <section className="content-section" data-reveal style={rd(160)}>
-        <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 12 }}>
+        <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
             <rect x="6" y="8" width="28" height="24" rx="2" stroke="#15324A" strokeWidth="1.5" />
             <path d="M6 8l8-4h12l8 4" stroke="#15324A" strokeWidth="1.5" strokeLinejoin="round" />
@@ -177,7 +177,7 @@ export default function DocumentationStandards() {
 
       {/* Audit Readiness */}
       <section className="content-section" data-reveal style={rd(240)}>
-        <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 12 }}>
+        <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
             <path d="M20 6l12 6v10c0 7-5 12-12 14C13 34 8 29 8 22V12l12-6z" stroke="#15324A" strokeWidth="1.5" strokeLinejoin="round" />
             <path d="M15 20l4 4 7-8" stroke="#15324A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -213,7 +213,7 @@ export default function DocumentationStandards() {
       {/* Related Quality Pages */}
       <section className="content-section" data-reveal style={rd(320)}>
         <h3>Related Quality Pages</h3>
-        <div className="feature-grid" style={{ marginTop: 16 }}>
+        <div className="feature-grid" style={{ marginTop: 24 }}>
           {[
             { title: "Supplier Assessment", desc: "How Salus Vita evaluates and qualifies manufacturing partners through structured assessment criteria.", to: "/quality/supplier-assessment" },
             { title: "Regulatory Framework", desc: "The international regulatory landscape that informs documentation and compliance requirements.", to: "/quality/regulatory-framework" },
@@ -238,7 +238,6 @@ export default function DocumentationStandards() {
           </p>
           <div className="hero-actions" style={{ justifyContent: "center" }}>
             <Link to="/contact/sourcing-enquiry" className="btn btn-primary">Request Documentation Overview</Link>
-            <Link to="/contact" className="btn btn-outline">Speak to Our Quality Team</Link>
           </div>
         </div>
       </div>

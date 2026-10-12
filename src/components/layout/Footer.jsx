@@ -2,9 +2,14 @@ import { Link } from "react-router-dom"
 import { navigation, legalLinks } from "../../data/navigation"
 
 export default function Footer() {
-  // Select columns for footer: About, Solutions, Quality, Resources
-  const footerSections = navigation.filter(
-    (n) => n.children && ["About", "Solutions", "Quality", "Resources"].includes(n.label)
+  // Build footer columns from the new subMenus structure
+  const footerColumns = navigation.flatMap((navItem) =>
+    navItem.subMenus
+      ? navItem.subMenus.slice(0, 1).map((sub) => ({
+          heading: navItem.label,
+          items: sub.items.slice(0, 5),
+        }))
+      : []
   )
 
   return (
@@ -24,13 +29,12 @@ export default function Footer() {
           </div>
 
           {/* Link columns */}
-          {footerSections.map((section) => (
-            <div key={section.label} className="sv-footer-col">
-              <h4>{section.label}</h4>
-              <Link to={section.path}>{section.label} Overview</Link>
-              {section.children.map((child) => (
-                <Link key={child.path} to={child.path}>
-                  {child.label}
+          {footerColumns.map((col) => (
+            <div key={col.heading} className="sv-footer-col">
+              <h4>{col.heading}</h4>
+              {col.items.map((item) => (
+                <Link key={item.path} to={item.path}>
+                  {item.label}
                 </Link>
               ))}
             </div>

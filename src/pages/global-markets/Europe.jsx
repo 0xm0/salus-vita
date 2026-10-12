@@ -36,7 +36,7 @@ export default function Europe() {
       <PageHero
         eyebrow="GLOBAL MARKETS"
         title="Europe"
-        description="European pharmaceutical markets set a global benchmark for regulatory rigour, quality standards, and supply chain transparency. Salus Vita facilitates market access and supply coordination across the EU, EEA, and United Kingdom."
+        description="Pharmaceutical market access and supply coordination across the EU, EEA, and United Kingdom."
         breadcrumbs={[{ label: "Global Markets", path: "/global-markets" }, { label: "Europe" }]}
         primaryCTA={{ label: "Discuss European Supply", to: "/contact/sourcing-enquiry" }}
         secondaryCTA={{ label: "All Markets", to: "/global-markets" }}
@@ -44,7 +44,7 @@ export default function Europe() {
 
       {/* EMA Framework */}
       <section className="content-section" data-reveal>
-        <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 20 }}>
+        <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" style={{ flexShrink: 0, marginTop: 2 }}>
             <circle cx="20" cy="20" r="16" stroke="#176E79" strokeWidth="2" fill="none" />
             <path d="M11 16h18M11 24h18" stroke="#176E79" strokeWidth="1" opacity="0.4" />
@@ -72,7 +72,7 @@ export default function Europe() {
 
       {/* National Variations */}
       <section className="content-section" data-reveal>
-        <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 20 }}>
+        <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" style={{ flexShrink: 0, marginTop: 2 }}>
             <rect x="6" y="8" width="28" height="24" rx="3" stroke="#176E79" strokeWidth="2" fill="none" />
             <path d="M6 16h28" stroke="#176E79" strokeWidth="1.5" />
@@ -89,7 +89,7 @@ export default function Europe() {
         <p>
           Salus Vita assesses these national variations as part of every European market entry engagement, ensuring that product registration, supply chain design, and commercial strategy account for jurisdiction-specific requirements from the outset. This includes evaluating language requirements for patient information leaflets, country-specific serialisation obligations, and local qualified person (QP) release arrangements.
         </p>
-        <div className="feature-grid" style={{ marginTop: 24, gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))" }}>
+        <div className="feature-grid" style={{ marginTop: 24 }}>
           {MARKETS.map((m, i) => (
             <div key={m.name} className="card" data-reveal style={rd(i * 80)}>
               <h3>{m.name}</h3>
@@ -101,7 +101,7 @@ export default function Europe() {
 
       {/* Cross-Border Within Europe */}
       <section className="content-section" data-reveal>
-        <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 20 }}>
+        <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" style={{ flexShrink: 0, marginTop: 2 }}>
             <path d="M8 20h24" stroke="#176E79" strokeWidth="2" strokeLinecap="round" />
             <path d="M26 14l6 6-6 6" stroke="#176E79" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -134,7 +134,7 @@ export default function Europe() {
 
       {/* Market Entry */}
       <section className="content-section" data-reveal>
-        <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 20 }}>
+        <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" style={{ flexShrink: 0, marginTop: 2 }}>
             <rect x="8" y="10" width="24" height="20" rx="3" stroke="#176E79" strokeWidth="2" fill="none" />
             <path d="M20 10v-4M16 6h8" stroke="#176E79" strokeWidth="2" strokeLinecap="round" />
@@ -153,7 +153,7 @@ export default function Europe() {
         <p>
           For generic and biosimilar products, market entry planning also involves evaluating launch sequencing relative to patent expiry timelines, assessing tender participation requirements in hospital markets, and coordinating with local distribution partners who hold established relationships with pharmacy chains, wholesalers, and hospital procurement groups.
         </p>
-        <div className="feature-grid" style={{ marginTop: 24, gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))" }}>
+        <div className="feature-grid" style={{ marginTop: 24 }}>
           {[
             { title: "Regulatory Strategy", desc: "Assessing the optimal authorisation pathway and registration sequence for each target market based on product type and commercial priorities." },
             { title: "Commercial Assessment", desc: "Evaluating pricing, reimbursement, and competitive landscape to determine commercial viability in each European jurisdiction." },
@@ -200,7 +200,6 @@ export default function Europe() {
           </p>
           <div className="hero-actions" style={{ justifyContent: "center" }}>
             <Link to="/contact/sourcing-enquiry" className="btn btn-primary">Discuss European Supply</Link>
-            <Link to="/contact" className="btn btn-outline">Contact Us</Link>
           </div>
         </div>
       </section>

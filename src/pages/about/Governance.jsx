@@ -43,9 +43,9 @@ export default function Governance() {
       <PageHero
         eyebrow="GOVERNANCE"
         title="Corporate Governance"
-        description="Salus Vita maintains a governance framework designed for the specific requirements of an international pharmaceutical sourcing and procurement coordinator - prioritising supply chain integrity, commercial ethics, and regulatory compliance across jurisdictions."
+        description="Supply chain integrity, commercial ethics, and regulatory compliance across every jurisdiction we operate in."
         breadcrumbs={[{ label: "About", path: "/about" }, { label: "Governance" }]}
-        primaryCTA={{ label: "Contact Us", to: "/contact" }}
+        primaryCTA={{ label: "Discuss Your Requirements", to: "/contact/sourcing-enquiry" }}
         secondaryCTA={{ label: "Leadership", to: "/about/leadership" }}
       />
 
@@ -92,7 +92,7 @@ export default function Governance() {
           Three core governance priorities reflect the nature of Salus Vita's role as a
           pharmaceutical supply coordinator operating across international markets.
         </p>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: 20, marginTop: 24 }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: 24, marginTop: 24 }}>
           {PILLARS.map((p, i) => (
             <div key={p.title} className="card" data-reveal style={rd(i * 80)}>
               <h3>{p.title}</h3>
@@ -112,7 +112,7 @@ export default function Governance() {
           obligations, and the executive team reports to the Board on compliance performance
           at regular intervals.
         </p>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 20, marginTop: 24 }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 24, marginTop: 24 }}>
           {COMPLIANCE_AREAS.map((c, i) => (
             <div key={c.title} className="card" data-reveal style={rd(i * 70)}>
               <h3>{c.title}</h3>
@@ -168,7 +168,7 @@ export default function Governance() {
           role as a sourcing and procurement coordinator requires us to assess, verify,
           and continuously monitor the quality credentials of the manufacturers we engage with.
         </p>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: 20, marginTop: 24 }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: 24, marginTop: 24 }}>
           {[
             {
               title: "Supplier Assessment Framework",
@@ -203,7 +203,6 @@ export default function Governance() {
           </p>
           <div className="hero-actions" style={{ justifyContent: "center" }}>
             <Link to="/contact/sourcing-enquiry" className="btn btn-primary">Discuss Your Requirements</Link>
-            <Link to="/contact" className="btn btn-outline">Contact Us</Link>
           </div>
         </div>
       </section>

@@ -7,7 +7,7 @@ export default function AustralianImportation() {
       <PageHero
         eyebrow="CAPABILITIES"
         title="Australian Importation"
-        description="Salus Vita facilitates the importation of pharmaceutical products into Australia, coordinating TGA regulatory assessment, import permit processes, customs requirements, and the identification of sponsor and importer obligations."
+        description="Coordinating TGA regulatory assessment, import permits, customs clearance, and sponsor obligation identification for pharmaceutical products entering Australia."
         breadcrumbs={[
           { label: "Capabilities", path: "/capabilities" },
           { label: "Australian Importation" },
@@ -175,7 +175,7 @@ export default function AustralianImportation() {
       {/* Related Capabilities */}
       <section className="content-section" data-reveal>
         <h3>Related Capabilities</h3>
-        <div className="feature-grid" style={{ marginTop: 16 }}>
+        <div className="feature-grid" style={{ marginTop: 24 }}>
           <Link to="/capabilities/cross-border-supply" className="card" style={{ textDecoration: "none", color: "inherit" }}>
             <h3 style={{ color: "var(--teal)" }}>Cross-Border Supply</h3>
             <p>Structuring overseas-to-overseas transactions where products do not enter Australia.</p>
@@ -202,7 +202,6 @@ export default function AustralianImportation() {
           </p>
           <div className="hero-actions" style={{ justifyContent: "center" }}>
             <Link to="/contact/sourcing-enquiry" className="btn btn-primary">Submit an Importation Enquiry</Link>
-            <Link to="/contact" className="btn btn-outline">Contact Us</Link>
           </div>
         </div>
       </section>

@@ -40,7 +40,7 @@ export default function SupplierAssessment() {
       <PageHero
         eyebrow="QUALITY & COMPLIANCE"
         title="Supplier Assessment and Evaluation"
-        description="Every manufacturing partner in the Salus Vita network is assessed through a structured, multi-stage qualification process. We evaluate regulatory standing, production capability, and quality system maturity before coordinating any procurement activity."
+        description="Structured, multi-stage qualification of every manufacturing partner for regulatory standing, capability, and quality maturity."
         breadcrumbs={[{ label: "Quality", path: "/quality" }, { label: "Supplier Assessment" }]}
         primaryCTA={{ label: "Discuss Supplier Qualification", to: "/contact/sourcing-enquiry" }}
       />
@@ -60,7 +60,7 @@ export default function SupplierAssessment() {
         <p>
           The assessment process is designed to verify that a manufacturer can consistently produce pharmaceutical products that meet the quality, safety, and efficacy requirements of the intended target markets. Rather than relying on a single data point, Salus Vita evaluates manufacturers across multiple dimensions to build a comprehensive risk-rated profile that guides engagement terms and ongoing monitoring intensity.
         </p>
-        <div className="feature-grid" style={{ marginTop: 28 }}>
+        <div className="feature-grid" style={{ marginTop: 24 }}>
           {CRITERIA.map((c, i) => (
             <div key={c.title} className="card" data-reveal style={rd(i * 70)}>
               <h3 style={{ color: "var(--navy)", marginBottom: 8 }}>{c.title}</h3>
@@ -86,7 +86,7 @@ export default function SupplierAssessment() {
         <p>
           The documentation package is tailored to the specific product type, dosage form, and target market. For products intended for the Australian market, documentation must satisfy TGA expectations for imported therapeutic goods. For multi-market supply, Salus Vita coordinates with manufacturers to ensure that a single documentation set can address the requirements of all intended regulatory authorities, reducing duplication and accelerating review timelines.
         </p>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 12, marginTop: 24 }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 16, marginTop: 24 }}>
           {DOCUMENTS.map((doc, i) => (
             <div key={doc} className="card" data-reveal style={{ ...rd(i * 50), display: "flex", alignItems: "center", gap: 12, padding: "14px 18px" }}>
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style={{ flexShrink: 0 }}>
@@ -97,7 +97,7 @@ export default function SupplierAssessment() {
             </div>
           ))}
         </div>
-        <p style={{ marginTop: 20, fontSize: "0.92rem", color: "#555" }}>
+        <p style={{ marginTop: 24, fontSize: "0.92rem", color: "#555" }}>
           All documentation received from third parties is verified for authenticity, completeness, and currency before acceptance into the Salus Vita quality system. Documents approaching expiry are flagged for proactive renewal to ensure continuous qualification status.
         </p>
       </section>
@@ -117,7 +117,7 @@ export default function SupplierAssessment() {
         <p>
           Salus Vita monitors publicly available regulatory databases for inspection outcomes, warning letters, import alerts, and enforcement actions affecting qualified partners. Any significant regulatory action triggers an immediate internal risk reassessment and, where appropriate, direct engagement with the manufacturer to understand the scope and remediation plan. Formal re-qualification reviews are conducted at defined intervals, with frequency determined by the supplier's risk category.
         </p>
-        <div className="feature-grid" style={{ marginTop: 28 }}>
+        <div className="feature-grid" style={{ marginTop: 24 }}>
           {KPIS.map((kpi, i) => (
             <div key={kpi.label} className="card" data-reveal style={rd(i * 70)}>
               <h3 style={{ color: "var(--navy)", marginBottom: 8, fontSize: "1rem" }}>{kpi.label}</h3>
@@ -125,7 +125,7 @@ export default function SupplierAssessment() {
             </div>
           ))}
         </div>
-        <p style={{ marginTop: 20 }}>
+        <p style={{ marginTop: 24 }}>
           Where performance falls below agreed thresholds, Salus Vita initiates a structured improvement process with the manufacturing partner. Persistent underperformance may result in supply reduction, suspension of new orders, or activation of alternative qualified sources to protect continuity of supply for customers.
         </p>
       </section>
@@ -153,16 +153,16 @@ export default function SupplierAssessment() {
             { tier: "Critical", colour: "#A0522D", items: ["Quarterly performance review", "Active contingency source qualification", "Intensive regulatory monitoring", "Executive escalation pathway", "Supply continuity planning"] },
           ].map((t, i) => (
             <div key={t.tier} className="card" data-reveal style={{ ...rd(i * 90), borderTop: `3px solid ${t.colour}` }}>
-              <h3 style={{ color: t.colour, marginBottom: 12 }}>{t.tier} Risk</h3>
+              <h3 style={{ color: t.colour, marginBottom: 8 }}>{t.tier} Risk</h3>
               <ul style={{ margin: 0, paddingLeft: 18, fontSize: "0.92rem" }}>
                 {t.items.map((item) => (
-                  <li key={item} style={{ marginBottom: 6 }}>{item}</li>
+                  <li key={item} style={{ marginBottom: 8 }}>{item}</li>
                 ))}
               </ul>
             </div>
           ))}
         </div>
-        <p style={{ marginTop: 20 }}>
+        <p style={{ marginTop: 24 }}>
           Events that may trigger an elevation in risk categorisation include regulatory warning letters, confirmed batch failures, significant supply disruptions, changes in manufacturing site or process, and adverse findings during re-qualification review. Salus Vita maintains documented contingency plans for all products sourced from elevated and critical-risk suppliers, ensuring that customer supply is protected in the event of a disruption.
         </p>
       </section>
@@ -170,7 +170,7 @@ export default function SupplierAssessment() {
       {/* Related Quality Pages */}
       <section className="content-section" data-reveal style={rd(320)}>
         <h2>Related Quality Pages</h2>
-        <div className="feature-grid" style={{ marginTop: 20 }}>
+        <div className="feature-grid" style={{ marginTop: 24 }}>
           {[
             { title: "Regulatory Framework", desc: "How Salus Vita aligns procurement activities with TGA, international GMP standards, and market-specific regulatory requirements.", to: "/quality/regulatory-framework" },
             { title: "Supply Chain Integrity", desc: "Traceability, counterparty verification, and recall management across the pharmaceutical supply chain.", to: "/quality/supply-chain-integrity" },

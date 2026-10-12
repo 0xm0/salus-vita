@@ -97,7 +97,7 @@ export default function GlobalMarkets() {
       <PageHero
         eyebrow="GLOBAL REACH"
         title="International Pharmaceutical Supply Without Geographic Boundaries"
-        description="Headquartered in Australia with coordination capabilities spanning the Asia-Pacific, Europe, and the Middle East and Africa, Salus Vita facilitates pharmaceutical supply wherever quality medicines are needed and qualified counterparties are ready to transact."
+        description="Australian-headquartered pharmaceutical supply coordination spanning Asia-Pacific, Europe, the Middle East, and Africa."
         primaryCTA={{ label: "Discuss Market Entry", to: "/contact/sourcing-enquiry" }}
         secondaryCTA={{ label: "Our Capabilities", to: "/capabilities" }}
       />
@@ -138,12 +138,12 @@ export default function GlobalMarkets() {
       {/* Region Cards */}
       <section className="content-section">
         <h2 data-reveal>Our Operating Regions</h2>
-        <p data-reveal style={{ maxWidth: 720, marginBottom: 28 }}>
+        <p data-reveal>
           Salus Vita coordinates pharmaceutical supply across four principal regions, each presenting distinct
           regulatory requirements, commercial dynamics, and patient needs. Our regional knowledge informs every
           sourcing assessment and transaction pathway we facilitate.
         </p>
-        <div className="feature-grid" style={{ marginTop: 8, gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))" }}>
+        <div className="feature-grid">
           {REGIONS.map((r, i) => (
             <Link
               to={r.to}
@@ -152,10 +152,10 @@ export default function GlobalMarkets() {
               data-reveal
               style={{ ...rd(i * 90), textDecoration: "none", color: "inherit" }}
             >
-              <div style={{ marginBottom: 12 }}>{r.icon}</div>
+              <div style={{ marginBottom: 16 }}>{r.icon}</div>
               <h3>{r.title}</h3>
               <p>{r.desc}</p>
-              <span style={{ marginTop: 14, display: "inline-block", fontSize: 14, fontWeight: 600, color: "var(--teal)" }}>
+              <span style={{ marginTop: 12, display: "inline-block", fontSize: 14, fontWeight: 600, color: "var(--teal)" }}>
                 Explore market details →
               </span>
             </Link>
@@ -166,12 +166,12 @@ export default function GlobalMarkets() {
       {/* Transaction Pathways */}
       <section className="content-section" data-reveal>
         <h2>Transaction Pathways</h2>
-        <p style={{ maxWidth: 720, marginBottom: 28 }}>
+        <p>
           International pharmaceutical transactions follow different pathways depending on the origin of the product,
           the destination market, and the regulatory requirements of both. Salus Vita facilitates three principal
           transaction models, each with tailored coordination, documentation, and quality oversight.
         </p>
-        <div className="feature-grid" style={{ gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))" }}>
+        <div className="feature-grid">
           {PATHWAYS.map((p, i) => (
             <div key={p.title} className="card" data-reveal style={rd(i * 100)}>
               <span style={{
@@ -182,7 +182,7 @@ export default function GlobalMarkets() {
                 backgroundColor: "#E9F0F2",
                 borderRadius: 4,
                 padding: "3px 10px",
-                marginBottom: 12,
+                marginBottom: 16,
                 letterSpacing: "0.05em",
               }}>
                 PATHWAY {p.step}
@@ -197,7 +197,7 @@ export default function GlobalMarkets() {
       {/* Stats */}
       <section className="content-section" data-reveal>
         <h2>International Coordination at Scale</h2>
-        <p style={{ maxWidth: 720, marginBottom: 28 }}>
+        <p>
           Our operational footprint reflects the breadth of markets and counterparties we coordinate across. Every
           manufacturer, distributor, and regulatory pathway is individually assessed before any transaction proceeds.
         </p>

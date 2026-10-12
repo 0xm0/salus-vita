@@ -92,7 +92,7 @@ export default function Quality() {
       <PageHero
         eyebrow="QUALITY & COMPLIANCE"
         title="Quality-Conscious Procurement. Clearly Defined Responsibilities."
-        description="Salus Vita coordinates and facilitates pharmaceutical procurement across international markets. We do not manufacture, warehouse, or hold GMP certifications. Instead, we assess, verify, and monitor the quality credentials of every partner in our network, ensuring that responsibilities are clearly documented and appropriately assigned."
+        description="Assessing, verifying, and monitoring quality credentials across our international manufacturing partner network."
         primaryCTA={{ label: "Request a Quality Information Pack", to: "/contact/sourcing-enquiry" }}
         secondaryCTA={{ label: "View Regulatory Framework", to: "/quality/regulatory-framework" }}
       />
@@ -119,7 +119,7 @@ export default function Quality() {
 
       <section className="content-section" data-reveal style={rd(80)}>
         <h2>Our Quality Pillars</h2>
-        <p style={{ maxWidth: 700, marginBottom: 32 }}>
+        <p style={{ maxWidth: 700 }}>
           Our quality framework is built on four integrated pillars. Together, they provide the
           structure through which Salus Vita evaluates, documents, and monitors every aspect of
           the pharmaceutical procurement process.
@@ -146,7 +146,7 @@ export default function Quality() {
 
       <section className="content-section" data-reveal style={{ background: "var(--pale-blue, #E9F0F2)", ...rd(160) }}>
         <h2>Clearly Defined Responsibilities</h2>
-        <p style={{ maxWidth: 760, marginBottom: 32 }}>
+        <p style={{ maxWidth: 760 }}>
           Salus Vita does not claim certifications, licences, or manufacturing credentials that belong
           to our partners. We believe that transparency about roles and responsibilities is fundamental
           to a trustworthy pharmaceutical supply chain. The table below outlines the distinction between
@@ -156,10 +156,10 @@ export default function Quality() {
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: 24 }}>
           {RESPONSIBILITIES.map((col, ci) => (
             <div key={ci} className="card" data-reveal style={rd(ci * 100)}>
-              <h3 style={{ color: "var(--navy, #15324A)", marginBottom: 16 }}>{col.heading}</h3>
+              <h3 style={{ color: "var(--navy, #15324A)" }}>{col.heading}</h3>
               <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
                 {col.items.map((item, ii) => (
-                  <li key={ii} style={{ display: "flex", alignItems: "flex-start", gap: 10, marginBottom: 12 }}>
+                  <li key={ii} style={{ display: "flex", alignItems: "flex-start", gap: 10, marginBottom: 8 }}>
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style={{ flexShrink: 0, marginTop: 2 }}>
                       <circle cx="10" cy="10" r="9" stroke="#176E79" strokeWidth="1.5" fill="none" />
                       <path d="M6 10l3 3 5-5" stroke="#176E79" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -199,7 +199,7 @@ export default function Quality() {
 
       <section className="content-section" data-reveal style={rd(320)}>
         <h2>Standards We Assess Against</h2>
-        <p style={{ maxWidth: 700, marginBottom: 24 }}>
+        <p style={{ maxWidth: 700 }}>
           Our procurement assessments reference the following international standards and guidelines.
           These are the benchmarks against which we evaluate our manufacturing partners - they are
           not certifications held by Salus Vita.
@@ -230,7 +230,6 @@ export default function Quality() {
           </p>
           <div className="hero-actions" style={{ justifyContent: "center" }}>
             <Link to="/contact/sourcing-enquiry" className="btn btn-primary">Request Quality Information Pack</Link>
-            <Link to="/contact" className="btn btn-outline">Speak to Our Team</Link>
           </div>
         </div>
       </div>

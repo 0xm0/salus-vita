@@ -7,7 +7,7 @@ export default function BespokeSourcing() {
       <PageHero
         eyebrow="CAPABILITIES"
         title="Bespoke Sourcing"
-        description="Salus Vita manages customer-specific, complex procurement requirements that fall outside standard sourcing pathways, applying structured feasibility assessment, custom supply solutions, and dedicated project management to deliver results."
+        description="Structured feasibility assessment and custom supply solutions for complex pharmaceutical requirements outside standard sourcing pathways."
         breadcrumbs={[
           { label: "Capabilities", path: "/capabilities" },
           { label: "Bespoke Sourcing" },
@@ -177,7 +177,7 @@ export default function BespokeSourcing() {
       {/* Related Capabilities */}
       <section className="content-section" data-reveal>
         <h3>Related Capabilities</h3>
-        <div className="feature-grid" style={{ marginTop: 16 }}>
+        <div className="feature-grid" style={{ marginTop: 24 }}>
           <Link to="/capabilities/global-sourcing" className="card" style={{ textDecoration: "none", color: "inherit" }}>
             <h3 style={{ color: "var(--teal)" }}>Global Sourcing</h3>
             <p>Identifying and evaluating manufacturers across international markets for standard and specialised requirements.</p>
@@ -205,7 +205,6 @@ export default function BespokeSourcing() {
           </p>
           <div className="hero-actions" style={{ justifyContent: "center" }}>
             <Link to="/contact/sourcing-enquiry" className="btn btn-primary">Submit a Bespoke Request</Link>
-            <Link to="/contact" className="btn btn-outline">Contact Us</Link>
           </div>
         </div>
       </section>

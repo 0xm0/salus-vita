@@ -27,7 +27,7 @@ export default function Distributors() {
       <PageHero
         eyebrow="STRATEGIC PARTNERSHIPS"
         title="For Authorised Distributors"
-        description="Salus Vita coordinates reliable pharmaceutical sourcing for authorised distributors seeking quality-assessed products, transparent commercial arrangements, and ongoing compliance support across defined territories."
+        description="Reliable pharmaceutical sourcing for authorised distributors with quality-assessed products and compliance support."
         breadcrumbs={[
           { label: "Partnerships", path: "/partnerships" },
           { label: "Distributors" },

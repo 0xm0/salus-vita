@@ -47,7 +47,7 @@ export default function FinishedDosageForms() {
       <PageHero
         eyebrow="PHARMACEUTICAL SOLUTIONS"
         title="Finished Dosage Forms"
-        description="Salus Vita coordinates the procurement of market-ready finished pharmaceutical products from qualified external manufacturers, managing the assessment, documentation, and regulatory alignment required to connect products with their intended markets."
+        description="Procurement of market-ready finished pharmaceutical products from qualified manufacturers, with full regulatory and documentation alignment."
         breadcrumbs={[{ label: "Solutions", path: "/solutions" }, { label: "Finished Dosage Forms" }]}
         primaryCTA={{ label: "Request Product Sourcing", to: "/contact/sourcing-enquiry" }}
         secondaryCTA={{ label: "View All Solutions", to: "/solutions" }}
@@ -255,7 +255,6 @@ export default function FinishedDosageForms() {
           </p>
           <div className="hero-actions" style={{ justifyContent: "center" }}>
             <Link to="/contact/sourcing-enquiry" className="btn btn-primary">Submit Sourcing Enquiry</Link>
-            <Link to="/contact" className="btn btn-outline">Contact Our Team</Link>
           </div>
         </div>
       </section>

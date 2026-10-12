@@ -9,7 +9,7 @@ export default function SupplyChainIntegrity() {
       <PageHero
         eyebrow="QUALITY & COMPLIANCE"
         title="Supply Chain Integrity and Traceability"
-        description="Salus Vita coordinates transparent, traceable pharmaceutical supply chains built on verified counterparties, documented chain of custody, and rigorous oversight at every transfer point."
+        description="Transparent, traceable pharmaceutical supply chains with verified counterparties and documented chain of custody."
         breadcrumbs={[{ label: "Quality", path: "/quality" }, { label: "Supply Chain Integrity" }]}
         primaryCTA={{ label: "Learn About Our Approach", to: "/contact/sourcing-enquiry" }}
         secondaryCTA={{ label: "Quality Overview", to: "/quality" }}
@@ -17,7 +17,7 @@ export default function SupplyChainIntegrity() {
 
       {/* Traceability Systems */}
       <section className="content-section" data-reveal>
-        <div style={{ display: "flex", alignItems: "flex-start", gap: 20, marginBottom: 16 }}>
+        <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
             <path d="M8 12h24M8 20h24M8 28h24" stroke="#15324A" strokeWidth="2" strokeLinecap="round" />
             <circle cx="14" cy="12" r="2" stroke="#15324A" strokeWidth="1.5" fill="none" />
@@ -53,7 +53,7 @@ export default function SupplyChainIntegrity() {
 
       {/* Counterparty Verification */}
       <section className="content-section" data-reveal style={rd(80)}>
-        <div style={{ display: "flex", alignItems: "flex-start", gap: 20, marginBottom: 16 }}>
+        <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
             <rect x="6" y="8" width="28" height="24" rx="3" stroke="#15324A" strokeWidth="2" fill="none" />
             <path d="M16 20l3 3 6-6" stroke="#15324A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -89,7 +89,7 @@ export default function SupplyChainIntegrity() {
 
       {/* Recall Procedures */}
       <section className="content-section" data-reveal style={rd(160)}>
-        <div style={{ display: "flex", alignItems: "flex-start", gap: 20, marginBottom: 16 }}>
+        <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
             <path d="M20 6l14 24H6L20 6z" stroke="#15324A" strokeWidth="2" strokeLinejoin="round" fill="none" />
             <path d="M20 16v6" stroke="#15324A" strokeWidth="2" strokeLinecap="round" />
@@ -125,7 +125,7 @@ export default function SupplyChainIntegrity() {
 
       {/* Adverse Event Handling */}
       <section className="content-section" data-reveal style={rd(240)}>
-        <div style={{ display: "flex", alignItems: "flex-start", gap: 20, marginBottom: 16 }}>
+        <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
             <rect x="8" y="6" width="24" height="28" rx="3" stroke="#15324A" strokeWidth="2" fill="none" />
             <path d="M14 14h12M14 20h12M14 26h8" stroke="#15324A" strokeWidth="1.5" strokeLinecap="round" />
@@ -164,7 +164,7 @@ export default function SupplyChainIntegrity() {
       {/* Key Principles */}
       <section className="content-section" data-reveal style={rd(320)}>
         <h2>Guiding Principles for Supply Chain Integrity</h2>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: 16, marginTop: 20 }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: 16, marginTop: 24 }}>
           {[
             { title: "Direct Sourcing Relationships", text: "Every product is sourced directly from qualified manufacturers or their authorised representatives, eliminating unverified intermediaries from the supply chain." },
             { title: "Documented Chain of Custody", text: "Comprehensive documentation accompanies each consignment, establishing an unbroken audit trail from manufacturer release to customer receipt." },
@@ -182,7 +182,7 @@ export default function SupplyChainIntegrity() {
       {/* Related Quality Pages */}
       <section className="content-section" data-reveal style={rd(400)}>
         <h2>Related Quality Pages</h2>
-        <div className="feature-grid" style={{ marginTop: 20 }}>
+        <div className="feature-grid" style={{ marginTop: 24 }}>
           {[
             { title: "Supplier Assessment", desc: "How Salus Vita evaluates and qualifies manufacturing partners through structured assessment and ongoing monitoring.", to: "/quality/supplier-assessment" },
             { title: "Regulatory Framework", desc: "The regulatory standards and frameworks that guide Salus Vita's procurement and supply coordination activities.", to: "/quality/regulatory-framework" },

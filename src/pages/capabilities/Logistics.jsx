@@ -7,7 +7,7 @@ export default function Logistics() {
       <PageHero
         eyebrow="CAPABILITIES"
         title="Logistics Coordination"
-        description="Salus Vita coordinates third-party freight forwarding, customs brokerage, cold-chain management, and warehousing partnerships to facilitate the safe and compliant transport of pharmaceutical products from manufacturer to destination."
+        description="Coordinating freight forwarding, customs brokerage, cold-chain management, and warehousing for pharmaceutical shipments."
         breadcrumbs={[
           { label: "Capabilities", path: "/capabilities" },
           { label: "Logistics" },
@@ -168,7 +168,7 @@ export default function Logistics() {
       {/* Related Capabilities */}
       <section className="content-section" data-reveal>
         <h3>Related Capabilities</h3>
-        <div className="feature-grid" style={{ marginTop: 16 }}>
+        <div className="feature-grid" style={{ marginTop: 24 }}>
           <Link to="/capabilities/international-procurement" className="card" style={{ textDecoration: "none", color: "inherit" }}>
             <h3 style={{ color: "var(--teal)" }}>International Procurement</h3>
             <p>Coordinating the full procurement cycle from quotation through to supply coordination and delivery management.</p>
@@ -195,7 +195,6 @@ export default function Logistics() {
           </p>
           <div className="hero-actions" style={{ justifyContent: "center" }}>
             <Link to="/contact/sourcing-enquiry" className="btn btn-primary">Submit a Logistics Enquiry</Link>
-            <Link to="/contact" className="btn btn-outline">Contact Us</Link>
           </div>
         </div>
       </section>

@@ -24,7 +24,7 @@ export default function MiddleEastAfrica() {
       <PageHero
         eyebrow="GLOBAL MARKETS"
         title="Middle East & Africa"
-        description="The Middle East and Africa encompass some of the world's most dynamic pharmaceutical markets. Salus Vita facilitates market access and supply coordination across the GCC, North Africa, and Sub-Saharan Africa through regulatory navigation and local partnership development."
+        description="Market access and supply coordination across the GCC, North Africa, and Sub-Saharan Africa through local partnerships."
         breadcrumbs={[{ label: "Global Markets", path: "/global-markets" }, { label: "Middle East & Africa" }]}
         primaryCTA={{ label: "Discuss MEA Opportunities", to: "/contact/sourcing-enquiry" }}
         secondaryCTA={{ label: "All Markets", to: "/global-markets" }}
@@ -32,7 +32,7 @@ export default function MiddleEastAfrica() {
 
       {/* Regulatory Landscape */}
       <section className="content-section" data-reveal>
-        <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 20 }}>
+        <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" style={{ flexShrink: 0, marginTop: 2 }}>
             <rect x="8" y="6" width="24" height="28" rx="3" stroke="#176E79" strokeWidth="2" fill="none" />
             <path d="M14 14h12M14 19h12M14 24h8" stroke="#176E79" strokeWidth="1.5" strokeLinecap="round" />
@@ -48,7 +48,7 @@ export default function MiddleEastAfrica() {
         <p>
           Salus Vita monitors regulatory developments across the MEA region, tracking changes in registration requirements, GMP recognition frameworks, import licensing procedures, and pharmacovigilance obligations. This awareness enables our team to assess market entry feasibility and advise clients on the regulatory pathway, timeline, and documentation requirements applicable to each target jurisdiction.
         </p>
-        <div className="two-col" style={{ marginTop: 28 }}>
+        <div className="two-col" style={{ marginTop: 24 }}>
           <div>
             <h3 style={{ fontSize: 18, fontWeight: 700, color: "var(--navy)", marginBottom: 8 }}>Gulf Cooperation Council</h3>
             <p>
@@ -72,7 +72,7 @@ export default function MiddleEastAfrica() {
 
       {/* Market Access Strategies */}
       <section className="content-section" data-reveal>
-        <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 20 }}>
+        <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" style={{ flexShrink: 0, marginTop: 2 }}>
             <circle cx="20" cy="20" r="16" stroke="#176E79" strokeWidth="2" fill="none" />
             <path d="M20 8v12l8 4" stroke="#176E79" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -86,7 +86,7 @@ export default function MiddleEastAfrica() {
         <p>
           Salus Vita assesses market access opportunities by evaluating the regulatory pathway, competitive landscape, pricing environment, and distribution infrastructure in each target jurisdiction. Our assessments consider both the immediate commercial opportunity and the longer-term trajectory of each market, including expected regulatory reform, healthcare expenditure trends, and evolving procurement practices.
         </p>
-        <div className="feature-grid" style={{ marginTop: 24, gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))" }}>
+        <div className="feature-grid" style={{ marginTop: 24 }}>
           {[
             { title: "Regulatory Pathway Assessment", desc: "Evaluating registration requirements, expected timelines, GMP recognition frameworks, and documentation needs for each target jurisdiction." },
             { title: "Competitive Landscape Analysis", desc: "Assessing the existing market for comparable products, pricing benchmarks, market share distribution, and potential competitive positioning." },
@@ -103,7 +103,7 @@ export default function MiddleEastAfrica() {
 
       {/* Distribution Networks */}
       <section className="content-section" data-reveal>
-        <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 20 }}>
+        <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" style={{ flexShrink: 0, marginTop: 2 }}>
             <circle cx="20" cy="10" r="4" stroke="#176E79" strokeWidth="2" fill="none" />
             <circle cx="10" cy="30" r="4" stroke="#176E79" strokeWidth="2" fill="none" />
@@ -131,7 +131,7 @@ export default function MiddleEastAfrica() {
 
       {/* Growth Opportunities */}
       <section className="content-section" data-reveal>
-        <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 20 }}>
+        <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" style={{ flexShrink: 0, marginTop: 2 }}>
             <rect x="6" y="6" width="28" height="28" rx="4" stroke="#176E79" strokeWidth="2" fill="none" />
             <path d="M12 28l5-6 4 3 7-11" stroke="#176E79" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -196,7 +196,6 @@ export default function MiddleEastAfrica() {
           </p>
           <div className="hero-actions" style={{ justifyContent: "center" }}>
             <Link to="/contact/sourcing-enquiry" className="btn btn-primary">Discuss MEA Opportunities</Link>
-            <Link to="/contact" className="btn btn-outline">Contact Us</Link>
           </div>
         </div>
       </section>

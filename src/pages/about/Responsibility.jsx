@@ -54,9 +54,9 @@ export default function Responsibility() {
       <PageHero
         eyebrow="RESPONSIBILITY"
         title="Corporate Responsibility"
-        description="As a company that coordinates international pharmaceutical supply, Salus Vita recognises a responsibility that extends beyond commercial outcomes - to the communities served by the products we help deliver, to the people who manufacture them, and to the environment affected by global trade."
+        description="Responsibility that extends beyond commercial outcomes, to communities, manufacturing partners, and the environment."
         breadcrumbs={[{ label: "About", path: "/about" }, { label: "Responsibility" }]}
-        primaryCTA={{ label: "Contact Us", to: "/contact" }}
+        primaryCTA={{ label: "Discuss Your Requirements", to: "/contact/sourcing-enquiry" }}
         secondaryCTA={{ label: "Governance", to: "/about/governance" }}
       />
 
@@ -70,7 +70,7 @@ export default function Responsibility() {
           choice of manufacturer partners, logistics arrangements, and the standards
           we set for every transaction we facilitate.
         </p>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: 20, marginTop: 24 }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: 24, marginTop: 24 }}>
           {ESG_PILLARS.map((pillar, i) => (
             <div key={pillar.label} className="card" data-reveal style={rd(i * 90)}>
               <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 16 }}>
@@ -152,7 +152,7 @@ export default function Responsibility() {
           that extend beyond product quality to encompass ethical and environmental
           standards.
         </p>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 20, marginTop: 24 }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 24, marginTop: 24 }}>
           {[
             {
               title: "Regulated Manufacturers Only",
@@ -229,7 +229,6 @@ export default function Responsibility() {
           </p>
           <div className="hero-actions" style={{ justifyContent: "center" }}>
             <Link to="/contact/sourcing-enquiry" className="btn btn-primary">Discuss Your Requirements</Link>
-            <Link to="/contact" className="btn btn-outline">Contact Us</Link>
           </div>
         </div>
       </section>

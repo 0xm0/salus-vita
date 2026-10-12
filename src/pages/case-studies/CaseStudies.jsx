@@ -92,7 +92,7 @@ export default function CaseStudies() {
                 flexDirection: "column",
               }}
             >
-              <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 12 }}>
+              <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 16 }}>
                 <span className="card-icon">{cs.icon}</span>
                 <span
                   style={{
@@ -122,7 +122,7 @@ export default function CaseStudies() {
                   fontSize: 14,
                   fontWeight: 600,
                   color: "var(--teal)",
-                  marginTop: 12,
+                  marginTop: 16,
                   display: "inline-flex",
                   alignItems: "center",
                   gap: 6,
@@ -158,7 +158,7 @@ export default function CaseStudies() {
             style={{
               display: "grid",
               gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
-              gap: 20,
+              gap: 24,
               marginTop: 24,
             }}
           >
@@ -197,7 +197,7 @@ export default function CaseStudies() {
                     color: "var(--teal)",
                     opacity: 0.25,
                     display: "block",
-                    marginBottom: 12,
+                    marginBottom: 16,
                   }}
                 >
                   {item.step}

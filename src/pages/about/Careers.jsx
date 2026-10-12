@@ -55,7 +55,7 @@ export default function Careers() {
       <PageHero
         eyebrow="JOIN OUR TEAM"
         title="Careers at Salus Vita"
-        description="Join a team of pharmaceutical professionals coordinating quality-assured supply across international markets. We are always looking for people who combine industry expertise with a commitment to compliance and integrity."
+        description="Pharmaceutical professionals coordinating quality-assured supply across international markets."
         breadcrumbs={[{ label: "About", path: "/about" }, { label: "Careers" }]}
         primaryCTA={{ label: "View Openings", to: "#openings" }}
         secondaryCTA={{ label: "About Us", to: "/about" }}
@@ -103,7 +103,7 @@ export default function Careers() {
           Our workplace values reflect the same principles that guide our approach to
           pharmaceutical supply coordination.
         </p>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: 20, marginTop: 24 }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: 24, marginTop: 24 }}>
           {WORKPLACE_VALUES.map((v, i) => (
             <div key={v.title} className="card" data-reveal style={rd(i * 80)}>
               <h3>{v.title}</h3>
@@ -117,7 +117,7 @@ export default function Careers() {
       <section className="content-section" data-reveal style={rd(200)} id="openings">
         <h2>Current Openings</h2>
         <p>We are currently recruiting for the following positions:</p>
-        <div style={{ display: "flex", flexDirection: "column", gap: 14, marginTop: 24 }}>
+        <div style={{ display: "flex", flexDirection: "column", gap: 16, marginTop: 24 }}>
           {OPENINGS.map((job, i) => (
             <div
               key={job.title}

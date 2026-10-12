@@ -32,7 +32,7 @@ const DIFFERENTIATORS = [
   {
     title: "Bespoke Sourcing Capability",
     challenge: "Standard commercial supply channels often cannot accommodate requests for niche APIs, low-volume generics, or specialty products with limited global availability.",
-    approach: "Salus Vita provides tailored sourcing solutions for hard-to-find pharmaceutical products, leveraging our manufacturer network and industry relationships to identify viable supply options.",
+    approach: "Salus Vita provides tailored sourcing solutions for hard-to-find pharmaceutical products, drawing on our manufacturer network and industry relationships to identify viable supply options.",
   },
 ]
 
@@ -42,7 +42,7 @@ export default function WhySalusVita() {
       <PageHero
         eyebrow="OUR DIFFERENCE"
         title="Why Salus Vita"
-        description="In international pharmaceutical supply, the right coordinating partner can determine the success of a sourcing engagement. Salus Vita brings a structured, transparent, and compliance-conscious approach to every transaction."
+        description="Structured, transparent, and compliance-conscious pharmaceutical sourcing coordination across international markets."
         breadcrumbs={[{ label: "About", path: "/about" }, { label: "Why Salus Vita" }]}
         primaryCTA={{ label: "Discuss Your Requirements", to: "/contact/sourcing-enquiry" }}
         secondaryCTA={{ label: "Our Capabilities", to: "/capabilities" }}
@@ -70,8 +70,8 @@ export default function WhySalusVita() {
         <div style={{ display: "flex", flexDirection: "column", gap: 24, marginTop: 24 }}>
           {DIFFERENTIATORS.map((d, i) => (
             <div key={d.title} className="card" data-reveal style={rd(i * 70)}>
-              <h3 style={{ marginBottom: 20 }}>{d.title}</h3>
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 32 }}>
+              <h3 style={{ marginBottom: 16 }}>{d.title}</h3>
+              <div className="grid-2-col" style={{ gap: 32 }}>
                 <div>
                   <span
                     style={{
@@ -81,7 +81,7 @@ export default function WhySalusVita() {
                       letterSpacing: "0.14em",
                       textTransform: "uppercase",
                       color: "var(--muted-2)",
-                      marginBottom: 10,
+                      marginBottom: 8,
                     }}
                   >
                     The Challenge
@@ -97,7 +97,7 @@ export default function WhySalusVita() {
                       letterSpacing: "0.14em",
                       textTransform: "uppercase",
                       color: "var(--teal)",
-                      marginBottom: 10,
+                      marginBottom: 8,
                     }}
                   >
                     The Salus Vita Approach
@@ -156,7 +156,6 @@ export default function WhySalusVita() {
           </p>
           <div className="hero-actions" style={{ justifyContent: "center" }}>
             <Link to="/contact/sourcing-enquiry" className="btn btn-primary">Submit an Enquiry</Link>
-            <Link to="/contact" className="btn btn-outline">Contact Us</Link>
           </div>
         </div>
       </section>

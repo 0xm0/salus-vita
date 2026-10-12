@@ -20,7 +20,7 @@ const labelStyle = {
   fontWeight: 600,
   color: "var(--navy)",
   display: "block",
-  marginBottom: 6,
+  marginBottom: 8,
 }
 
 const legendStyle = {
@@ -134,7 +134,7 @@ export default function SourcingEnquiry() {
               borderRadius: "var(--radius)",
             }}
           >
-            <div style={{ display: "flex", alignItems: "flex-start", gap: 14 }}>
+            <div style={{ display: "flex", alignItems: "flex-start", gap: 16 }}>
               <svg
                 viewBox="0 0 24 24"
                 fill="none"
@@ -213,14 +213,14 @@ export default function SourcingEnquiry() {
               display: "flex",
               flexDirection: "column",
               gap: 32,
-              marginTop: 28,
+              marginTop: 24,
             }}
           >
             {/* Contact Information */}
             <fieldset style={fieldsetStyle}>
               <legend style={legendStyle}>Contact Information</legend>
 
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+              <div className="grid-2-col">
                 <div>
                   <label style={labelStyle} htmlFor="se-org">Organisation *</label>
                   <input
@@ -246,7 +246,7 @@ export default function SourcingEnquiry() {
                 </div>
               </div>
 
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+              <div className="grid-2-col">
                 <div>
                   <label style={labelStyle} htmlFor="se-name">Contact Name *</label>
                   <input
@@ -272,7 +272,7 @@ export default function SourcingEnquiry() {
                 </div>
               </div>
 
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+              <div className="grid-2-col">
                 <div>
                   <label style={labelStyle} htmlFor="se-email">Email Address *</label>
                   <input
@@ -304,7 +304,7 @@ export default function SourcingEnquiry() {
             <fieldset style={fieldsetStyle}>
               <legend style={legendStyle}>Enquiry Details</legend>
 
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+              <div className="grid-2-col">
                 <div>
                   <label style={labelStyle} htmlFor="se-category">Enquiry Category *</label>
                   <select
@@ -355,7 +355,7 @@ export default function SourcingEnquiry() {
                 </select>
               </div>
 
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+              <div className="grid-2-col">
                 <div>
                   <label style={labelStyle} htmlFor="se-volumes">Indicative Volumes</label>
                   <input

@@ -50,9 +50,9 @@ export default function Leadership() {
       <PageHero
         eyebrow="OUR PEOPLE"
         title="Leadership Team"
-        description="The Salus Vita leadership team brings together pharmaceutical industry experience across procurement, quality assurance, regulatory affairs, and international trade coordination."
+        description="Pharmaceutical professionals with deep expertise in procurement, quality assurance, regulatory affairs, and international trade."
         breadcrumbs={[{ label: "About", path: "/about" }, { label: "Leadership" }]}
-        primaryCTA={{ label: "Contact Us", to: "/contact" }}
+        primaryCTA={{ label: "Submit an Enquiry", to: "/contact/sourcing-enquiry" }}
         secondaryCTA={{ label: "Careers", to: "/about/careers" }}
       />
 
@@ -65,7 +65,7 @@ export default function Leadership() {
           bring a practical understanding of what it takes to coordinate compliant,
           quality-assured pharmaceutical supply across multiple jurisdictions.
         </p>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 20, marginTop: 24 }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 24, marginTop: 24 }}>
           {EXECUTIVES.map((exec, i) => (
             <div key={exec.name} className="card" data-reveal style={rd(i * 80)}>
               <div
@@ -86,7 +86,7 @@ export default function Leadership() {
                 {exec.name.split(" ").filter((_, idx) => idx === 0 || idx === exec.name.split(" ").length - 1).map(n => n[0]).join("")}
               </div>
               <h3>{exec.name}</h3>
-              <p style={{ fontSize: 13, fontWeight: 600, color: "var(--teal)", marginBottom: 10 }}>{exec.role}</p>
+              <p style={{ fontSize: 13, fontWeight: 600, color: "var(--teal)", marginBottom: 8 }}>{exec.role}</p>
               <p>{exec.bio}</p>
             </div>
           ))}
@@ -103,7 +103,7 @@ export default function Leadership() {
           and ensure we remain well-positioned to navigate changes in the
           regulatory and commercial landscape.
         </p>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: 20, marginTop: 24 }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: 24, marginTop: 24 }}>
           {ADVISORS.map((adv, i) => (
             <div key={adv.name} className="card" data-reveal style={rd(i * 80)}>
               <div
@@ -115,7 +115,7 @@ export default function Leadership() {
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
-                  marginBottom: 14,
+                  marginBottom: 16,
                   fontSize: 18,
                   fontWeight: 700,
                   color: "var(--teal)",
@@ -124,7 +124,7 @@ export default function Leadership() {
                 {adv.name.split(" ").filter((_, idx) => idx === 0 || idx === adv.name.split(" ").length - 1).map(n => n[0]).join("")}
               </div>
               <h3>{adv.name}</h3>
-              <p style={{ fontSize: 13, fontWeight: 600, color: "var(--teal)", marginBottom: 10 }}>{adv.role}</p>
+              <p style={{ fontSize: 13, fontWeight: 600, color: "var(--teal)", marginBottom: 8 }}>{adv.role}</p>
               <p>{adv.desc}</p>
             </div>
           ))}
@@ -167,7 +167,6 @@ export default function Leadership() {
           </p>
           <div className="hero-actions" style={{ justifyContent: "center" }}>
             <Link to="/contact/sourcing-enquiry" className="btn btn-primary">Submit an Enquiry</Link>
-            <Link to="/contact" className="btn btn-outline">Contact Us</Link>
           </div>
         </div>
       </section>

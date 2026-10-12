@@ -79,7 +79,7 @@ export default function APIs() {
       <PageHero
         eyebrow="PHARMACEUTICAL SOLUTIONS"
         title="Active Pharmaceutical Ingredients"
-        description="Salus Vita coordinates the sourcing of active pharmaceutical ingredients from assessed manufacturers worldwide, connecting buyers in manufacturing, research, and institutional settings with quality-assured API supply."
+        description="Quality-assured API supply from assessed manufacturers worldwide for manufacturing, research, and institutional buyers."
         breadcrumbs={[{ label: "Solutions", path: "/solutions" }, { label: "Active Pharmaceutical Ingredients" }]}
         primaryCTA={{ label: "Request API Sourcing", to: "/contact/sourcing-enquiry" }}
         secondaryCTA={{ label: "View All Solutions", to: "/solutions" }}
@@ -101,7 +101,7 @@ export default function APIs() {
           requirements, or monitor ongoing supplier performance across geographies. Whether the end use is commercial
           manufacturing, clinical research, or institutional compounding, the same rigour applies.
         </p>
-        <div className="feature-grid" style={{ marginTop: 32 }}>
+        <div className="feature-grid" style={{ marginTop: 24 }}>
           {PROCESS_STEPS.map((step, i) => (
             <div key={step.title} className="card" data-reveal style={rd(i * 90)}>
               <div style={{ marginBottom: 16 }}>{step.icon}</div>
@@ -272,8 +272,8 @@ export default function APIs() {
 
       {/* Related Solutions */}
       <section className="content-section" data-reveal>
-        <h3 style={{ fontSize: 20, fontWeight: 700, color: "var(--navy)", marginBottom: 20 }}>Related Solutions</h3>
-        <div className="feature-grid" style={{ gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))" }}>
+        <h3 style={{ fontSize: 20, fontWeight: 700, color: "var(--navy)", marginBottom: 16 }}>Related Solutions</h3>
+        <div className="feature-grid">
           {RELATED.map((r, i) => (
             <Link
               to={r.to}
@@ -284,7 +284,7 @@ export default function APIs() {
             >
               <h3>{r.title}</h3>
               <p>{r.desc}</p>
-              <span style={{ marginTop: 14, display: "inline-block", fontSize: 14, fontWeight: 600, color: "var(--teal)" }}>
+              <span style={{ marginTop: 16, display: "inline-block", fontSize: 14, fontWeight: 600, color: "var(--teal)" }}>
                 Learn more →
               </span>
             </Link>
@@ -302,7 +302,6 @@ export default function APIs() {
           </p>
           <div className="hero-actions" style={{ justifyContent: "center" }}>
             <Link to="/contact/sourcing-enquiry" className="btn btn-primary">Submit Enquiry</Link>
-            <Link to="/contact" className="btn btn-outline">Contact Us</Link>
           </div>
         </div>
       </section>

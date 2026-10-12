@@ -9,7 +9,7 @@ export default function Manufacturers() {
       <PageHero
         eyebrow="STRATEGIC PARTNERSHIPS"
         title="For Manufacturers and CDMOs"
-        description="Salus Vita coordinates international market access for pharmaceutical manufacturers and contract development and manufacturing organisations seeking to reach new territories through structured, transparent commercial partnerships."
+        description="International market access for pharmaceutical manufacturers and CDMOs seeking new territories through structured partnerships."
         breadcrumbs={[{ label: "Partnerships", path: "/partnerships" }, { label: "Manufacturers" }]}
         primaryCTA={{ label: "Discuss Market Access", to: "/contact/sourcing-enquiry" }}
       />
@@ -68,7 +68,7 @@ export default function Manufacturers() {
           product under consideration. This analysis helps manufacturers prioritise their
           international expansion efforts based on commercial viability rather than assumption.
         </p>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: 16, marginTop: 20 }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: 16, marginTop: 24 }}>
           {[
             "Therapeutic area demand analysis",
             "Competitive landscape assessment",
@@ -154,7 +154,7 @@ export default function Manufacturers() {
       {/* Engagement Process */}
       <section className="content-section" data-reveal style={rd(320)}>
         <h2>The Manufacturer Engagement Process</h2>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))", gap: 16, marginTop: 20 }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))", gap: 16, marginTop: 24 }}>
           {[
             { step: "01", title: "Initial Enquiry", detail: "Manufacturer or CDMO contacts Salus Vita with a product portfolio or market access objective" },
             { step: "02", title: "Portfolio Assessment", detail: "Salus Vita evaluates product suitability for target markets based on defined criteria" },
@@ -165,7 +165,7 @@ export default function Manufacturers() {
           ].map((item, i) => (
             <div key={item.step} className="card" data-reveal style={rd(i * 60)}>
               <p style={{ fontWeight: 700, color: "var(--teal)", fontSize: 24, margin: "0 0 4px 0" }}>{item.step}</p>
-              <p style={{ fontWeight: 600, color: "var(--navy)", margin: "0 0 6px 0" }}>{item.title}</p>
+              <p style={{ fontWeight: 600, color: "var(--navy)", margin: "0 0 8px 0" }}>{item.title}</p>
               <p style={{ fontSize: 14, opacity: 0.85, margin: 0 }}>{item.detail}</p>
             </div>
           ))}
@@ -175,7 +175,7 @@ export default function Manufacturers() {
       {/* Related Pages */}
       <section className="content-section" data-reveal style={rd(400)}>
         <h3>Related Partnership Pages</h3>
-        <div className="feature-grid" style={{ marginTop: 16 }}>
+        <div className="feature-grid" style={{ marginTop: 24 }}>
           {[
             { title: "For Institutional Buyers", desc: "Sourcing coordination for hospitals, wholesalers, and procurement teams.", to: "/partnerships/customers" },
             { title: "For Authorised Distributors", desc: "Territory-based sourcing partnerships with transparent commercial terms.", to: "/partnerships/distributors" },

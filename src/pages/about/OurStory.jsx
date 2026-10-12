@@ -19,10 +19,10 @@ export default function OurStory() {
       <PageHero
         eyebrow="OUR JOURNEY"
         title="Our Story"
-        description="From a founding vision in pharmaceutical sourcing coordination to a trusted international partner - the Salus Vita story is one of purpose, structured growth, and an unwavering commitment to quality."
+        description="From a founding vision in pharmaceutical sourcing coordination to a trusted international partner across multiple continents."
         breadcrumbs={[{ label: "About", path: "/about" }, { label: "Our Story" }]}
         primaryCTA={{ label: "Meet the Team", to: "/about/leadership" }}
-        secondaryCTA={{ label: "Contact Us", to: "/contact" }}
+        secondaryCTA={{ label: "Leadership", to: "/about/leadership" }}
       />
 
       {/* Founding Narrative */}
@@ -72,7 +72,7 @@ export default function OurStory() {
       {/* Timeline */}
       <section className="content-section" data-reveal style={rd(100)}>
         <h2>Key Milestones</h2>
-        <p style={{ marginBottom: 40 }}>
+        <p style={{ marginBottom: 32 }}>
           Salus Vita's growth has been deliberate and structured, expanding
           capabilities, geographic reach, and manufacturer relationships over
           more than fifteen years of operation.
@@ -122,12 +122,12 @@ export default function OurStory() {
                   fontWeight: 700,
                   letterSpacing: "0.08em",
                   color: "var(--teal)",
-                  marginBottom: 6,
+                  marginBottom: 8,
                 }}
               >
                 {m.year}
               </span>
-              <h3 style={{ fontSize: 18, fontWeight: 700, color: "var(--navy)", marginBottom: 6 }}>
+              <h3 style={{ fontSize: 18, fontWeight: 700, color: "var(--navy)", marginBottom: 8 }}>
                 {m.title}
               </h3>
               <p style={{ color: "var(--muted)", fontSize: 15, lineHeight: 1.65, maxWidth: 580 }}>
@@ -203,7 +203,6 @@ export default function OurStory() {
           </p>
           <div className="hero-actions" style={{ justifyContent: "center" }}>
             <Link to="/contact/sourcing-enquiry" className="btn btn-primary">Submit an Enquiry</Link>
-            <Link to="/contact" className="btn btn-outline">Contact Us</Link>
           </div>
         </div>
       </section>

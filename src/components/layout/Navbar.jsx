@@ -1,41 +1,26 @@
 import { useState, useEffect, useCallback } from "react"
 import { Link, useLocation } from "react-router-dom"
+import { motion, AnimatePresence } from "framer-motion"
+import { ChevronDown, Menu, X } from "lucide-react"
 import { navigation, utilityNav } from "../../data/navigation"
 
-const ChevronDown = () => (
-  <svg className="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-    <path d="m6 9 6 6 6-6" />
-  </svg>
-)
-
-const MenuIcon = () => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M4 6h16M4 12h16M4 18h16" />
-  </svg>
-)
-
-const CloseIcon = () => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M18 6 6 18M6 6l12 12" />
-  </svg>
-)
-
 export default function Navbar() {
+  const [openMenu, setOpenMenu] = useState(null)
+  const [hoverId, setHoverId] = useState(null)
   const [mobileOpen, setMobileOpen] = useState(false)
+  const [mobileAccordion, setMobileAccordion] = useState(null)
   const location = useLocation()
 
-  // Close mobile menu on route change
+  /* Close everything on route change */
   useEffect(() => {
     setMobileOpen(false)
+    setMobileAccordion(null)
+    setOpenMenu(null)
   }, [location.pathname])
 
-  // Lock body scroll when mobile menu is open
+  /* Lock body scroll when mobile menu is open */
   useEffect(() => {
-    if (mobileOpen) {
-      document.body.style.overflow = "hidden"
-    } else {
-      document.body.style.overflow = ""
-    }
+    document.body.style.overflow = mobileOpen ? "hidden" : ""
     return () => { document.body.style.overflow = "" }
   }, [mobileOpen])
 
@@ -43,46 +28,101 @@ export default function Navbar() {
     setMobileOpen(prev => !prev)
   }, [])
 
-  const isHome = location.pathname === "/"
+  const toggleAccordion = useCallback((label) => {
+    setMobileAccordion(prev => prev === label ? null : label)
+  }, [])
 
   return (
-    <nav className={`sv-navbar${isHome ? " sv-navbar-transparent" : ""}`} role="navigation" aria-label="Main navigation">
+    <nav className="sv-navbar" role="navigation" aria-label="Main navigation">
       <div className="sv-navbar-inner">
         {/* Brand */}
         <Link to="/" className="sv-brand">
           <span className="sv-brand-icon" aria-hidden="true">SV</span>
-          Salus Vita
+          <span className="sv-brand-text">Salus Vita</span>
         </Link>
 
-        {/* Desktop nav */}
+        {/* Desktop nav - dorpdown pattern */}
         <ul className="sv-nav-links">
-          {navigation.map((item) => (
-            <li key={item.label} className="sv-nav-item">
-              {item.children ? (
-                <>
-                  <Link
-                    to={item.path}
-                    className={`sv-nav-link${location.pathname.startsWith(item.path) && item.path !== "/" ? " active" : ""}`}
-                  >
-                    {item.label}
-                    <ChevronDown />
-                  </Link>
-                  <div className="sv-dropdown">
-                    {item.children.map((child) => (
-                      <Link key={child.path} to={child.path}>
-                        {child.label}
-                      </Link>
-                    ))}
+          {navigation.map((navItem) => (
+            <li
+              key={navItem.id}
+              className="relative"
+              onMouseEnter={() => setOpenMenu(navItem.label)}
+              onMouseLeave={() => setOpenMenu(null)}
+            >
+              <button
+                type="button"
+                className="sv-dorpdown-trigger group"
+                onMouseEnter={() => setHoverId(navItem.id)}
+                onMouseLeave={() => setHoverId(null)}
+              >
+                <span>{navItem.label}</span>
+                {navItem.subMenus && (
+                  <ChevronDown
+                    className={`sv-dorpdown-chevron ${openMenu === navItem.label ? "sv-dorpdown-chevron--open" : ""}`}
+                  />
+                )}
+                <AnimatePresence>
+                  {(hoverId === navItem.id || openMenu === navItem.label) && (
+                    <motion.div
+                      layoutId="hover-bg"
+                      className="sv-dorpdown-pill"
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                      transition={{ type: "spring", bounce: 0.15, duration: 0.4 }}
+                    />
+                  )}
+                </AnimatePresence>
+              </button>
+
+              <AnimatePresence>
+                {openMenu === navItem.label && navItem.subMenus && (
+                  <div className="sv-dorpdown-anchor">
+                    <motion.div
+                      className="sv-dorpdown-panel"
+                      layoutId="menu"
+                      initial={{ opacity: 0, y: 8 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: 8 }}
+                      transition={{ type: "spring", bounce: 0.15, duration: 0.4 }}
+                    >
+                      <div className="sv-dorpdown-columns">
+                        {navItem.subMenus.map((sub) => (
+                          <motion.div layout className="sv-dorpdown-col" key={sub.title}>
+                            <h3 className="sv-dorpdown-heading">{sub.title}</h3>
+                            <ul className="sv-dorpdown-items">
+                              {sub.items.map((item) => {
+                                const Icon = item.icon
+                                return (
+                                  <li key={item.path}>
+                                    <Link
+                                      to={item.path}
+                                      className="sv-dorpdown-item group"
+                                    >
+                                      <div className="sv-dorpdown-item-icon">
+                                        <Icon className="h-5 w-5 flex-none" />
+                                      </div>
+                                      <div className="sv-dorpdown-item-text">
+                                        <p className="sv-dorpdown-item-label">
+                                          {item.label}
+                                        </p>
+                                        <p className="sv-dorpdown-item-desc">
+                                          {item.description}
+                                        </p>
+                                      </div>
+                                    </Link>
+                                  </li>
+                                )
+                              })}
+                            </ul>
+                          </motion.div>
+                        ))}
+                      </div>
+                    </motion.div>
                   </div>
-                </>
-              ) : (
-                <Link
-                  to={item.path}
-                  className={`sv-nav-link${location.pathname === item.path ? " active" : ""}`}
-                >
-                  {item.label}
-                </Link>
-              )}
+                )}
+              </AnimatePresence>
             </li>
           ))}
         </ul>
@@ -91,7 +131,7 @@ export default function Navbar() {
         <div className="sv-utility-nav">
           {utilityNav.map((item) =>
             item.isPrimary ? (
-              <Link key={item.path} to={item.path} className="btn btn-primary" style={{ padding: "8px 18px", fontSize: "14px" }}>
+              <Link key={item.path} to={item.path} className="btn btn-primary sv-utility-btn">
                 {item.label}
               </Link>
             ) : (
@@ -106,39 +146,74 @@ export default function Navbar() {
             aria-label={mobileOpen ? "Close menu" : "Open menu"}
             aria-expanded={mobileOpen}
           >
-            {mobileOpen ? <CloseIcon /> : <MenuIcon />}
+            {mobileOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
         </div>
       </div>
 
-      {/* Mobile menu */}
-      <div className={`sv-mobile-menu${mobileOpen ? " open" : ""}`} aria-hidden={!mobileOpen}>
-        {navigation.map((item) => (
-          <div key={item.label} className="sv-mobile-section">
-            <Link to={item.path} onClick={() => setMobileOpen(false)} style={{ fontWeight: 600 }}>
-              {item.label}
-            </Link>
-            {item.children && item.children.map((child) => (
-              <Link key={child.path} to={child.path} onClick={() => setMobileOpen(false)} style={{ paddingLeft: 32 }}>
-                {child.label}
-              </Link>
-            ))}
-          </div>
-        ))}
-        <div className="sv-mobile-cta">
-          {utilityNav.map((item) => (
-            <Link
-              key={item.path}
-              to={item.path}
-              className={item.isPrimary ? "btn btn-primary" : "btn btn-outline"}
-              onClick={() => setMobileOpen(false)}
-              style={{ justifyContent: "center" }}
-            >
-              {item.label}
-            </Link>
-          ))}
-        </div>
-      </div>
+      {/* Mobile menu overlay */}
+      <AnimatePresence>
+        {mobileOpen && (
+          <motion.div
+            className="sv-mobile-menu"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.25 }}
+            aria-hidden={!mobileOpen}
+          >
+            <div className="sv-mobile-menu-body">
+              {navigation.map((item) => (
+                <div key={item.id} className="sv-mobile-section">
+                  <button
+                    type="button"
+                    className={`sv-mobile-accordion-btn${mobileAccordion === item.label ? " open" : ""}`}
+                    onClick={() => toggleAccordion(item.label)}
+                  >
+                    {item.label}
+                    <ChevronDown
+                      size={14}
+                      className={`transition-transform duration-250 ${mobileAccordion === item.label ? "rotate-180" : ""}`}
+                    />
+                  </button>
+                  <div className={`sv-mobile-accordion-panel${mobileAccordion === item.label ? " open" : ""}`}>
+                    {item.subMenus && item.subMenus.map((sub) => (
+                      <div key={sub.title} className="sv-mobile-group">
+                        {item.subMenus.length > 1 && (
+                          <span className="sv-mobile-group-heading">{sub.title}</span>
+                        )}
+                        {sub.items.map((link) => (
+                          <Link
+                            key={link.path}
+                            to={link.path}
+                            className="sv-mobile-link"
+                            onClick={() => setMobileOpen(false)}
+                          >
+                            {link.label}
+                          </Link>
+                        ))}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="sv-mobile-cta">
+              {utilityNav.map((item) => (
+                <Link
+                  key={item.path}
+                  to={item.path}
+                  className={item.isPrimary ? "btn btn-primary sv-mobile-cta-btn" : "btn btn-outline sv-mobile-cta-btn"}
+                  onClick={() => setMobileOpen(false)}
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   )
 }

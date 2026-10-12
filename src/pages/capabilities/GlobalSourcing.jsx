@@ -7,7 +7,7 @@ export default function GlobalSourcing() {
       <PageHero
         eyebrow="CAPABILITIES"
         title="Global Sourcing"
-        description="Salus Vita identifies and evaluates pharmaceutical manufacturers and contract development and manufacturing organisations (CDMOs) across international markets, assessing their capability to meet specific product, quality, and regulatory requirements."
+        description="Identifying and evaluating pharmaceutical manufacturers across international markets against your product, quality, and regulatory requirements."
         breadcrumbs={[
           { label: "Capabilities", path: "/capabilities" },
           { label: "Global Sourcing" },
@@ -117,7 +117,7 @@ export default function GlobalSourcing() {
             </p>
             <p>
               Where appropriate, Salus Vita facilitates on-site assessments or coordinates with third-party
-              auditing firms to conduct quality audits on behalf of clients. We can also leverage mutual
+              auditing firms to conduct quality audits on behalf of clients. We can also use mutual
               recognition arrangements between inspection agencies to streamline the qualification process
               for manufacturers already holding recognised GMP certifications.
             </p>
@@ -175,7 +175,7 @@ export default function GlobalSourcing() {
       {/* Related Capabilities */}
       <section className="content-section" data-reveal>
         <h3>Related Capabilities</h3>
-        <div className="feature-grid" style={{ marginTop: 16 }}>
+        <div className="feature-grid" style={{ marginTop: 24 }}>
           <Link to="/capabilities/international-procurement" className="card" style={{ textDecoration: "none", color: "inherit" }}>
             <h3 style={{ color: "var(--teal)" }}>International Procurement</h3>
             <p>Coordinating quotations, negotiations, and contract structuring for international pharmaceutical transactions.</p>
@@ -202,7 +202,6 @@ export default function GlobalSourcing() {
           </p>
           <div className="hero-actions" style={{ justifyContent: "center" }}>
             <Link to="/contact/sourcing-enquiry" className="btn btn-primary">Submit a Sourcing Enquiry</Link>
-            <Link to="/contact" className="btn btn-outline">Contact Us</Link>
           </div>
         </div>
       </section>

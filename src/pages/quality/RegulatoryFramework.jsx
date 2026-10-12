@@ -9,14 +9,14 @@ export default function RegulatoryFramework() {
       <PageHero
         eyebrow="QUALITY & COMPLIANCE"
         title="Regulatory Framework and Compliance"
-        description="Salus Vita coordinates pharmaceutical procurement in alignment with the regulatory frameworks of every target market. Our processes are structured to facilitate compliance with TGA, PIC/S, WHO, and other international standards, ensuring that every product sourced through our network meets the expectations of the relevant regulatory authority."
+        description="Procurement aligned with TGA, PIC/S, WHO, and international regulatory standards for every target market."
         breadcrumbs={[{ label: "Quality", path: "/quality" }, { label: "Regulatory Framework" }]}
         primaryCTA={{ label: "Discuss Regulatory Requirements", to: "/contact/sourcing-enquiry" }}
       />
 
       {/* Australian Framework (TGA) */}
       <section className="content-section" data-reveal>
-        <div style={{ display: "flex", alignItems: "flex-start", gap: 20, marginBottom: 12 }}>
+        <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
             <rect x="4" y="8" width="32" height="24" rx="3" stroke="#15324A" strokeWidth="2" fill="none" />
             <path d="M4 14h32" stroke="#15324A" strokeWidth="2" />
@@ -38,7 +38,7 @@ export default function RegulatoryFramework() {
 
       {/* International Standards */}
       <section className="content-section" data-reveal style={rd(80)}>
-        <div style={{ display: "flex", alignItems: "flex-start", gap: 20, marginBottom: 12 }}>
+        <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
             <circle cx="20" cy="20" r="15" stroke="#15324A" strokeWidth="2" fill="none" />
             <ellipse cx="20" cy="20" rx="7" ry="15" stroke="#15324A" strokeWidth="1.5" fill="none" />
@@ -60,7 +60,7 @@ export default function RegulatoryFramework() {
 
       {/* Product Classification */}
       <section className="content-section" data-reveal style={rd(160)}>
-        <div style={{ display: "flex", alignItems: "flex-start", gap: 20, marginBottom: 12 }}>
+        <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
             <rect x="6" y="6" width="12" height="12" rx="2" stroke="#15324A" strokeWidth="2" fill="none" />
             <rect x="22" y="6" width="12" height="12" rx="2" stroke="#15324A" strokeWidth="2" fill="none" />
@@ -83,7 +83,7 @@ export default function RegulatoryFramework() {
 
       {/* Compliance Monitoring */}
       <section className="content-section" data-reveal style={rd(240)}>
-        <div style={{ display: "flex", alignItems: "flex-start", gap: 20, marginBottom: 12 }}>
+        <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
             <path d="M20 4l14 7v10c0 8-6 14-14 17C12 35 6 29 6 21V11l14-7z" stroke="#15324A" strokeWidth="2" fill="none" />
             <path d="M14 20l4 4 8-8" stroke="#15324A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -104,7 +104,7 @@ export default function RegulatoryFramework() {
       {/* Related Quality Pages */}
       <section className="content-section" data-reveal style={rd(320)}>
         <h2>Related Quality Pages</h2>
-        <div className="feature-grid" style={{ marginTop: 20 }}>
+        <div className="feature-grid" style={{ marginTop: 24 }}>
           <Link to="/quality/supplier-assessment" className="card" data-reveal style={{ ...rd(0), textDecoration: "none", color: "inherit" }}>
             <h3>Supplier Assessment</h3>
             <p>How Salus Vita evaluates and qualifies manufacturing partners through structured due diligence and ongoing performance monitoring.</p>
@@ -131,7 +131,6 @@ export default function RegulatoryFramework() {
           <p>Discuss your market-specific regulatory requirements or request detailed compliance documentation for any product in our network.</p>
           <div className="hero-actions" style={{ justifyContent: "center" }}>
             <Link to="/contact/sourcing-enquiry" className="btn btn-primary">Discuss Requirements</Link>
-            <Link to="/contact" className="btn btn-outline">Contact Our Team</Link>
           </div>
         </div>
       </div>
