@@ -880,7 +880,7 @@ html.lenis, html.lenis body { height: auto; }
   filter: saturate(0.7) brightness(1.1);
 }
 
-/* Home page light hero */
+/* Home page light hero - transparent so planet shows through */
 .home-hero {
   position: relative;
   z-index: 1;
@@ -892,7 +892,7 @@ html.lenis, html.lenis body { height: auto; }
   text-align: center;
   padding: 0 24px;
   color: var(--ink);
-  background: var(--off-white);
+  background: rgba(246, 248, 249, 0.25);
 }
 .home-hero h1 {
   font-size: clamp(36px, 5vw, 64px);
@@ -901,15 +901,18 @@ html.lenis, html.lenis body { height: auto; }
   letter-spacing: -0.03em;
   color: var(--navy);
   max-width: 900px;
+  text-shadow: 0 1px 8px rgba(246, 248, 249, 0.8), 0 0 2px rgba(246, 248, 249, 0.6);
 }
 .home-hero .eyebrow {
   color: var(--teal);
+  text-shadow: 0 1px 6px rgba(246, 248, 249, 0.7);
 }
 .home-hero p {
   color: var(--muted);
   font-size: 18px;
   line-height: 1.65;
   max-width: 600px;
+  text-shadow: 0 1px 6px rgba(246, 248, 249, 0.7);
 }
 .home-hero .hero-actions {
   margin-top: 38px;
@@ -951,17 +954,24 @@ html.lenis, html.lenis body { height: auto; }
 }
 .home-hero .logo:hover { color: var(--navy); opacity: 1; }
 
-/* Light sections for the home page */
+/* Light sections for the home page - semi-transparent to show planet */
 .home-section {
   position: relative;
   z-index: 1;
-  background: var(--off-white);
+  background: rgba(246, 248, 249, 0.78);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border-top: 1px solid var(--line);
   color: var(--ink);
 }
 .home-section:nth-child(even) {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.78);
 }
+/* CTA section (last home section) - more opaque for visual break */
+.home-section:last-of-type {
+  background: rgba(246, 248, 249, 0.92);
+}
+
 .home-section .section-head h2,
 .home-section h2 {
   color: var(--navy);
