@@ -16,7 +16,7 @@ export default function Disclaimer() {
 
         <h2 data-reveal>1. General Disclaimer</h2>
         <p data-reveal>
-          The information provided on this website (salusvita.com.au) is published by Salus Vita Pty Ltd
+          The information provided on this website (salusvita.net) is published by Salus Vita Pty Ltd
           (ABN XX XXX XXX XXX) and is intended for general informational purposes only. While Salus Vita
           endeavours to ensure that the content on this website is accurate, complete, and current, we make
           no representations or warranties of any kind, whether express, implied, or statutory, regarding
@@ -280,7 +280,7 @@ export default function Disclaimer() {
           <p style={{ margin: "0 0 4px", fontWeight: 600 }}>Salus Vita Pty Ltd</p>
           <p style={{ margin: "0 0 4px" }}>ABN: XX XXX XXX XXX</p>
           <p style={{ margin: "0 0 4px" }}>
-            Email: <a href="mailto:legal@salusvita.com.au" style={{ color: "var(--teal)" }}>legal@salusvita.com.au</a>
+            Email: <a href="mailto:legal@salusvita.net" style={{ color: "var(--teal)" }}>legal@salusvita.net</a>
           </p>
           <p style={{ margin: 0 }}>Melbourne, Victoria, Australia</p>
         </div>

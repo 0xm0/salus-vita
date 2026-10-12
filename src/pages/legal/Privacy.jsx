@@ -312,7 +312,7 @@ export default function Privacy() {
           <strong>Privacy Officer</strong><br />
           Salus Vita Pty Ltd<br />
           ABN XX XXX XXX XXX<br />
-          Email: privacy@salusvita.com.au<br />
+          Email: privacy@salusvita.net<br />
           Melbourne, Victoria, Australia
         </div>
         <p data-reveal style={{ marginTop: 20 }}>

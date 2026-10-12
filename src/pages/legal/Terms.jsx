@@ -38,7 +38,7 @@ export default function Terms() {
         <p data-reveal>In these Terms, the following definitions apply:</p>
         <ul data-reveal style={{ lineHeight: 1.9 }}>
           <li><strong>"Company", "we", "our", or "us"</strong> refers to Salus Vita Pty Ltd (ABN XX XXX XXX XXX), an Australian company.</li>
-          <li><strong>"Site"</strong> refers to the website located at salusvita.com.au and all associated subdomains.</li>
+          <li><strong>"Site"</strong> refers to the website located at salusvita.net and all associated subdomains.</li>
           <li><strong>"User", "you", or "your"</strong> refers to any individual or entity that accesses or uses the Site.</li>
           <li><strong>"Professional Portal"</strong> refers to the authenticated section of the Site available to approved Users following a verification process.</li>
           <li><strong>"Services"</strong> refers to the pharmaceutical sourcing, procurement, supply, and related services offered by Salus Vita, whether through the Site or otherwise.</li>
@@ -292,7 +292,7 @@ export default function Terms() {
           If you have any questions or concerns about these Terms, please contact our legal team:
         </p>
         <ul data-reveal style={{ lineHeight: 1.9 }}>
-          <li><strong>Email:</strong> legal@salusvita.com.au</li>
+          <li><strong>Email:</strong> legal@salusvita.net</li>
           <li><strong>Post:</strong> Legal Department, Salus Vita Pty Ltd, Melbourne, Victoria, Australia</li>
         </ul>
       </section>

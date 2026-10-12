@@ -38,19 +38,19 @@ const OFFICES = [
     name: "Australia (Head Office)",
     address: ["Level 12, 100 Collins Street", "Melbourne VIC 3000", "Australia"],
     phone: "+61 3 9000 0000",
-    email: "info@salusvita.com.au",
+    email: "info@salusvita.net",
   },
   {
     name: "Singapore (Asia-Pacific)",
     address: ["1 Raffles Place, #20-01", "Singapore 048616"],
     phone: "+65 6000 0000",
-    email: "apac@salusvita.com.au",
+    email: "apac@salusvita.net",
   },
   {
     name: "United Kingdom (Europe)",
     address: ["30 St Mary Axe", "London EC3A 8BF", "United Kingdom"],
     phone: "+44 20 7000 0000",
-    email: "europe@salusvita.com.au",
+    email: "europe@salusvita.net",
   },
 ]
 

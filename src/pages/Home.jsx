@@ -107,7 +107,6 @@ const PATHWAYS = [
   },
 ]
 
-const LOGOS = ["Cipla", "Mylan", "Dr Reddy's", "Aurobindo", "Sun Pharma", "Lupin"]
 
 export default function Home() {
   return (
@@ -137,12 +136,6 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="logos" data-reveal style={rd(420)}>
-          <span className="logos-label">Trusted pharmaceutical supply partners</span>
-          <div className="logos-row">
-            {LOGOS.map((l) => <span key={l} className="logo">{l}</span>)}
-          </div>
-        </div>
       </header>
 
       {/* ---- SECTION 2: CAPABILITIES ---- */}

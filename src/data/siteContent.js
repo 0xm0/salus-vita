@@ -17,7 +17,7 @@ export const brand = {
 }
 
 export const contact = {
-  email: "info@salusvita.com",
+  email: "info@salusvita.net",
   phone: "+61 3 9000 0000",
   address: {
     line1: "Level 12, 500 Collins Street",
