@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import Planet from "../Planet.jsx"
+import FangMark from "../components/ui/FangMark"
 
 const rd = (ms) => ({ "--rd": `${ms}ms` })
 
@@ -111,7 +112,32 @@ export default function Home() {
       {/* ---- SECTION 1: HERO ---- */}
       <header className="home-hero">
         <Planet />
-        <div style={{ flex: 1, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: "96px 0 0" }}>
+
+        {/* Fang mark watermark */}
+        <svg
+          className="hero-fang-watermark"
+          viewBox="0 0 48 48"
+          width="360"
+          height="360"
+          style={{
+            position: "absolute",
+            right: "8%",
+            top: "50%",
+            transform: "translateY(-50%)",
+            opacity: 0.05,
+            pointerEvents: "none",
+            zIndex: 1,
+          }}
+          aria-hidden="true"
+        >
+          <g transform="translate(24, 22)">
+            <path d="M -10,-16 C -10,-16 -12,0 -4,10 C 0,15 6,16 6,16" fill="none" stroke="#ffffff" strokeWidth="2.5" strokeLinecap="round"/>
+            <path d="M 10,-16 C 10,-16 12,0 4,10 C 0,15 -6,16 -6,16" fill="none" stroke="#ffffff" strokeWidth="2.5" strokeLinecap="round"/>
+            <circle cx="0" cy="20" r="1.5" fill="#ffffff"/>
+          </g>
+        </svg>
+
+        <div style={{ flex: 1, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: "96px 0 0", position: "relative", zIndex: 2 }}>
           <span className="eyebrow" data-reveal style={rd(60)}>
             AUSTRALIAN-HEADQUARTERED | INTERNATIONAL PHARMACEUTICAL SUPPLY
           </span>
@@ -156,6 +182,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <div style={{ textAlign: "center", padding: "8px 0" }}>
+        <FangMark size={24} strokeColor="rgba(15, 61, 34, 0.25)" dotColor="rgba(45, 138, 86, 0.3)" />
+      </div>
 
       {/* ---- SECTION 3: SHOWCASE / OPERATING MODEL ---- */}
       <section className="home-section home-section--white">
@@ -206,6 +236,10 @@ export default function Home() {
 
         </div>
       </section>
+
+      <div style={{ textAlign: "center", padding: "8px 0" }}>
+        <FangMark size={24} strokeColor="rgba(15, 61, 34, 0.25)" dotColor="rgba(45, 138, 86, 0.3)" />
+      </div>
 
       {/* ---- SECTION 3B: STATS ---- */}
       <section className="home-section home-section--pale">

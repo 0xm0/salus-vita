@@ -1,4 +1,4 @@
-# Salus Vita - Advisory Fixes Progress Tracker
+# Salus Vita - Brand Visibility Fixes
 
 ## Status Key
 - [ ] Pending
@@ -9,38 +9,28 @@
 
 ## Tasks
 
-| # | Issue | File(s) | Status | Agent | Notes |
-|---|-------|---------|--------|-------|-------|
-| 1 | Forms submit to admin@salusvita.net via email | Contact.jsx, SourcingEnquiry.jsx, PortalApplication.jsx | [ ] | A | Use Formspree or serverless, all forms send to admin@salusvita.net |
-| 2 | Add 404 page | router.jsx, new NotFound.jsx | [ ] | B | Catch-all route, branded 404 page with nav back |
-| 3 | Phone number 1300 692 468 | Contact.jsx, siteContent.js, Footer.jsx | [ ] | B | Replace placeholder +61 3 9000 0000 |
-| 4 | Professional Portal "Coming Soon" | ProfessionalLanding.jsx, navigation.js, Navbar | [ ] | C | Show coming soon state, keep in nav but disable login/apply |
-| 5 | Leadership page | - | [x] | - | Leave as-is per user |
-| 6 | Contact map + address | Contact.jsx | [ ] | D | 2 Queen Street Melbourne, embed Google Maps |
-| 7 | Footer incomplete (slice fix) | Footer.jsx | [ ] | D | Show all section links, not just first submenu |
-| 8 | CMS/Blog | - | [x] | - | Leave as-is per user |
-| 9 | "Dedicated" stat fix | Home.jsx | [ ] | E | Replace with something that reads as a real stat |
-| 10 | Sourcing enquiry form - reduce friction | SourcingEnquiry.jsx | [ ] | E | Make half the fields optional |
-| 11 | Trust signals (ABN link, LinkedIn) | Footer.jsx, Contact.jsx | [ ] | E | Link ABN to ABR lookup, add LinkedIn |
-| 12 | About breadcrumbs | About.jsx | [ ] | E | Add breadcrumbs matching other pages |
+| # | Task | File(s) | Status | Agent | Notes |
+|---|------|---------|--------|-------|-------|
+| 1 | Hero watermark - large fang mark ~5% opacity behind headline | Home.jsx, index.css | [ ] | A | 300-400px, white stroke, absolute positioned |
+| 2 | CTA card watermark - fang mark bottom-right ~8% opacity | index.css | [ ] | B | SVG data URI in .cta-card background, ~120px |
+| 3 | 404 page - large FangMark replaces "404" text | NotFound.jsx | [ ] | C | FangMark size={120}, brand touchpoint |
+| 4 | Footer - 48px standalone fang mark above columns | Footer.jsx | [ ] | D | Centered, standalone element with separator |
+| 5 | Homepage section dividers - small fang mark between sections | Home.jsx | [ ] | E | 24px, 30% opacity, centered between sections |
+| 6 | Cleanup dead code (submitForm.js) | src/lib/submitForm.js | [ ] | C | Orphaned after Typeform switch |
 
 ## Post-Fix Pipeline
 
 | Step | Status | Notes |
 |------|--------|-------|
 | All agent fixes | [ ] | 5 agents in parallel |
-| Build verification | [ ] | Clean build, no errors |
-| Code review | [ ] | Review all changed files |
-| QA Desktop (Chrome) | [ ] | Full functionality test |
-| QA Mobile (Chrome) | [ ] | Responsiveness, nav, forms |
+| Build verification | [ ] | Clean build |
+| QA Desktop (Chrome) | [ ] | Screenshots + visual check |
+| QA Mobile (Chrome) | [ ] | Responsive check |
 | Commit + Deploy | [ ] | Push to GitHub + Vercel |
 
----
-
-## Agent Assignment Plan
-
-- **Agent A**: #1 - Form email submissions (all 3 forms -> admin@salusvita.net)
-- **Agent B**: #2, #3 - 404 page + phone number fix
-- **Agent C**: #4 - Professional Portal coming soon state
-- **Agent D**: #6, #7 - Contact map/address + footer fix
-- **Agent E**: #9, #10, #11, #12 - Stats, form UX, trust signals, breadcrumbs
+## Agent Assignment
+- **Agent A**: #1 - Hero watermark (Home.jsx + CSS)
+- **Agent B**: #2 - CTA card watermark (index.css only)
+- **Agent C**: #3 + #6 - 404 page fang mark + delete dead code
+- **Agent D**: #4 - Footer fang mark upgrade
+- **Agent E**: #5 - Homepage section dividers

@@ -44,11 +44,17 @@ export default function Footer() {
   return (
     <footer className="sv-footer">
       <div className="sv-footer-inner">
+        {/* Centered fang mark above everything */}
+        <div style={{ textAlign: "center", marginBottom: 32 }}>
+          <FangMark size={48} strokeColor="rgba(255,255,255,0.6)" dotColor="rgba(255,255,255,0.4)" />
+          <div style={{ width: 60, height: 1, background: "rgba(255,255,255,0.15)", margin: "20px auto 0" }} />
+        </div>
+
         <div className="sv-footer-top">
           {/* Brand column */}
           <div className="sv-footer-brand">
             <Link to="/" className="sv-brand">
-              <FangMark size={28} />
+              <FangMark size={32} />
               Salus Vita
             </Link>
             <p>

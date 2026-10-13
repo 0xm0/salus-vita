@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import FangMark from "../components/ui/FangMark"
 
 export default function NotFound() {
   return (
@@ -13,23 +14,15 @@ export default function NotFound() {
       }}
     >
       <div style={{ maxWidth: 520 }}>
-        <p
-          style={{
-            fontSize: 80,
-            fontWeight: 700,
-            color: "var(--teal)",
-            lineHeight: 1,
-            margin: 0,
-          }}
-        >
-          404
-        </p>
+        <div style={{ marginBottom: 24, display: "flex", justifyContent: "center" }}>
+          <FangMark size={120} />
+        </div>
         <h1
           style={{
             fontSize: 32,
             fontWeight: 700,
-            color: "var(--navy)",
-            margin: "16px 0 12px",
+            color: "var(--dark-green, #0f3d22)",
+            margin: "0 0 12px",
           }}
         >
           Page Not Found
@@ -42,7 +35,7 @@ export default function NotFound() {
             margin: "0 0 32px",
           }}
         >
-          The page you're looking for doesn't exist or has been moved.
+          The page you are looking for does not exist or has been moved.
         </p>
         <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
           <Link
