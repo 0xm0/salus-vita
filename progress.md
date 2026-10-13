@@ -1,60 +1,46 @@
-# Salus Vita - Site Review Progress Tracker
+# Salus Vita - Advisory Fixes Progress Tracker
 
 ## Status Key
 - [ ] Pending
 - [~] In Progress
 - [x] Complete
-- [!] Blocked / Needs User Input
 
 ---
 
-## Critical Fixes
+## Tasks
 
 | # | Issue | File(s) | Status | Agent | Notes |
 |---|-------|---------|--------|-------|-------|
-| 1 | Fake people on Leadership page | Leadership.jsx | [x] | A | Replaced with role-based descriptions, no names |
-| 2 | FAQs says "15 years of experience" | FAQs.jsx | [x] | B | Rewritten to reflect May 2023 founding |
-| 3 | FAQs claims Singapore/UK offices, 40+ countries | FAQs.jsx | [x] | B | Changed to "headquartered in Australia, operating internationally" |
-
-## Inflated Stats / Claims
-
-| # | Issue | File(s) | Status | Agent | Notes |
-|---|-------|---------|--------|-------|-------|
-| 4 | Home stats inflated (200+, 15+, 24/7) | Home.jsx | [x] | C | Now: 8+ countries, 30+ contacts, "Dedicated" |
-| 5 | Global Markets "30+ jurisdictions" contradicts Home | GlobalMarkets.jsx | [x] | C | Now: 12+ jurisdictions, aligned with Home |
-| 6 | Careers lists fake job openings + "established company" | Careers.jsx | [x] | D | Role categories instead of fake listings |
-| 7 | Responsibility claims modern slavery reporting | Responsibility.jsx | [x] | D | Softened to aspirational/growth language |
-| 8 | Governance reads like large enterprise | Governance.jsx | [x] | A | "Board of Directors" -> "company's directors" |
-
-## Tone / Repetition
-
-| # | Issue | File(s) | Status | Agent | Notes |
-|---|-------|---------|--------|-------|-------|
-| 9 | "quality-assured" overused sitewide | Multiple | [x] | E | Reduced from 20 to ~11 instances, varied alternatives |
-| 10 | CTA sections all use same formula | Multiple | [x] | E | Varied 4 CTAs with distinct copy |
-| 11 | OurStory duplicate CTA links | OurStory.jsx | [x] | E | Removed secondaryCTA |
-| 12 | About.jsx overstates geographic scope | About.jsx | [x] | E | Softened to "growing reach" language |
-
-## Mobile / UX Fix
-
-| # | Issue | File(s) | Status | Agent | Notes |
-|---|-------|---------|--------|-------|-------|
-| 13 | Mobile hamburger menu not opening | Navbar.jsx, index.css | [x] | - | Moved overlay outside nav, z-index 200 |
-
-## Additional Fixes (Pre-Agent)
-
-| # | Issue | File(s) | Status | Notes |
-|---|-------|---------|--------|-------|
-| 14 | Wrong founding date "2009" | OurStory, About, Leadership, siteContent | [x] | Changed to May 2023 |
-| 15 | ABN placeholder "XX XXX XXX XXX" | Privacy, Terms, Disclaimer, Footer | [x] | Set to 92 668 370 518 |
+| 1 | Forms submit to admin@salusvita.net via email | Contact.jsx, SourcingEnquiry.jsx, PortalApplication.jsx | [ ] | A | Use Formspree or serverless, all forms send to admin@salusvita.net |
+| 2 | Add 404 page | router.jsx, new NotFound.jsx | [ ] | B | Catch-all route, branded 404 page with nav back |
+| 3 | Phone number 1300 692 468 | Contact.jsx, siteContent.js, Footer.jsx | [ ] | B | Replace placeholder +61 3 9000 0000 |
+| 4 | Professional Portal "Coming Soon" | ProfessionalLanding.jsx, navigation.js, Navbar | [ ] | C | Show coming soon state, keep in nav but disable login/apply |
+| 5 | Leadership page | - | [x] | - | Leave as-is per user |
+| 6 | Contact map + address | Contact.jsx | [ ] | D | 2 Queen Street Melbourne, embed Google Maps |
+| 7 | Footer incomplete (slice fix) | Footer.jsx | [ ] | D | Show all section links, not just first submenu |
+| 8 | CMS/Blog | - | [x] | - | Leave as-is per user |
+| 9 | "Dedicated" stat fix | Home.jsx | [ ] | E | Replace with something that reads as a real stat |
+| 10 | Sourcing enquiry form - reduce friction | SourcingEnquiry.jsx | [ ] | E | Make half the fields optional |
+| 11 | Trust signals (ABN link, LinkedIn) | Footer.jsx, Contact.jsx | [ ] | E | Link ABN to ABR lookup, add LinkedIn |
+| 12 | About breadcrumbs | About.jsx | [ ] | E | Add breadcrumbs matching other pages |
 
 ## Post-Fix Pipeline
 
 | Step | Status | Notes |
 |------|--------|-------|
-| All agent fixes | [x] | 5/5 agents complete |
-| Build verification | [x] | Clean build, no errors |
-| Code review | [~] | Running now |
+| All agent fixes | [ ] | 5 agents in parallel |
+| Build verification | [ ] | Clean build, no errors |
+| Code review | [ ] | Review all changed files |
 | QA Desktop (Chrome) | [ ] | Full functionality test |
-| QA Mobile (Chrome) | [ ] | Responsiveness, touch targets, nav |
-| Final deploy | [ ] | Push to GitHub + Vercel |
+| QA Mobile (Chrome) | [ ] | Responsiveness, nav, forms |
+| Commit + Deploy | [ ] | Push to GitHub + Vercel |
+
+---
+
+## Agent Assignment Plan
+
+- **Agent A**: #1 - Form email submissions (all 3 forms -> admin@salusvita.net)
+- **Agent B**: #2, #3 - 404 page + phone number fix
+- **Agent C**: #4 - Professional Portal coming soon state
+- **Agent D**: #6, #7 - Contact map/address + footer fix
+- **Agent E**: #9, #10, #11, #12 - Stats, form UX, trust signals, breadcrumbs

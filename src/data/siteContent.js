@@ -19,7 +19,7 @@ export const brand = {
 
 export const contact = {
   email: "info@salusvita.net",
-  phone: "+61 3 9000 0000",
+  phone: "1300 692 468",
   address: {
     line1: "Level 12, 500 Collins Street",
     city: "Melbourne",

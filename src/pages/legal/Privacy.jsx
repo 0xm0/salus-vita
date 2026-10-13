@@ -16,7 +16,7 @@ export default function Privacy() {
 
         <h2 data-reveal>1. Introduction</h2>
         <p data-reveal>
-          Salus Vita Pty Ltd (ABN 92 668 370 518) ("Salus Vita", "we", "our", "us") is an Australian-headquartered
+          Salus Vita Pty Ltd (ABN <a href="https://abr.business.gov.au/ABN/View?abn=92668370518" target="_blank" rel="noopener noreferrer" style={{ color: "var(--teal)" }}>92 668 370 518</a>) ("Salus Vita", "we", "our", "us") is an Australian-headquartered
           international pharmaceutical sourcing, procurement and supply company. We are committed to protecting
           the privacy and security of the personal information we collect and hold.
         </p>
@@ -311,7 +311,7 @@ export default function Privacy() {
         }}>
           <strong>Privacy Officer</strong><br />
           Salus Vita Pty Ltd<br />
-          ABN 92 668 370 518<br />
+          ABN <a href="https://abr.business.gov.au/ABN/View?abn=92668370518" target="_blank" rel="noopener noreferrer" style={{ color: "var(--teal)" }}>92 668 370 518</a><br />
           Email: privacy@salusvita.net<br />
           Melbourne, Victoria, Australia
         </div>

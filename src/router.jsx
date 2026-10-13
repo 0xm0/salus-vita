@@ -76,6 +76,9 @@ import Privacy from "./pages/legal/Privacy"
 import Terms from "./pages/legal/Terms"
 import Disclaimer from "./pages/legal/Disclaimer"
 
+// Not Found
+import NotFound from "./pages/NotFound"
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -167,6 +170,9 @@ const router = createBrowserRouter([
       { path: "privacy", element: <Privacy /> },
       { path: "terms", element: <Terms /> },
       { path: "disclaimer", element: <Disclaimer /> },
+
+      // Catch-all
+      { path: "*", element: <NotFound /> },
     ],
   },
 ])

@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
 import PageHero from "../../components/layout/PageHero"
+import { submitForm } from "../../lib/submitForm"
 
 const inputStyle = {
   padding: "12px 16px",
@@ -77,6 +78,8 @@ export default function SourcingEnquiry() {
     message: "",
   })
   const [submitted, setSubmitted] = useState(false)
+  const [submitting, setSubmitting] = useState(false)
+  const [error, setError] = useState("")
 
   const update = (field) => (e) =>
     setForm((prev) => ({ ...prev, [field]: e.target.value }))
@@ -85,10 +88,20 @@ export default function SourcingEnquiry() {
     setForm((prev) => ({ ...prev, supportingDocuments: e.target.files[0] || null }))
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    setSubmitted(true)
-    window.scrollTo({ top: 0, behavior: "smooth" })
+    setSubmitting(true)
+    setError("")
+    // Exclude the file object from the JSON payload
+    const { supportingDocuments, ...formData } = form
+    const result = await submitForm(formData, "Sourcing Enquiry")
+    setSubmitting(false)
+    if (result.ok) {
+      setSubmitted(true)
+      window.scrollTo({ top: 0, behavior: "smooth" })
+    } else {
+      setError(result.message)
+    }
   }
 
   const handleReset = () => {
@@ -108,6 +121,7 @@ export default function SourcingEnquiry() {
       message: "",
     })
     setSubmitted(false)
+    setError("")
   }
 
   return (
@@ -234,7 +248,7 @@ export default function SourcingEnquiry() {
                   />
                 </div>
                 <div>
-                  <label style={labelStyle} htmlFor="se-website">Website</label>
+                  <label style={labelStyle} htmlFor="se-website">Website (optional)</label>
                   <input
                     id="se-website"
                     type="url"
@@ -260,7 +274,7 @@ export default function SourcingEnquiry() {
                   />
                 </div>
                 <div>
-                  <label style={labelStyle} htmlFor="se-role">Role / Job Title</label>
+                  <label style={labelStyle} htmlFor="se-role">Role / Job Title (optional)</label>
                   <input
                     id="se-role"
                     type="text"
@@ -306,12 +320,12 @@ export default function SourcingEnquiry() {
 
               <div className="grid-2-col">
                 <div>
-                  <label style={labelStyle} htmlFor="se-category">Enquiry Category *</label>
+                  <label style={labelStyle} htmlFor="se-category">Enquiry Category (optional)</label>
                   <select
                     id="se-category"
                     value={form.enquiryCategory}
                     onChange={update("enquiryCategory")}
-                    required
+
                     style={{ ...inputStyle, cursor: "pointer" }}
                   >
                     <option value="" disabled>Select a category</option>
@@ -321,14 +335,14 @@ export default function SourcingEnquiry() {
                   </select>
                 </div>
                 <div>
-                  <label style={labelStyle} htmlFor="se-market">Intended Market *</label>
+                  <label style={labelStyle} htmlFor="se-market">Intended Market (optional)</label>
                   <input
                     id="se-market"
                     type="text"
                     value={form.intendedMarket}
                     onChange={update("intendedMarket")}
                     placeholder="e.g. Australia, Singapore, EU"
-                    required
+
                     style={inputStyle}
                   />
                 </div>
@@ -357,7 +371,7 @@ export default function SourcingEnquiry() {
 
               <div className="grid-2-col">
                 <div>
-                  <label style={labelStyle} htmlFor="se-volumes">Indicative Volumes</label>
+                  <label style={labelStyle} htmlFor="se-volumes">Indicative Volumes (optional)</label>
                   <input
                     id="se-volumes"
                     type="text"
@@ -368,7 +382,7 @@ export default function SourcingEnquiry() {
                   />
                 </div>
                 <div>
-                  <label style={labelStyle} htmlFor="se-timing">Proposed Timing</label>
+                  <label style={labelStyle} htmlFor="se-timing">Proposed Timing (optional)</label>
                   <input
                     id="se-timing"
                     type="text"
@@ -386,7 +400,7 @@ export default function SourcingEnquiry() {
               <legend style={legendStyle}>Additional Information</legend>
 
               <div>
-                <label style={labelStyle} htmlFor="se-message">Message</label>
+                <label style={labelStyle} htmlFor="se-message">Message (optional)</label>
                 <textarea
                   id="se-message"
                   value={form.message}
@@ -398,7 +412,7 @@ export default function SourcingEnquiry() {
               </div>
 
               <div>
-                <label style={labelStyle} htmlFor="se-docs">Supporting Documents</label>
+                <label style={labelStyle} htmlFor="se-docs">Supporting Documents (optional)</label>
                 <input
                   id="se-docs"
                   type="file"
@@ -435,12 +449,29 @@ export default function SourcingEnquiry() {
               </p>
             </div>
 
+            {error && (
+              <div
+                style={{
+                  padding: "12px 16px",
+                  background: "#fef2f2",
+                  border: "1px solid #fecaca",
+                  borderRadius: 8,
+                  color: "#991b1b",
+                  fontSize: 14,
+                }}
+              >
+                {error}
+              </div>
+            )}
+
             <div style={{ display: "flex", alignItems: "center", gap: 16, flexWrap: "wrap" }}>
               <button
                 type="submit"
                 className="btn btn-primary"
+                style={{ opacity: submitting ? 0.7 : 1 }}
+                disabled={submitting}
               >
-                Submit Sourcing Enquiry
+                {submitting ? "Submitting..." : "Submit Sourcing Enquiry"}
               </button>
               <p style={{ fontSize: 13, color: "var(--muted-2)", margin: 0 }}>
                 * Required fields. We aim to respond within two business days.

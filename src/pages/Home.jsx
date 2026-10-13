@@ -86,7 +86,7 @@ const STATS = [
   { value: "8+", label: "Countries Sourced" },
   { value: "30+", label: "Manufacturer Contacts" },
   { value: "3", label: "Transaction Pathways" },
-  { value: "Dedicated", label: "Supply Coordination" },
+  { value: "100%", label: "Compliance Focus" },
 ]
 
 const PATHWAYS = [

@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
 import PageHero from "../../components/layout/PageHero"
+import { submitForm } from "../../lib/submitForm"
 
 const inputStyle = {
   padding: "12px 16px",
@@ -36,8 +37,8 @@ const ENQUIRY_TYPES = [
 const OFFICES = [
   {
     name: "Australia (Head Office)",
-    address: ["Melbourne, Victoria", "Australia"],
-    phone: "+61 3 9000 0000",
+    address: ["2 Queen Street", "Melbourne VIC 3000, Australia"],
+    phone: "1300 692 468",
     email: "info@salusvita.net",
   },
 ]
@@ -52,13 +53,23 @@ export default function Contact() {
     message: "",
   })
   const [submitted, setSubmitted] = useState(false)
+  const [submitting, setSubmitting] = useState(false)
+  const [error, setError] = useState("")
 
   const update = (field) => (e) =>
     setForm((prev) => ({ ...prev, [field]: e.target.value }))
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    setSubmitted(true)
+    setSubmitting(true)
+    setError("")
+    const result = await submitForm(form, "General Enquiry")
+    setSubmitting(false)
+    if (result.ok) {
+      setSubmitted(true)
+    } else {
+      setError(result.message)
+    }
   }
 
   const handleReset = () => {
@@ -71,6 +82,7 @@ export default function Contact() {
       message: "",
     })
     setSubmitted(false)
+    setError("")
   }
 
   return (
@@ -243,12 +255,28 @@ export default function Contact() {
                   <Link to="/privacy" style={{ color: "var(--teal)" }}>Privacy Policy</Link>.
                 </p>
 
+                {error && (
+                  <div
+                    style={{
+                      padding: "12px 16px",
+                      background: "#fef2f2",
+                      border: "1px solid #fecaca",
+                      borderRadius: 8,
+                      color: "#991b1b",
+                      fontSize: 14,
+                    }}
+                  >
+                    {error}
+                  </div>
+                )}
+
                 <button
                   type="submit"
                   className="btn btn-primary"
-                  style={{ alignSelf: "flex-start" }}
+                  style={{ alignSelf: "flex-start", opacity: submitting ? 0.7 : 1 }}
+                  disabled={submitting}
                 >
-                  Send Message
+                  {submitting ? "Sending..." : "Send Message"}
                 </button>
               </form>
             )}
@@ -258,7 +286,7 @@ export default function Contact() {
           <div>
             <h2 data-reveal>Our Office</h2>
             <p data-reveal style={{ marginBottom: 24 }}>
-              Salus Vita is headquartered in Australia and operates across international markets, supporting clients and supply partners in the Asia-Pacific, Europe, and beyond.
+              Salus Vita is headquartered at 2 Queen Street, Melbourne, and operates across international markets, supporting clients and supply partners in the Asia-Pacific, Europe, and beyond.
             </p>
 
             {OFFICES.map((office, i) => (
@@ -302,7 +330,8 @@ export default function Contact() {
                 <div style={{ marginLeft: 30 }}>
                   {office.phone && (
                     <p style={{ color: "var(--muted)", fontSize: 14, margin: "4px 0" }}>
-                      <span style={{ fontWeight: 600, color: "var(--navy)" }}>Phone:</span> {office.phone}
+                      <span style={{ fontWeight: 600, color: "var(--navy)" }}>Phone:</span>{" "}
+                      <a href="tel:1300692468" style={{ color: "var(--teal)", textDecoration: "none" }}>{office.phone}</a>
                     </p>
                   )}
                   {office.email && (
@@ -340,40 +369,20 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* Map Placeholder */}
+      {/* Google Maps Embed */}
       <section className="content-section">
-        <h2 data-reveal>Our Global Presence</h2>
-        <div
-          data-reveal
-          style={{
-            width: "100%",
-            height: 320,
-            borderRadius: "var(--radius)",
-            background: "var(--pale-blue)",
-            border: "1px solid var(--line)",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            color: "var(--muted-2)",
-            fontSize: 15,
-            flexDirection: "column",
-            gap: 12,
-          }}
-        >
-          <svg
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            style={{ width: 40, height: 40, opacity: 0.5 }}
-          >
-            <circle cx="12" cy="12" r="10" />
-            <path d="M2 12h20" />
-            <path d="M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20Z" />
-          </svg>
-          Interactive map integration - Melbourne
+        <h2 data-reveal>Our Location</h2>
+        <div data-reveal>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.96715931531888!3d-37.81627997975159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642b4e7b28dad%3A0x6e3b4b7b0f9a2d0!2s2%20Queen%20St%2C%20Melbourne%20VIC%203000!5e0!3m2!1sen!2sau!4v1697000000000!5m2!1sen!2sau"
+            width="100%"
+            height="300"
+            style={{ border: 0, borderRadius: 12 }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Salus Vita Office Location"
+          ></iframe>
         </div>
       </section>
 

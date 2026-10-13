@@ -20,7 +20,7 @@ export default function Terms() {
           that you have read, understood, and agree to be bound by these Terms of Use ("Terms"), together
           with our <Link to="/privacy">Privacy Policy</Link> and <Link to="/disclaimer">Disclaimer</Link>,
           which are incorporated herein by reference. These Terms constitute a legally binding agreement
-          between you and Salus Vita Pty Ltd (ABN 92 668 370 518).
+          between you and Salus Vita Pty Ltd (ABN <a href="https://abr.business.gov.au/ABN/View?abn=92668370518" target="_blank" rel="noopener noreferrer" style={{ color: "var(--teal)" }}>92 668 370 518</a>).
         </p>
         <p data-reveal>
           You represent that you are at least eighteen (18) years of age and possess the legal authority
@@ -37,7 +37,7 @@ export default function Terms() {
         <h2 data-reveal>2. Definitions</h2>
         <p data-reveal>In these Terms, the following definitions apply:</p>
         <ul data-reveal style={{ lineHeight: 1.9 }}>
-          <li><strong>"Company", "we", "our", or "us"</strong> refers to Salus Vita Pty Ltd (ABN 92 668 370 518), an Australian company.</li>
+          <li><strong>"Company", "we", "our", or "us"</strong> refers to Salus Vita Pty Ltd (ABN <a href="https://abr.business.gov.au/ABN/View?abn=92668370518" target="_blank" rel="noopener noreferrer" style={{ color: "var(--teal)" }}>92 668 370 518</a>), an Australian company.</li>
           <li><strong>"Site"</strong> refers to the website located at salusvita.net and all associated subdomains.</li>
           <li><strong>"User", "you", or "your"</strong> refers to any individual or entity that accesses or uses the Site.</li>
           <li><strong>"Professional Portal"</strong> refers to the authenticated section of the Site available to approved Users following a verification process.</li>

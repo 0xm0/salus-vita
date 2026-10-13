@@ -1,8 +1,7 @@
+import { useState } from "react"
 import { Link } from "react-router-dom"
 import PageHero from "../../components/layout/PageHero"
-
-const clerkAvailable = false
-const SignInButton = null
+import { submitForm } from "../../lib/submitForm"
 
 const FEATURES = [
   {
@@ -99,14 +98,125 @@ const ELIGIBILITY = [
 ]
 
 export default function ProfessionalLanding() {
-  const signedOutContent = (
+  const [email, setEmail] = useState("")
+  const [status, setStatus] = useState(null) // null | "sending" | "success" | "error"
+
+  const handleInterest = async (e) => {
+    e.preventDefault()
+    if (!email) return
+
+    setStatus("sending")
+    try {
+      const result = await submitForm({ email }, "Professional Portal Interest Registration")
+      setStatus(result.ok ? "success" : "error")
+    } catch {
+      setStatus("error")
+    }
+  }
+
+  return (
     <>
       <PageHero
         eyebrow="PROFESSIONAL PORTAL"
         title="Secure Access for Pharmaceutical Professionals"
-        description="The Salus Vita Professional Portal provides verified pharmaceutical professionals with direct access to product-specific enquiries, technical documentation, and commercial quotations."
-        primaryCTA={{ label: "Apply for Access", to: "/professional/apply" }}
+        description="The Salus Vita Professional Portal will provide verified pharmaceutical professionals with direct access to product-specific enquiries, technical documentation, and commercial quotations."
       />
+
+      {/* Coming Soon Notice */}
+      <section className="content-section" style={{ maxWidth: 720 }}>
+        <div
+          data-reveal
+          style={{
+            padding: "32px 28px",
+            background: "rgba(23, 110, 121, 0.06)",
+            border: "1px solid rgba(23, 110, 121, 0.15)",
+            borderRadius: 12,
+            textAlign: "center",
+          }}
+        >
+          <span
+            style={{
+              display: "inline-block",
+              padding: "6px 18px",
+              borderRadius: 999,
+              fontSize: 13,
+              fontWeight: 600,
+              background: "rgba(23, 110, 121, 0.12)",
+              color: "#176E79",
+              letterSpacing: "0.04em",
+              marginBottom: 16,
+            }}
+          >
+            COMING SOON
+          </span>
+          <h2 style={{ margin: "0 0 12px", fontSize: 22 }}>
+            The Professional Portal is Currently in Development
+          </h2>
+          <p style={{ margin: "0 0 24px", color: "var(--muted)", lineHeight: 1.6 }}>
+            Register your interest below and we will notify you when the portal launches.
+          </p>
+
+          {status === "success" ? (
+            <div
+              style={{
+                padding: "16px 20px",
+                background: "rgba(23, 110, 121, 0.08)",
+                borderRadius: 8,
+                color: "#176E79",
+                fontWeight: 500,
+                fontSize: 15,
+              }}
+            >
+              Thank you. We will be in touch when the Professional Portal launches.
+            </div>
+          ) : (
+            <form
+              onSubmit={handleInterest}
+              style={{
+                display: "flex",
+                gap: 12,
+                maxWidth: 480,
+                margin: "0 auto",
+                flexWrap: "wrap",
+                justifyContent: "center",
+              }}
+            >
+              <input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="Your business email address"
+                required
+                style={{
+                  flex: "1 1 260px",
+                  padding: "12px 16px",
+                  fontSize: 15,
+                  border: "1px solid var(--line-strong)",
+                  borderRadius: 8,
+                  background: "#fff",
+                  color: "var(--ink)",
+                  fontFamily: "inherit",
+                  outline: "none",
+                  boxSizing: "border-box",
+                }}
+              />
+              <button
+                type="submit"
+                className="btn btn-primary"
+                disabled={status === "sending"}
+                style={{ flexShrink: 0 }}
+              >
+                {status === "sending" ? "Sending..." : "Register Interest"}
+              </button>
+            </form>
+          )}
+          {status === "error" && (
+            <p style={{ margin: "12px 0 0", fontSize: 14, color: "#a03030" }}>
+              Something went wrong. Please try again or contact us directly at admin@salusvita.net.
+            </p>
+          )}
+        </div>
+      </section>
 
       {/* Value Proposition */}
       <section className="content-section">
@@ -117,7 +227,7 @@ export default function ProfessionalLanding() {
           verification of professional credentials, regulatory licences, and organisational standing.
         </p>
         <p data-reveal>
-          Once approved, portal members gain direct access to the tools and documentation that support
+          Once approved, portal members will gain direct access to the tools and documentation that support
           informed procurement decisions, streamlined enquiry management, and transparent supply chain
           communication.
         </p>
@@ -127,7 +237,7 @@ export default function ProfessionalLanding() {
       <section className="content-section">
         <h2 data-reveal>Portal Capabilities</h2>
         <p data-reveal>
-          The Professional Portal centralises the resources and communication channels that pharmaceutical
+          The Professional Portal will centralise the resources and communication channels that pharmaceutical
           professionals need to evaluate, procure, and manage pharmaceutical supply relationships.
         </p>
         <div className="feature-grid">
@@ -145,9 +255,9 @@ export default function ProfessionalLanding() {
       <section className="content-section" style={{ background: "var(--pale-blue)" }}>
         <h2 data-reveal>Eligibility Requirements</h2>
         <p data-reveal>
-          Portal access is restricted to qualified pharmaceutical professionals and organisations.
+          Portal access will be restricted to qualified pharmaceutical professionals and organisations.
           Salus Vita verifies all applications against regulatory databases and professional registries
-          before granting access. The following categories of professionals are eligible to apply.
+          before granting access. The following categories of professionals will be eligible to apply.
         </p>
         <div className="feature-grid">
           {ELIGIBILITY.map((e, i) => (
@@ -167,7 +277,7 @@ export default function ProfessionalLanding() {
       <section className="content-section">
         <h2 data-reveal>Verification Process</h2>
         <p data-reveal>
-          Portal access is not instant. Every application undergoes a structured verification process
+          Portal access will not be instant. Every application will undergo a structured verification process
           to ensure the security and integrity of the platform.
         </p>
         <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
@@ -219,93 +329,21 @@ export default function ProfessionalLanding() {
       {/* CTA Banner */}
       <section className="cta-banner">
         <div className="cta-card" data-reveal>
-          <h2>Ready to Access the Professional Portal?</h2>
+          <h2>Stay Informed</h2>
           <p>
-            Apply for verified access, or sign in if you already have an approved account.
-            Our team reviews new applications within one to two business days.
+            The Professional Portal is under active development. Register your interest above
+            or contact our team to learn more about what the portal will offer.
           </p>
           <div className="hero-actions" style={{ justifyContent: "center" }}>
-            <Link to="/professional/apply" className="btn btn-primary">
-              Apply for Access
+            <Link to="/contact" className="btn btn-primary">
+              Contact Us
             </Link>
-            {clerkAvailable && SignInButton ? (
-              <SignInButton mode="modal">
-                <button className="btn btn-outline">Sign In</button>
-              </SignInButton>
-            ) : (
-              <Link to="/professional/apply" className="btn btn-outline">Sign In</Link>
-            )}
+            <Link to="/about" className="btn btn-outline">
+              About Salus Vita
+            </Link>
           </div>
         </div>
       </section>
     </>
   )
-
-  const signedInContent = (
-    <>
-      <PageHero
-        eyebrow="PROFESSIONAL PORTAL"
-        title="Welcome Back"
-        description="You are signed in to the Salus Vita Professional Portal. Access your dashboard, documentation, and enquiry tools below."
-        primaryCTA={{ label: "Go to Dashboard", to: "/professional/dashboard" }}
-        secondaryCTA={{ label: "Document Library", to: "/professional/documents" }}
-      />
-
-      <section className="content-section">
-        <h2 data-reveal>Quick Actions</h2>
-        <div className="feature-grid">
-          {[
-            {
-              title: "Dashboard",
-              desc: "View your active enquiries, recent activity, and account summary.",
-              to: "/professional/dashboard",
-              icon: (
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#176E79" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                  <rect x="3" y="3" width="7" height="7" />
-                  <rect x="14" y="3" width="7" height="7" />
-                  <rect x="14" y="14" width="7" height="7" />
-                  <rect x="3" y="14" width="7" height="7" />
-                </svg>
-              ),
-            },
-            {
-              title: "Document Library",
-              desc: "Access technical specifications, certificates of analysis, and regulatory documents.",
-              to: "/professional/documents",
-              icon: (
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#176E79" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z" />
-                </svg>
-              ),
-            },
-            {
-              title: "New Enquiry",
-              desc: "Submit a new product-specific sourcing or supply enquiry.",
-              to: "/contact/sourcing-enquiry",
-              icon: (
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#176E79" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                  <line x1="12" y1="5" x2="12" y2="19" />
-                  <line x1="5" y1="12" x2="19" y2="12" />
-                </svg>
-              ),
-            },
-          ].map((item, i) => (
-            <Link
-              to={item.to}
-              key={item.title}
-              className="card"
-              data-reveal
-              style={{ "--rd": `${i * 80}ms`, textDecoration: "none", color: "inherit" }}
-            >
-              <div style={{ marginBottom: 8 }}>{item.icon}</div>
-              <h3>{item.title}</h3>
-              <p>{item.desc}</p>
-            </Link>
-          ))}
-        </div>
-      </section>
-    </>
-  )
-
-  return signedOutContent
 }

@@ -94,6 +94,7 @@ export default function About() {
         description="Australian-headquartered pharmaceutical sourcing and supply company. We connect vetted manufacturers with buyers across global markets."
         primaryCTA={{ label: "Discuss Your Requirements", to: "/contact/sourcing-enquiry" }}
         secondaryCTA={{ label: "Our Story", to: "/about/our-story" }}
+        breadcrumbs={[{ label: "About" }]}
       />
 
       {/* Company Overview */}

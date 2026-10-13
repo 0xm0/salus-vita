@@ -1,18 +1,46 @@
 import { Link } from "react-router-dom"
-import { navigation, legalLinks } from "../../data/navigation"
+import { legalLinks } from "../../data/navigation"
 import FangMark from "../ui/FangMark"
 
-export default function Footer() {
-  // Build footer columns from the new subMenus structure
-  const footerColumns = navigation.flatMap((navItem) =>
-    navItem.subMenus
-      ? navItem.subMenus.slice(0, 1).map((sub) => ({
-          heading: navItem.label,
-          items: sub.items.slice(0, 5),
-        }))
-      : []
-  )
+const FOOTER_COLUMNS = [
+  {
+    heading: "Company",
+    items: [
+      { label: "About", path: "/about" },
+      { label: "Our Story", path: "/about/our-story" },
+      { label: "Leadership", path: "/about/leadership" },
+      { label: "Careers", path: "/careers" },
+    ],
+  },
+  {
+    heading: "Services",
+    items: [
+      { label: "Global Sourcing", path: "/solutions/global-sourcing" },
+      { label: "International Procurement", path: "/solutions/international-procurement" },
+      { label: "Australian Importation", path: "/solutions/australian-importation" },
+      { label: "Cross-Border Supply", path: "/solutions/cross-border-supply" },
+    ],
+  },
+  {
+    heading: "Quality",
+    items: [
+      { label: "Supplier Assessment", path: "/quality/supplier-assessment" },
+      { label: "Regulatory Framework", path: "/quality/regulatory-framework" },
+      { label: "Supply Chain Integrity", path: "/quality/supply-chain-integrity" },
+    ],
+  },
+  {
+    heading: "Resources",
+    items: [
+      { label: "Blog & Insights", path: "/resources/blog" },
+      { label: "Case Studies", path: "/resources/case-studies" },
+      { label: "FAQs", path: "/resources/faqs" },
+      { label: "Glossary", path: "/resources/glossary" },
+    ],
+  },
+]
 
+export default function Footer() {
   return (
     <footer className="sv-footer">
       <div className="sv-footer-inner">
@@ -27,10 +55,24 @@ export default function Footer() {
               Connecting pharmaceutical manufacturers with markets worldwide.
               Australian-headquartered international pharmaceutical supply.
             </p>
+            <p style={{ fontSize: 13, color: "var(--muted)", lineHeight: 1.6, margin: "8px 0 0" }}>
+              2 Queen Street<br />
+              Melbourne VIC 3000, Australia
+            </p>
+            <p style={{ fontSize: 13, margin: "8px 0 0" }}>
+              <a
+                href="https://salusvita.net"
+                style={{ color: "var(--teal)", textDecoration: "none" }}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                salusvita.net
+              </a>
+            </p>
           </div>
 
           {/* Link columns */}
-          {footerColumns.map((col) => (
+          {FOOTER_COLUMNS.map((col) => (
             <div key={col.heading} className="sv-footer-col">
               <h4>{col.heading}</h4>
               {col.items.map((item) => (
