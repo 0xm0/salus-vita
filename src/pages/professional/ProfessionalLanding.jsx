@@ -1,7 +1,6 @@
-import { useState } from "react"
 import { Link } from "react-router-dom"
 import PageHero from "../../components/layout/PageHero"
-import { submitForm } from "../../lib/submitForm"
+import { Widget } from "@typeform/embed-react"
 
 const FEATURES = [
   {
@@ -98,22 +97,6 @@ const ELIGIBILITY = [
 ]
 
 export default function ProfessionalLanding() {
-  const [email, setEmail] = useState("")
-  const [status, setStatus] = useState(null) // null | "sending" | "success" | "error"
-
-  const handleInterest = async (e) => {
-    e.preventDefault()
-    if (!email) return
-
-    setStatus("sending")
-    try {
-      const result = await submitForm({ email }, "Professional Portal Interest Registration")
-      setStatus(result.ok ? "success" : "error")
-    } catch {
-      setStatus("error")
-    }
-  }
-
   return (
     <>
       <PageHero
@@ -155,66 +138,9 @@ export default function ProfessionalLanding() {
           <p style={{ margin: "0 0 24px", color: "var(--muted)", lineHeight: 1.6 }}>
             Register your interest below and we will notify you when the portal launches.
           </p>
-
-          {status === "success" ? (
-            <div
-              style={{
-                padding: "16px 20px",
-                background: "rgba(23, 110, 121, 0.08)",
-                borderRadius: 8,
-                color: "#176E79",
-                fontWeight: 500,
-                fontSize: 15,
-              }}
-            >
-              Thank you. We will be in touch when the Professional Portal launches.
-            </div>
-          ) : (
-            <form
-              onSubmit={handleInterest}
-              style={{
-                display: "flex",
-                gap: 12,
-                maxWidth: 480,
-                margin: "0 auto",
-                flexWrap: "wrap",
-                justifyContent: "center",
-              }}
-            >
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Your business email address"
-                required
-                style={{
-                  flex: "1 1 260px",
-                  padding: "12px 16px",
-                  fontSize: 15,
-                  border: "1px solid var(--line-strong)",
-                  borderRadius: 8,
-                  background: "#fff",
-                  color: "var(--ink)",
-                  fontFamily: "inherit",
-                  outline: "none",
-                  boxSizing: "border-box",
-                }}
-              />
-              <button
-                type="submit"
-                className="btn btn-primary"
-                disabled={status === "sending"}
-                style={{ flexShrink: 0 }}
-              >
-                {status === "sending" ? "Sending..." : "Register Interest"}
-              </button>
-            </form>
-          )}
-          {status === "error" && (
-            <p style={{ margin: "12px 0 0", fontSize: 14, color: "#a03030" }}>
-              Something went wrong. Please try again or contact us directly at admin@salusvita.net.
-            </p>
-          )}
+          <div style={{ maxWidth: 520, margin: "0 auto" }}>
+            <Widget id="uCQGA7wN" style={{ height: 350, borderRadius: 12 }} />
+          </div>
         </div>
       </section>
 
