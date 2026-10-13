@@ -200,6 +200,17 @@ export default function Navbar() {
                 </div>
               </div>
             ))}
+            {/* Direct links */}
+            <div className="sv-mobile-section" style={{ borderBottom: "none" }}>
+              <Link
+                to="/contact"
+                className="sv-mobile-accordion-btn"
+                onClick={() => setMobileOpen(false)}
+                style={{ fontWeight: 600 }}
+              >
+                Contact Us
+              </Link>
+            </div>
           </div>
 
           <div className="sv-mobile-cta">
