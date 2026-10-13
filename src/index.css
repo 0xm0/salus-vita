@@ -406,6 +406,7 @@ html.lenis, html.lenis body { height: auto; }
   font-size: clamp(26px, 3.5vw, 40px);
   font-weight: 800;
   margin-bottom: 16px;
+  color: #ffffff;
 }
 .cta-card p {
   color: rgba(255, 255, 255, 0.9);
@@ -792,13 +793,15 @@ html.lenis, html.lenis body { height: auto; }
   .sv-footer-top { grid-template-columns: 1fr 1fr; }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   /* Nav: hide desktop dorpdown nav, show mobile toggle */
   .sv-nav-links { display: none; }
   .sv-utility-nav .sv-utility-link { display: none; }
   .sv-utility-nav .sv-utility-btn { display: none; }
   .sv-mobile-toggle { display: flex; }
-  .sv-brand-text { display: none; }
+}
+
+@media (max-width: 768px) {
 
   /* Section padding: tighter on mobile */
   .section { padding: clamp(48px, 8vw, 80px) 16px; }

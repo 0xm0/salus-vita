@@ -1,5 +1,5 @@
 /* ============================================================
-   PLANET — ported verbatim from getlayers-scenes/planet.html into a
+   PLANET - ported verbatim from getlayers-scenes/planet.html into a
    mountable module. A GLTF earth with a day/night-lights/rim/water shader,
    a soft atmosphere halo, three drifting cloud shells, ambient motes, a
    starfield and radar-ping land markers, composited through a bloom +
@@ -179,7 +179,7 @@ export function initPlanet(canvas) {
   const finalComposer = new EffectComposer(renderer)
   finalComposer.addPass(renderScene); finalComposer.addPass(finalPass)
 
-  /* ---------- ORBIT CONTROLS (input disabled — auto-spin only) ---------- */
+  /* ---------- ORBIT CONTROLS (input disabled - auto-spin only) ---------- */
   const controls = new OrbitControls(camera, renderer.domElement)
   controls.enableDamping = true; controls.dampingFactor = 0.06
   controls.enablePan = false
