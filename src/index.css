@@ -22,7 +22,7 @@
   --ink: #15324A;
   --ink-light: #fff;
   --muted: #4a6275;
-  --muted-2: #7a95a8;
+  --muted-2: #5a7a8a;
   --line: rgba(21, 50, 74, 0.10);
   --line-strong: rgba(21, 50, 74, 0.18);
   --accent: #176E79;
@@ -126,6 +126,14 @@ html.lenis, html.lenis body { height: auto; }
   cursor: pointer;
   transition: transform .18s ease, box-shadow .25s ease, background .2s ease, border-color .2s ease;
   white-space: nowrap;
+}
+
+/* ---------- button groups ---------- */
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
 }
 .btn svg { width: 17px; height: 17px; }
 .btn-primary {
@@ -233,7 +241,7 @@ html.lenis, html.lenis body { height: auto; }
   margin: 0 auto;
 }
 .page-hero .eyebrow {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.85);
 }
 .page-hero h1 {
   font-size: clamp(32px, 5vw, 56px);
@@ -247,7 +255,7 @@ html.lenis, html.lenis body { height: auto; }
   max-width: 600px;
   font-size: clamp(16px, 2vw, 19px);
   line-height: 1.6;
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255, 0.9);
   margin-bottom: 24px;
 }
 .page-hero .breadcrumbs {
@@ -255,18 +263,18 @@ html.lenis, html.lenis body { height: auto; }
   gap: 8px;
   align-items: center;
   font-size: 13px;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.75);
   margin-bottom: 24px;
 }
 .page-hero .breadcrumbs a {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.75);
   transition: color .2s;
 }
 .page-hero .breadcrumbs a:hover {
   color: #fff;
 }
 .page-hero .breadcrumbs .separator {
-  color: rgba(255, 255, 255, 0.35);
+  color: rgba(255, 255, 255, 0.5);
 }
 .page-hero .hero-actions {
   display: flex;
@@ -283,7 +291,7 @@ html.lenis, html.lenis body { height: auto; }
 }
 .page-hero .btn-outline {
   color: #fff;
-  border-color: rgba(255, 255, 255, 0.35);
+  border-color: rgba(255, 255, 255, 0.5);
 }
 .page-hero .btn-outline:hover {
   background: rgba(255, 255, 255, 0.1);
@@ -400,7 +408,7 @@ html.lenis, html.lenis body { height: auto; }
   margin-bottom: 16px;
 }
 .cta-card p {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.9);
   font-size: 17px;
   line-height: 1.6;
   max-width: 520px;
@@ -412,7 +420,7 @@ html.lenis, html.lenis body { height: auto; }
 }
 .cta-card .btn-outline {
   color: #fff;
-  border-color: rgba(255, 255, 255, 0.35);
+  border-color: rgba(255, 255, 255, 0.5);
 }
 
 /* ---------- navbar ---------- */
@@ -732,20 +740,20 @@ html.lenis, html.lenis body { height: auto; }
 .sv-footer-brand p {
   font-size: 14px;
   line-height: 1.65;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.75);
 }
 .sv-footer-col h4 {
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.6);
   margin-bottom: 16px;
 }
 .sv-footer-col a {
   display: block;
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.8);
   margin-bottom: 10px;
   transition: color .18s;
 }
@@ -760,14 +768,14 @@ html.lenis, html.lenis body { height: auto; }
   gap: 16px;
   padding-top: 32px;
   font-size: 13px;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.6);
 }
 .sv-footer-legal {
   display: flex;
   gap: 20px;
 }
 .sv-footer-legal a {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.65);
   transition: color .18s;
 }
 .sv-footer-legal a:hover {
@@ -904,10 +912,10 @@ html.lenis, html.lenis body { height: auto; }
   max-width: 900px;
 }
 .home-hero .eyebrow {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.85);
 }
 .home-hero p {
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255, 0.9);
   font-size: 18px;
   line-height: 1.65;
   max-width: 600px;
@@ -931,7 +939,7 @@ html.lenis, html.lenis body { height: auto; }
 }
 .home-hero .btn-outline {
   color: #fff;
-  border-color: rgba(255, 255, 255, 0.35);
+  border-color: rgba(255, 255, 255, 0.5);
 }
 .home-hero .btn-outline:hover {
   background: rgba(255, 255, 255, 0.1);
@@ -1079,10 +1087,10 @@ html.lenis, html.lenis body { height: auto; }
   margin: 0 auto;
 }
 .home-section .cta-card p {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.9);
 }
 .home-section .cta-card .eyebrow {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.85);
 }
 
 /* Home page uses standard footer */

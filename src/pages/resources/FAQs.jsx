@@ -234,7 +234,7 @@ export default function FAQs() {
         <p data-reveal style={{ maxWidth: 560, margin: "16px auto 24px" }}>
           Our team is available to discuss your specific requirements, answer technical questions, or explore how Salus Vita can support your pharmaceutical supply needs.
         </p>
-        <div data-reveal style={{ display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap" }}>
+        <div className="hero-actions" data-reveal style={{ justifyContent: "center" }}>
           <Link to="/contact" className="btn btn-primary">Contact Our Team</Link>
           <Link to="/contact/sourcing-enquiry" className="btn btn-outline">Submit a Sourcing Enquiry</Link>
         </div>
