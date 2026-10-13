@@ -9,7 +9,7 @@ const PARTNER_TYPES = [
     desc: "Coordinate market access across international territories through structured commercial partnerships, regulatory pathway assessment, and documentation support.",
     to: "/partnerships/manufacturers",
     icon: (
-      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#15324A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#0f3d22" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <rect x="4" y="18" width="14" height="18" rx="1" />
         <rect x="22" y="10" width="14" height="26" rx="1" />
         <path d="M8 22h6M8 26h6M8 30h6M26 14h6M26 18h6M26 22h6M26 26h6M26 30h6" />
@@ -22,7 +22,7 @@ const PARTNER_TYPES = [
     desc: "Access quality-assessed pharmaceutical sourcing through a single coordination point, with documented supplier qualification and transparent procurement processes.",
     to: "/partnerships/customers",
     icon: (
-      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#15324A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#0f3d22" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M20 4l16 8v2H4v-2l16-8z" />
         <path d="M8 14v16M14 14v16M20 14v16M26 14v16M32 14v16" />
         <rect x="4" y="30" width="32" height="4" rx="1" />
@@ -35,7 +35,7 @@ const PARTNER_TYPES = [
     desc: "Build reliable sourcing partnerships with clearly defined territories, transparent commercial terms, and comprehensive compliance documentation.",
     to: "/partnerships/distributors",
     icon: (
-      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#15324A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#0f3d22" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="20" cy="20" r="14" />
         <ellipse cx="20" cy="20" rx="7" ry="14" />
         <path d="M6 14h28M6 26h28M6 20h28" />

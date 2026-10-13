@@ -172,8 +172,8 @@ export default function Home() {
               </p>
 
               {PATHWAYS.map((item, i) => (
-                <div key={item.title} data-reveal style={{ ...rd(220 + i * 90), marginBottom: i < 2 ? 16 : 0, paddingLeft: 16, borderLeft: "3px solid rgba(23, 110, 121, 0.25)" }}>
-                  <h3 style={{ fontSize: 17, fontWeight: 700, color: "#15324A", marginBottom: 8 }}>{item.title}</h3>
+                <div key={item.title} data-reveal style={{ ...rd(220 + i * 90), marginBottom: i < 2 ? 16 : 0, paddingLeft: 16, borderLeft: "3px solid rgba(45, 138, 86, 0.25)" }}>
+                  <h3 style={{ fontSize: 17, fontWeight: 700, color: "#0f3d22", marginBottom: 8 }}>{item.title}</h3>
                   <p style={{ fontSize: 15, lineHeight: 1.65 }}>{item.desc}</p>
                 </div>
               ))}

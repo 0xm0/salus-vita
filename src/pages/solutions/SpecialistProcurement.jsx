@@ -54,12 +54,12 @@ export default function SpecialistProcurement() {
           </div>
           <div>
             <div className="card" data-reveal style={rd(100)}>
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#176E79" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2d8a56" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
               <h3 style={{ marginTop: 16 }}>Enhanced Diligence</h3>
               <p>Every specialist engagement includes additional verification steps beyond our standard supplier qualification process.</p>
             </div>
             <div className="card" data-reveal style={{ ...rd(200), marginTop: 16 }}>
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#176E79" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2d8a56" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
               <h3 style={{ marginTop: 16 }}>Dedicated Coordination</h3>
               <p>A named project lead manages each specialist engagement from initial scoping through to completed delivery.</p>
             </div>
@@ -70,7 +70,7 @@ export default function SpecialistProcurement() {
       {/* Risk Assessment */}
       <section className="content-section" data-reveal>
         <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
-          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#176E79" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, marginTop: 4 }}>
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#2d8a56" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, marginTop: 4 }}>
             <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/>
             <line x1="12" y1="9" x2="12" y2="13"/>
             <line x1="12" y1="17" x2="12.01" y2="17"/>
@@ -107,7 +107,7 @@ export default function SpecialistProcurement() {
       {/* Qualified Counterparties */}
       <section className="content-section" data-reveal>
         <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
-          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#176E79" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, marginTop: 4 }}>
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#2d8a56" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, marginTop: 4 }}>
             <path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
             <circle cx="8.5" cy="7" r="4"/>
             <polyline points="17 11 19 13 23 9"/>
@@ -140,7 +140,7 @@ export default function SpecialistProcurement() {
       {/* Specialist Advisory */}
       <section className="content-section" data-reveal>
         <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
-          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#176E79" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, marginTop: 4 }}>
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#2d8a56" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, marginTop: 4 }}>
             <path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/>
             <path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/>
           </svg>
@@ -181,7 +181,7 @@ export default function SpecialistProcurement() {
       {/* Project Coordination */}
       <section className="content-section" data-reveal>
         <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
-          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#176E79" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, marginTop: 4 }}>
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#2d8a56" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, marginTop: 4 }}>
             <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
           </svg>
           <h2 style={{ margin: 0 }}>Project Coordination</h2>

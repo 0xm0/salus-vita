@@ -10,12 +10,12 @@ const SOLUTIONS = [
     to: "/solutions/apis",
     icon: (
       <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="4" y="14" width="14" height="20" rx="2" stroke="#176E79" strokeWidth="2" />
-        <rect x="22" y="6" width="14" height="20" rx="2" stroke="#176E79" strokeWidth="2" />
-        <path d="M11 14V10a4 4 0 0 1 8 0v4" stroke="#176E79" strokeWidth="2" />
-        <circle cx="11" cy="24" r="3" stroke="#176E79" strokeWidth="2" />
-        <circle cx="29" cy="16" r="3" stroke="#176E79" strokeWidth="2" />
-        <path d="M18 24h4M22 26v8" stroke="#176E79" strokeWidth="2" strokeLinecap="round" />
+        <rect x="4" y="14" width="14" height="20" rx="2" stroke="#2d8a56" strokeWidth="2" />
+        <rect x="22" y="6" width="14" height="20" rx="2" stroke="#2d8a56" strokeWidth="2" />
+        <path d="M11 14V10a4 4 0 0 1 8 0v4" stroke="#2d8a56" strokeWidth="2" />
+        <circle cx="11" cy="24" r="3" stroke="#2d8a56" strokeWidth="2" />
+        <circle cx="29" cy="16" r="3" stroke="#2d8a56" strokeWidth="2" />
+        <path d="M18 24h4M22 26v8" stroke="#2d8a56" strokeWidth="2" strokeLinecap="round" />
       </svg>
     ),
   },
@@ -25,11 +25,11 @@ const SOLUTIONS = [
     to: "/solutions/finished-dosage-forms",
     icon: (
       <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="6" y="8" width="28" height="24" rx="3" stroke="#176E79" strokeWidth="2" />
-        <path d="M6 16h28" stroke="#176E79" strokeWidth="2" />
-        <circle cx="14" cy="24" r="3" stroke="#176E79" strokeWidth="2" />
-        <circle cx="26" cy="24" r="3" stroke="#176E79" strokeWidth="2" />
-        <path d="M14 12h4M22 12h4" stroke="#176E79" strokeWidth="2" strokeLinecap="round" />
+        <rect x="6" y="8" width="28" height="24" rx="3" stroke="#2d8a56" strokeWidth="2" />
+        <path d="M6 16h28" stroke="#2d8a56" strokeWidth="2" />
+        <circle cx="14" cy="24" r="3" stroke="#2d8a56" strokeWidth="2" />
+        <circle cx="26" cy="24" r="3" stroke="#2d8a56" strokeWidth="2" />
+        <path d="M14 12h4M22 12h4" stroke="#2d8a56" strokeWidth="2" strokeLinecap="round" />
       </svg>
     ),
   },
@@ -39,11 +39,11 @@ const SOLUTIONS = [
     to: "/solutions/specialist-procurement",
     icon: (
       <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="16" r="10" stroke="#176E79" strokeWidth="2" />
-        <path d="M27 23l7 7" stroke="#176E79" strokeWidth="2" strokeLinecap="round" />
-        <path d="M16 16h8M20 12v8" stroke="#176E79" strokeWidth="2" strokeLinecap="round" />
-        <path d="M10 34h20" stroke="#176E79" strokeWidth="2" strokeLinecap="round" />
-        <path d="M14 34v-4M26 34v-4" stroke="#176E79" strokeWidth="2" strokeLinecap="round" />
+        <circle cx="20" cy="16" r="10" stroke="#2d8a56" strokeWidth="2" />
+        <path d="M27 23l7 7" stroke="#2d8a56" strokeWidth="2" strokeLinecap="round" />
+        <path d="M16 16h8M20 12v8" stroke="#2d8a56" strokeWidth="2" strokeLinecap="round" />
+        <path d="M10 34h20" stroke="#2d8a56" strokeWidth="2" strokeLinecap="round" />
+        <path d="M14 34v-4M26 34v-4" stroke="#2d8a56" strokeWidth="2" strokeLinecap="round" />
       </svg>
     ),
   },
@@ -53,11 +53,11 @@ const SOLUTIONS = [
     to: "/solutions/managed-access",
     icon: (
       <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M20 4v8M20 28v8" stroke="#176E79" strokeWidth="2" strokeLinecap="round" />
-        <path d="M4 20h8M28 20h8" stroke="#176E79" strokeWidth="2" strokeLinecap="round" />
-        <circle cx="20" cy="20" r="8" stroke="#176E79" strokeWidth="2" />
-        <circle cx="20" cy="20" r="3" fill="#176E79" />
-        <path d="M10 10l4 4M26 26l4 4M26 10l-4 4M14 26l-4 4" stroke="#176E79" strokeWidth="1.5" strokeLinecap="round" />
+        <path d="M20 4v8M20 28v8" stroke="#2d8a56" strokeWidth="2" strokeLinecap="round" />
+        <path d="M4 20h8M28 20h8" stroke="#2d8a56" strokeWidth="2" strokeLinecap="round" />
+        <circle cx="20" cy="20" r="8" stroke="#2d8a56" strokeWidth="2" />
+        <circle cx="20" cy="20" r="3" fill="#2d8a56" />
+        <path d="M10 10l4 4M26 26l4 4M26 10l-4 4M14 26l-4 4" stroke="#2d8a56" strokeWidth="1.5" strokeLinecap="round" />
       </svg>
     ),
   },
@@ -92,9 +92,9 @@ const VALUE_PROPS = [
     desc: "Working knowledge of TGA, EMA, WHO PQ and regional frameworks informs every sourcing decision, ensuring alignment with your market requirements.",
     icon: (
       <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="4" y="4" width="24" height="24" rx="3" stroke="#15324A" strokeWidth="2" />
-        <path d="M10 14l4 4 8-8" stroke="#176E79" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-        <path d="M10 22h12" stroke="#15324A" strokeWidth="2" strokeLinecap="round" />
+        <rect x="4" y="4" width="24" height="24" rx="3" stroke="#0f3d22" strokeWidth="2" />
+        <path d="M10 14l4 4 8-8" stroke="#2d8a56" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M10 22h12" stroke="#0f3d22" strokeWidth="2" strokeLinecap="round" />
       </svg>
     ),
   },
@@ -103,8 +103,8 @@ const VALUE_PROPS = [
     desc: "Manufacturer evaluation follows a structured methodology aligned with international GMP standards, with ongoing monitoring of qualified sources.",
     icon: (
       <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="16" cy="16" r="12" stroke="#15324A" strokeWidth="2" />
-        <path d="M16 8v8l6 4" stroke="#176E79" strokeWidth="2" strokeLinecap="round" />
+        <circle cx="16" cy="16" r="12" stroke="#0f3d22" strokeWidth="2" />
+        <path d="M16 8v8l6 4" stroke="#2d8a56" strokeWidth="2" strokeLinecap="round" />
       </svg>
     ),
   },
@@ -113,8 +113,8 @@ const VALUE_PROPS = [
     desc: "Our recommendations are driven by your requirements and the quality profile of available sources, not by commercial affiliations with any manufacturer.",
     icon: (
       <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M16 4l3 6h7l-5.5 4.5L22 22l-6-4-6 4 1.5-7.5L6 10h7l3-6z" stroke="#15324A" strokeWidth="2" strokeLinejoin="round" />
-        <circle cx="16" cy="14" r="3" stroke="#176E79" strokeWidth="2" />
+        <path d="M16 4l3 6h7l-5.5 4.5L22 22l-6-4-6 4 1.5-7.5L6 10h7l3-6z" stroke="#0f3d22" strokeWidth="2" strokeLinejoin="round" />
+        <circle cx="16" cy="14" r="3" stroke="#2d8a56" strokeWidth="2" />
       </svg>
     ),
   },
@@ -123,9 +123,9 @@ const VALUE_PROPS = [
     desc: "Established relationships with manufacturers across multiple production regions provide access to a broad range of pharmaceutical products and active substances.",
     icon: (
       <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="16" cy="16" r="12" stroke="#15324A" strokeWidth="2" />
-        <ellipse cx="16" cy="16" rx="6" ry="12" stroke="#15324A" strokeWidth="1.5" />
-        <path d="M4 16h24M6 10h20M6 22h20" stroke="#176E79" strokeWidth="1.5" strokeLinecap="round" />
+        <circle cx="16" cy="16" r="12" stroke="#0f3d22" strokeWidth="2" />
+        <ellipse cx="16" cy="16" rx="6" ry="12" stroke="#0f3d22" strokeWidth="1.5" />
+        <path d="M4 16h24M6 10h20M6 22h20" stroke="#2d8a56" strokeWidth="1.5" strokeLinecap="round" />
       </svg>
     ),
   },

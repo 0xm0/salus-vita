@@ -46,11 +46,11 @@ export default function Europe() {
       <section className="content-section" data-reveal>
         <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" style={{ flexShrink: 0, marginTop: 2 }}>
-            <circle cx="20" cy="20" r="16" stroke="#176E79" strokeWidth="2" fill="none" />
-            <path d="M11 16h18M11 24h18" stroke="#176E79" strokeWidth="1" opacity="0.4" />
-            <path d="M20 4v32" stroke="#176E79" strokeWidth="1" opacity="0.4" />
-            <ellipse cx="20" cy="20" rx="8" ry="16" stroke="#176E79" strokeWidth="1.5" fill="none" />
-            <circle cx="20" cy="20" r="3" fill="#176E79" opacity="0.3" />
+            <circle cx="20" cy="20" r="16" stroke="#2d8a56" strokeWidth="2" fill="none" />
+            <path d="M11 16h18M11 24h18" stroke="#2d8a56" strokeWidth="1" opacity="0.4" />
+            <path d="M20 4v32" stroke="#2d8a56" strokeWidth="1" opacity="0.4" />
+            <ellipse cx="20" cy="20" rx="8" ry="16" stroke="#2d8a56" strokeWidth="1.5" fill="none" />
+            <circle cx="20" cy="20" r="3" fill="#2d8a56" opacity="0.3" />
           </svg>
           <h2 style={{ margin: 0 }}>EMA Framework</h2>
         </div>
@@ -74,12 +74,12 @@ export default function Europe() {
       <section className="content-section" data-reveal>
         <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" style={{ flexShrink: 0, marginTop: 2 }}>
-            <rect x="6" y="8" width="28" height="24" rx="3" stroke="#176E79" strokeWidth="2" fill="none" />
-            <path d="M6 16h28" stroke="#176E79" strokeWidth="1.5" />
-            <path d="M16 16v16M26 16v16" stroke="#176E79" strokeWidth="1" opacity="0.5" />
-            <circle cx="11" cy="22" r="2" fill="#176E79" opacity="0.6" />
-            <circle cx="21" cy="22" r="2" fill="#176E79" opacity="0.6" />
-            <circle cx="31" cy="22" r="2" fill="#176E79" opacity="0.6" />
+            <rect x="6" y="8" width="28" height="24" rx="3" stroke="#2d8a56" strokeWidth="2" fill="none" />
+            <path d="M6 16h28" stroke="#2d8a56" strokeWidth="1.5" />
+            <path d="M16 16v16M26 16v16" stroke="#2d8a56" strokeWidth="1" opacity="0.5" />
+            <circle cx="11" cy="22" r="2" fill="#2d8a56" opacity="0.6" />
+            <circle cx="21" cy="22" r="2" fill="#2d8a56" opacity="0.6" />
+            <circle cx="31" cy="22" r="2" fill="#2d8a56" opacity="0.6" />
           </svg>
           <h2 style={{ margin: 0 }}>National Variations</h2>
         </div>
@@ -103,10 +103,10 @@ export default function Europe() {
       <section className="content-section" data-reveal>
         <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" style={{ flexShrink: 0, marginTop: 2 }}>
-            <path d="M8 20h24" stroke="#176E79" strokeWidth="2" strokeLinecap="round" />
-            <path d="M26 14l6 6-6 6" stroke="#176E79" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-            <path d="M14 14l-6 6 6 6" stroke="#176E79" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-            <circle cx="20" cy="20" r="3" stroke="#176E79" strokeWidth="1.5" fill="#E9F0F2" />
+            <path d="M8 20h24" stroke="#2d8a56" strokeWidth="2" strokeLinecap="round" />
+            <path d="M26 14l6 6-6 6" stroke="#2d8a56" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M14 14l-6 6 6 6" stroke="#2d8a56" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            <circle cx="20" cy="20" r="3" stroke="#2d8a56" strokeWidth="1.5" fill="#f0f5f2" />
           </svg>
           <h2 style={{ margin: 0 }}>Cross-Border Within Europe</h2>
         </div>
@@ -136,11 +136,11 @@ export default function Europe() {
       <section className="content-section" data-reveal>
         <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" style={{ flexShrink: 0, marginTop: 2 }}>
-            <rect x="8" y="10" width="24" height="20" rx="3" stroke="#176E79" strokeWidth="2" fill="none" />
-            <path d="M20 10v-4M16 6h8" stroke="#176E79" strokeWidth="2" strokeLinecap="round" />
-            <path d="M14 18h12M14 23h8" stroke="#176E79" strokeWidth="1.5" strokeLinecap="round" opacity="0.7" />
-            <circle cx="28" cy="26" r="5" stroke="#176E79" strokeWidth="1.5" fill="#E9F0F2" />
-            <path d="M28 24v4M26 26h4" stroke="#176E79" strokeWidth="1.5" strokeLinecap="round" />
+            <rect x="8" y="10" width="24" height="20" rx="3" stroke="#2d8a56" strokeWidth="2" fill="none" />
+            <path d="M20 10v-4M16 6h8" stroke="#2d8a56" strokeWidth="2" strokeLinecap="round" />
+            <path d="M14 18h12M14 23h8" stroke="#2d8a56" strokeWidth="1.5" strokeLinecap="round" opacity="0.7" />
+            <circle cx="28" cy="26" r="5" stroke="#2d8a56" strokeWidth="1.5" fill="#f0f5f2" />
+            <path d="M28 24v4M26 26h4" stroke="#2d8a56" strokeWidth="1.5" strokeLinecap="round" />
           </svg>
           <h2 style={{ margin: 0 }}>Market Entry</h2>
         </div>

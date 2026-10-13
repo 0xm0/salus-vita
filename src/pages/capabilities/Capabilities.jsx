@@ -8,10 +8,10 @@ const CAPABILITIES = [
     to: "/capabilities/global-sourcing",
     icon: (
       <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="18" stroke="#176E79" strokeWidth="2" fill="none" />
-        <ellipse cx="20" cy="20" rx="8" ry="18" stroke="#176E79" strokeWidth="1.5" fill="none" />
-        <line x1="2" y1="14" x2="38" y2="14" stroke="#176E79" strokeWidth="1.5" />
-        <line x1="2" y1="26" x2="38" y2="26" stroke="#176E79" strokeWidth="1.5" />
+        <circle cx="20" cy="20" r="18" stroke="#2d8a56" strokeWidth="2" fill="none" />
+        <ellipse cx="20" cy="20" rx="8" ry="18" stroke="#2d8a56" strokeWidth="1.5" fill="none" />
+        <line x1="2" y1="14" x2="38" y2="14" stroke="#2d8a56" strokeWidth="1.5" />
+        <line x1="2" y1="26" x2="38" y2="26" stroke="#2d8a56" strokeWidth="1.5" />
       </svg>
     ),
   },
@@ -21,9 +21,9 @@ const CAPABILITIES = [
     to: "/capabilities/international-procurement",
     icon: (
       <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="4" y="8" width="32" height="24" rx="2" stroke="#176E79" strokeWidth="2" fill="none" />
-        <path d="M4 16h32" stroke="#176E79" strokeWidth="1.5" />
-        <rect x="8" y="22" width="10" height="4" rx="1" stroke="#176E79" strokeWidth="1.5" fill="none" />
+        <rect x="4" y="8" width="32" height="24" rx="2" stroke="#2d8a56" strokeWidth="2" fill="none" />
+        <path d="M4 16h32" stroke="#2d8a56" strokeWidth="1.5" />
+        <rect x="8" y="22" width="10" height="4" rx="1" stroke="#2d8a56" strokeWidth="1.5" fill="none" />
       </svg>
     ),
   },
@@ -33,8 +33,8 @@ const CAPABILITIES = [
     to: "/capabilities/australian-importation",
     icon: (
       <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M20 4l14 8v16l-14 8-14-8V12l14-8z" stroke="#176E79" strokeWidth="2" fill="none" />
-        <path d="M20 4v32M6 12l14 8 14-8" stroke="#176E79" strokeWidth="1.5" />
+        <path d="M20 4l14 8v16l-14 8-14-8V12l14-8z" stroke="#2d8a56" strokeWidth="2" fill="none" />
+        <path d="M20 4v32M6 12l14 8 14-8" stroke="#2d8a56" strokeWidth="1.5" />
       </svg>
     ),
   },
@@ -44,10 +44,10 @@ const CAPABILITIES = [
     to: "/capabilities/cross-border-supply",
     icon: (
       <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M8 20h24M26 14l6 6-6 6" stroke="#176E79" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-        <path d="M32 20h-24M14 26l-6-6 6-6" stroke="#176E79" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" opacity="0.5" />
-        <circle cx="8" cy="20" r="3" stroke="#176E79" strokeWidth="1.5" fill="none" />
-        <circle cx="32" cy="20" r="3" stroke="#176E79" strokeWidth="1.5" fill="none" />
+        <path d="M8 20h24M26 14l6 6-6 6" stroke="#2d8a56" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M32 20h-24M14 26l-6-6 6-6" stroke="#2d8a56" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" opacity="0.5" />
+        <circle cx="8" cy="20" r="3" stroke="#2d8a56" strokeWidth="1.5" fill="none" />
+        <circle cx="32" cy="20" r="3" stroke="#2d8a56" strokeWidth="1.5" fill="none" />
       </svg>
     ),
   },
@@ -57,11 +57,11 @@ const CAPABILITIES = [
     to: "/capabilities/technical-documentation",
     icon: (
       <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M10 4h14l8 8v24a2 2 0 01-2 2H10a2 2 0 01-2-2V6a2 2 0 012-2z" stroke="#176E79" strokeWidth="2" fill="none" />
-        <path d="M24 4v8h8" stroke="#176E79" strokeWidth="1.5" />
-        <line x1="14" y1="20" x2="26" y2="20" stroke="#176E79" strokeWidth="1.5" />
-        <line x1="14" y1="26" x2="26" y2="26" stroke="#176E79" strokeWidth="1.5" />
-        <line x1="14" y1="32" x2="22" y2="32" stroke="#176E79" strokeWidth="1.5" />
+        <path d="M10 4h14l8 8v24a2 2 0 01-2 2H10a2 2 0 01-2-2V6a2 2 0 012-2z" stroke="#2d8a56" strokeWidth="2" fill="none" />
+        <path d="M24 4v8h8" stroke="#2d8a56" strokeWidth="1.5" />
+        <line x1="14" y1="20" x2="26" y2="20" stroke="#2d8a56" strokeWidth="1.5" />
+        <line x1="14" y1="26" x2="26" y2="26" stroke="#2d8a56" strokeWidth="1.5" />
+        <line x1="14" y1="32" x2="22" y2="32" stroke="#2d8a56" strokeWidth="1.5" />
       </svg>
     ),
   },
@@ -71,10 +71,10 @@ const CAPABILITIES = [
     to: "/capabilities/logistics",
     icon: (
       <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="2" y="14" width="22" height="16" rx="2" stroke="#176E79" strokeWidth="2" fill="none" />
-        <path d="M24 18h8l4 6v6h-12v-12z" stroke="#176E79" strokeWidth="2" fill="none" />
-        <circle cx="10" cy="32" r="3" stroke="#176E79" strokeWidth="2" fill="none" />
-        <circle cx="30" cy="32" r="3" stroke="#176E79" strokeWidth="2" fill="none" />
+        <rect x="2" y="14" width="22" height="16" rx="2" stroke="#2d8a56" strokeWidth="2" fill="none" />
+        <path d="M24 18h8l4 6v6h-12v-12z" stroke="#2d8a56" strokeWidth="2" fill="none" />
+        <circle cx="10" cy="32" r="3" stroke="#2d8a56" strokeWidth="2" fill="none" />
+        <circle cx="30" cy="32" r="3" stroke="#2d8a56" strokeWidth="2" fill="none" />
       </svg>
     ),
   },
@@ -84,9 +84,9 @@ const CAPABILITIES = [
     to: "/capabilities/bespoke-sourcing",
     icon: (
       <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="16" r="8" stroke="#176E79" strokeWidth="2" fill="none" />
-        <path d="M20 24v8M16 28h8" stroke="#176E79" strokeWidth="2" strokeLinecap="round" />
-        <path d="M26 10l4-4M28 8l-2 4 4-2" stroke="#176E79" strokeWidth="1.5" strokeLinecap="round" />
+        <circle cx="20" cy="16" r="8" stroke="#2d8a56" strokeWidth="2" fill="none" />
+        <path d="M20 24v8M16 28h8" stroke="#2d8a56" strokeWidth="2" strokeLinecap="round" />
+        <path d="M26 10l4-4M28 8l-2 4 4-2" stroke="#2d8a56" strokeWidth="1.5" strokeLinecap="round" />
       </svg>
     ),
   },

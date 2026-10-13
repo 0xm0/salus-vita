@@ -1,4 +1,4 @@
-export default function FangMark({ size = 28, strokeColor = "#15324A", dotColor = "#176E79", className = "" }) {
+export default function FangMark({ size = 28, strokeColor = "#0f3d22", dotColor = "#2d8a56", className = "" }) {
   return (
     <svg width={size} height={size} viewBox="0 0 48 48" aria-hidden="true" className={className}>
       <g transform="translate(24, 22)">

@@ -17,7 +17,7 @@ export default function Customers() {
       {/* Requirements Assessment */}
       <section className="content-section" data-reveal>
         <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
-          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#15324A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#0f3d22" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
             <rect x="6" y="4" width="28" height="32" rx="2" />
             <path d="M12 12h16M12 18h16M12 24h10" />
             <path d="M14 8l-2 2 4 4" />
@@ -62,7 +62,7 @@ export default function Customers() {
       {/* Sourcing Solutions */}
       <section className="content-section" data-reveal style={rd(80)}>
         <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
-          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#15324A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#0f3d22" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
             <circle cx="16" cy="16" r="10" />
             <path d="M24 24l10 10" />
             <path d="M12 16h8M16 12v8" />
@@ -92,7 +92,7 @@ export default function Customers() {
       {/* Procurement Planning */}
       <section className="content-section" data-reveal style={rd(160)}>
         <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
-          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#15324A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#0f3d22" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
             <rect x="4" y="8" width="32" height="28" rx="2" />
             <path d="M4 16h32" />
             <path d="M12 4v8M28 4v8" />
@@ -129,7 +129,7 @@ export default function Customers() {
       {/* Ongoing Support */}
       <section className="content-section" data-reveal style={rd(240)}>
         <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
-          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#15324A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#0f3d22" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
             <path d="M20 6a14 14 0 110 28 14 14 0 010-28z" />
             <path d="M20 14v8l5 3" />
           </svg>

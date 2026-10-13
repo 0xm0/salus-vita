@@ -53,10 +53,10 @@ export default function AsiaPacific() {
       <section className="content-section" data-reveal>
         <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" style={{ flexShrink: 0, marginTop: 2 }}>
-            <circle cx="20" cy="20" r="18" stroke="#176E79" strokeWidth="2" fill="none" />
-            <path d="M12 20c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8" stroke="#176E79" strokeWidth="1.5" fill="none" />
-            <path d="M20 12v16M12 20h16" stroke="#176E79" strokeWidth="1" opacity="0.5" />
-            <circle cx="20" cy="20" r="2" fill="#176E79" />
+            <circle cx="20" cy="20" r="18" stroke="#2d8a56" strokeWidth="2" fill="none" />
+            <path d="M12 20c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8" stroke="#2d8a56" strokeWidth="1.5" fill="none" />
+            <path d="M20 12v16M12 20h16" stroke="#2d8a56" strokeWidth="1" opacity="0.5" />
+            <circle cx="20" cy="20" r="2" fill="#2d8a56" />
           </svg>
           <h2 style={{ margin: 0 }}>Regional Landscape</h2>
         </div>
@@ -92,10 +92,10 @@ export default function AsiaPacific() {
       <section className="content-section" data-reveal>
         <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" style={{ flexShrink: 0, marginTop: 2 }}>
-            <rect x="8" y="6" width="24" height="28" rx="3" stroke="#176E79" strokeWidth="2" fill="none" />
-            <path d="M14 14h12M14 19h12M14 24h8" stroke="#176E79" strokeWidth="1.5" strokeLinecap="round" />
-            <circle cx="28" cy="28" r="6" stroke="#176E79" strokeWidth="1.5" fill="#E9F0F2" />
-            <path d="M26 28l1.5 1.5L30 27" stroke="#176E79" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            <rect x="8" y="6" width="24" height="28" rx="3" stroke="#2d8a56" strokeWidth="2" fill="none" />
+            <path d="M14 14h12M14 19h12M14 24h8" stroke="#2d8a56" strokeWidth="1.5" strokeLinecap="round" />
+            <circle cx="28" cy="28" r="6" stroke="#2d8a56" strokeWidth="1.5" fill="#f0f5f2" />
+            <path d="M26 28l1.5 1.5L30 27" stroke="#2d8a56" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
           <h2 style={{ margin: 0 }}>Regulatory Frameworks</h2>
         </div>
@@ -119,9 +119,9 @@ export default function AsiaPacific() {
       <section className="content-section" data-reveal>
         <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" style={{ flexShrink: 0, marginTop: 2 }}>
-            <rect x="6" y="6" width="28" height="28" rx="4" stroke="#176E79" strokeWidth="2" fill="none" />
-            <path d="M12 28l5-8 4 4 7-12" stroke="#176E79" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-            <circle cx="28" cy="12" r="2" fill="#176E79" />
+            <rect x="6" y="6" width="28" height="28" rx="4" stroke="#2d8a56" strokeWidth="2" fill="none" />
+            <path d="M12 28l5-8 4 4 7-12" stroke="#2d8a56" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            <circle cx="28" cy="12" r="2" fill="#2d8a56" />
           </svg>
           <h2 style={{ margin: 0 }}>Market Opportunities</h2>
         </div>
@@ -152,10 +152,10 @@ export default function AsiaPacific() {
       <section className="content-section" data-reveal>
         <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" style={{ flexShrink: 0, marginTop: 2 }}>
-            <circle cx="14" cy="14" r="6" stroke="#176E79" strokeWidth="2" fill="none" />
-            <circle cx="26" cy="14" r="6" stroke="#176E79" strokeWidth="2" fill="none" />
-            <circle cx="20" cy="26" r="6" stroke="#176E79" strokeWidth="2" fill="none" />
-            <path d="M17 19l3 3M23 19l-3 3" stroke="#176E79" strokeWidth="1.5" />
+            <circle cx="14" cy="14" r="6" stroke="#2d8a56" strokeWidth="2" fill="none" />
+            <circle cx="26" cy="14" r="6" stroke="#2d8a56" strokeWidth="2" fill="none" />
+            <circle cx="20" cy="26" r="6" stroke="#2d8a56" strokeWidth="2" fill="none" />
+            <path d="M17 19l3 3M23 19l-3 3" stroke="#2d8a56" strokeWidth="1.5" />
           </svg>
           <h2 style={{ margin: 0 }}>Partnership Models</h2>
         </div>

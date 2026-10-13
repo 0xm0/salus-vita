@@ -17,7 +17,7 @@ export default function Manufacturers() {
       {/* Market Access Support */}
       <section className="content-section" data-reveal>
         <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
-          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#15324A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#0f3d22" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
             <circle cx="20" cy="20" r="14" />
             <ellipse cx="20" cy="20" rx="7" ry="14" />
             <path d="M6 14h28M6 26h28" />
@@ -49,7 +49,7 @@ export default function Manufacturers() {
       {/* Portfolio Discussion */}
       <section className="content-section" data-reveal style={rd(80)}>
         <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
-          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#15324A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#0f3d22" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
             <rect x="6" y="6" width="28" height="28" rx="2" />
             <path d="M6 14h28M6 22h28M20 14v20" />
           </svg>
@@ -87,7 +87,7 @@ export default function Manufacturers() {
       {/* Documentation Coordination */}
       <section className="content-section" data-reveal style={rd(160)}>
         <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
-          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#15324A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#0f3d22" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
             <path d="M10 4h14l8 8v24a2 2 0 01-2 2H10a2 2 0 01-2-2V6a2 2 0 012-2z" />
             <path d="M24 4v8h8" />
             <path d="M14 18h12M14 22h12M14 26h8" />
@@ -119,13 +119,13 @@ export default function Manufacturers() {
       {/* Territory Planning */}
       <section className="content-section" data-reveal style={rd(240)}>
         <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
-          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#15324A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#0f3d22" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
             <rect x="4" y="8" width="32" height="24" rx="2" />
             <path d="M4 16h32" />
             <path d="M16 16v16M28 16v16" />
-            <circle cx="10" cy="12" r="1.5" fill="#15324A" />
-            <circle cx="16" cy="12" r="1.5" fill="#15324A" />
-            <circle cx="22" cy="12" r="1.5" fill="#15324A" />
+            <circle cx="10" cy="12" r="1.5" fill="#0f3d22" />
+            <circle cx="16" cy="12" r="1.5" fill="#0f3d22" />
+            <circle cx="22" cy="12" r="1.5" fill="#0f3d22" />
           </svg>
           <h2 style={{ margin: 0 }}>Territory Planning</h2>
         </div>

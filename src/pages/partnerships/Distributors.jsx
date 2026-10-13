@@ -39,9 +39,9 @@ export default function Distributors() {
       <section className="content-section" data-reveal>
         <div style={{ display: "flex", alignItems: "flex-start", gap: 20, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
-            <circle cx="20" cy="20" r="15" stroke="#15324A" strokeWidth="1.5" />
-            <path d="M14 20h12M20 14v12M15 15l10 10M25 15l-10 10" stroke="#15324A" strokeWidth="1.5" strokeLinecap="round" />
-            <circle cx="20" cy="20" r="3" stroke="#15324A" strokeWidth="1.5" />
+            <circle cx="20" cy="20" r="15" stroke="#0f3d22" strokeWidth="1.5" />
+            <path d="M14 20h12M20 14v12M15 15l10 10M25 15l-10 10" stroke="#0f3d22" strokeWidth="1.5" strokeLinecap="round" />
+            <circle cx="20" cy="20" r="3" stroke="#0f3d22" strokeWidth="1.5" />
           </svg>
           <h2 style={{ margin: 0 }}>Territory Assessment</h2>
         </div>
@@ -73,9 +73,9 @@ export default function Distributors() {
       <section className="content-section" data-reveal style={rd(80)}>
         <div style={{ display: "flex", alignItems: "flex-start", gap: 20, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
-            <rect x="8" y="6" width="24" height="28" rx="2" stroke="#15324A" strokeWidth="1.5" />
-            <path d="M14 14h12M14 19h12M14 24h8" stroke="#15324A" strokeWidth="1.5" strokeLinecap="round" />
-            <path d="M26 24l2 2 4-4" stroke="#15324A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            <rect x="8" y="6" width="24" height="28" rx="2" stroke="#0f3d22" strokeWidth="1.5" />
+            <path d="M14 14h12M14 19h12M14 24h8" stroke="#0f3d22" strokeWidth="1.5" strokeLinecap="round" />
+            <path d="M26 24l2 2 4-4" stroke="#0f3d22" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
           <h2 style={{ margin: 0 }}>Product Eligibility</h2>
         </div>
@@ -107,10 +107,10 @@ export default function Distributors() {
       <section className="content-section" data-reveal style={rd(160)}>
         <div style={{ display: "flex", alignItems: "flex-start", gap: 20, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
-            <rect x="6" y="10" width="28" height="20" rx="2" stroke="#15324A" strokeWidth="1.5" />
-            <path d="M6 16h28" stroke="#15324A" strokeWidth="1.5" />
-            <path d="M12 23h6M12 27h4" stroke="#15324A" strokeWidth="1.5" strokeLinecap="round" />
-            <circle cx="28" cy="25" r="4" stroke="#15324A" strokeWidth="1.5" />
+            <rect x="6" y="10" width="28" height="20" rx="2" stroke="#0f3d22" strokeWidth="1.5" />
+            <path d="M6 16h28" stroke="#0f3d22" strokeWidth="1.5" />
+            <path d="M12 23h6M12 27h4" stroke="#0f3d22" strokeWidth="1.5" strokeLinecap="round" />
+            <circle cx="28" cy="25" r="4" stroke="#0f3d22" strokeWidth="1.5" />
           </svg>
           <h2 style={{ margin: 0 }}>Commercial Structures</h2>
         </div>
@@ -142,8 +142,8 @@ export default function Distributors() {
       <section className="content-section" data-reveal style={rd(240)}>
         <div style={{ display: "flex", alignItems: "flex-start", gap: 20, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
-            <path d="M20 4L6 12v8c0 9.33 5.97 18.06 14 20 8.03-1.94 14-10.67 14-20v-8L20 4z" stroke="#15324A" strokeWidth="1.5" strokeLinejoin="round" />
-            <path d="M15 20l3 3 7-7" stroke="#15324A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M20 4L6 12v8c0 9.33 5.97 18.06 14 20 8.03-1.94 14-10.67 14-20v-8L20 4z" stroke="#0f3d22" strokeWidth="1.5" strokeLinejoin="round" />
+            <path d="M15 20l3 3 7-7" stroke="#0f3d22" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
           <h2 style={{ margin: 0 }}>Compliance Framework</h2>
         </div>

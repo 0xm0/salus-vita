@@ -72,8 +72,8 @@ const POSTS = [
 const CATEGORIES = ["All", ...Array.from(new Set(POSTS.map((p) => p.category)))]
 
 const categoryColors = {
-  Regulatory: { bg: "rgba(23,110,121,0.10)", color: "#176E79" },
-  Quality: { bg: "rgba(21,50,74,0.10)", color: "#15324A" },
+  Regulatory: { bg: "rgba(23,110,121,0.10)", color: "#2d8a56" },
+  Quality: { bg: "rgba(21,50,74,0.10)", color: "#0f3d22" },
   "Supply Chain": { bg: "rgba(23,110,121,0.15)", color: "#0f5a63" },
   "Market Access": { bg: "rgba(21,50,74,0.08)", color: "#2a5a7a" },
 }
@@ -200,7 +200,7 @@ export default function Resources() {
           {filtered.map((post, i) => {
             const chip = categoryColors[post.category] || {
               bg: "rgba(21,50,74,0.08)",
-              color: "#15324A",
+              color: "#0f3d22",
             }
             return (
               <Link

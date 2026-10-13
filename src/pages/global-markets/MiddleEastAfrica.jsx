@@ -34,11 +34,11 @@ export default function MiddleEastAfrica() {
       <section className="content-section" data-reveal>
         <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" style={{ flexShrink: 0, marginTop: 2 }}>
-            <rect x="8" y="6" width="24" height="28" rx="3" stroke="#176E79" strokeWidth="2" fill="none" />
-            <path d="M14 14h12M14 19h12M14 24h8" stroke="#176E79" strokeWidth="1.5" strokeLinecap="round" />
-            <path d="M8 10h24" stroke="#176E79" strokeWidth="1.5" />
-            <circle cx="30" cy="30" r="5" stroke="#176E79" strokeWidth="1.5" fill="#E9F0F2" />
-            <path d="M28.5 30l1 1 2-2.5" stroke="#176E79" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            <rect x="8" y="6" width="24" height="28" rx="3" stroke="#2d8a56" strokeWidth="2" fill="none" />
+            <path d="M14 14h12M14 19h12M14 24h8" stroke="#2d8a56" strokeWidth="1.5" strokeLinecap="round" />
+            <path d="M8 10h24" stroke="#2d8a56" strokeWidth="1.5" />
+            <circle cx="30" cy="30" r="5" stroke="#2d8a56" strokeWidth="1.5" fill="#f0f5f2" />
+            <path d="M28.5 30l1 1 2-2.5" stroke="#2d8a56" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
           <h2 style={{ margin: 0 }}>Regulatory Landscape</h2>
         </div>
@@ -74,9 +74,9 @@ export default function MiddleEastAfrica() {
       <section className="content-section" data-reveal>
         <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" style={{ flexShrink: 0, marginTop: 2 }}>
-            <circle cx="20" cy="20" r="16" stroke="#176E79" strokeWidth="2" fill="none" />
-            <path d="M20 8v12l8 4" stroke="#176E79" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-            <circle cx="20" cy="20" r="2" fill="#176E79" />
+            <circle cx="20" cy="20" r="16" stroke="#2d8a56" strokeWidth="2" fill="none" />
+            <path d="M20 8v12l8 4" stroke="#2d8a56" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            <circle cx="20" cy="20" r="2" fill="#2d8a56" />
           </svg>
           <h2 style={{ margin: 0 }}>Market Access Strategies</h2>
         </div>
@@ -105,11 +105,11 @@ export default function MiddleEastAfrica() {
       <section className="content-section" data-reveal>
         <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" style={{ flexShrink: 0, marginTop: 2 }}>
-            <circle cx="20" cy="10" r="4" stroke="#176E79" strokeWidth="2" fill="none" />
-            <circle cx="10" cy="30" r="4" stroke="#176E79" strokeWidth="2" fill="none" />
-            <circle cx="30" cy="30" r="4" stroke="#176E79" strokeWidth="2" fill="none" />
-            <path d="M20 14v4l-7 8M20 18l7 8" stroke="#176E79" strokeWidth="1.5" />
-            <path d="M14 30h12" stroke="#176E79" strokeWidth="1" strokeDasharray="2 2" />
+            <circle cx="20" cy="10" r="4" stroke="#2d8a56" strokeWidth="2" fill="none" />
+            <circle cx="10" cy="30" r="4" stroke="#2d8a56" strokeWidth="2" fill="none" />
+            <circle cx="30" cy="30" r="4" stroke="#2d8a56" strokeWidth="2" fill="none" />
+            <path d="M20 14v4l-7 8M20 18l7 8" stroke="#2d8a56" strokeWidth="1.5" />
+            <path d="M14 30h12" stroke="#2d8a56" strokeWidth="1" strokeDasharray="2 2" />
           </svg>
           <h2 style={{ margin: 0 }}>Distribution Networks</h2>
         </div>
@@ -133,9 +133,9 @@ export default function MiddleEastAfrica() {
       <section className="content-section" data-reveal>
         <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" style={{ flexShrink: 0, marginTop: 2 }}>
-            <rect x="6" y="6" width="28" height="28" rx="4" stroke="#176E79" strokeWidth="2" fill="none" />
-            <path d="M12 28l5-6 4 3 7-11" stroke="#176E79" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-            <circle cx="28" cy="14" r="2.5" fill="#176E79" />
+            <rect x="6" y="6" width="28" height="28" rx="4" stroke="#2d8a56" strokeWidth="2" fill="none" />
+            <path d="M12 28l5-6 4 3 7-11" stroke="#2d8a56" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            <circle cx="28" cy="14" r="2.5" fill="#2d8a56" />
           </svg>
           <h2 style={{ margin: 0 }}>Growth Opportunities</h2>
         </div>

@@ -11,10 +11,11 @@ export const company = {
 }
 
 export const brand = {
-  navy: "#15324A",
-  teal: "#176E79",
-  paleBlue: "#E9F0F2",
-  offWhite: "#F6F8F9",
+  darkGreen: "#0f3d22",
+  midGreen: "#2d8a56",
+  lightGreen: "#f0f5f2",
+  offWhite: "#fafcfb",
+  border: "#dce6df",
 }
 
 export const contact = {

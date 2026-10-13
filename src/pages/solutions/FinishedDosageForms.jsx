@@ -56,7 +56,7 @@ export default function FinishedDosageForms() {
       {/* Product Assessment */}
       <section className="content-section" data-reveal>
         <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 8 }}>
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#176E79" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2d8a56" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
             <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2" />
             <rect x="9" y="3" width="6" height="4" rx="1" />
             <path d="M9 14l2 2 4-4" />
@@ -93,7 +93,7 @@ export default function FinishedDosageForms() {
       {/* Commercial Feasibility */}
       <section className="content-section" data-reveal>
         <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 8 }}>
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#176E79" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2d8a56" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
             <path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6" />
           </svg>
           <h2 style={{ margin: 0 }}>Commercial Feasibility</h2>
@@ -121,7 +121,7 @@ export default function FinishedDosageForms() {
       {/* Packaging and Labelling */}
       <section className="content-section" data-reveal>
         <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 8 }}>
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#176E79" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2d8a56" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
             <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" />
             <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
             <line x1="12" y1="22.08" x2="12" y2="12" />
@@ -178,7 +178,7 @@ export default function FinishedDosageForms() {
       {/* Market Requirements */}
       <section className="content-section" data-reveal>
         <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 8 }}>
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#176E79" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2d8a56" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
             <circle cx="12" cy="12" r="10" />
             <line x1="2" y1="12" x2="22" y2="12" />
             <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" />
@@ -220,7 +220,7 @@ export default function FinishedDosageForms() {
               <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 8 }}>
                 <span style={{
                   display: "inline-flex", alignItems: "center", justifyContent: "center",
-                  width: 28, height: 28, borderRadius: "50%", backgroundColor: "#176E79",
+                  width: 28, height: 28, borderRadius: "50%", backgroundColor: "#2d8a56",
                   color: "#fff", fontSize: 13, fontWeight: 700,
                 }}>
                   {i + 1}

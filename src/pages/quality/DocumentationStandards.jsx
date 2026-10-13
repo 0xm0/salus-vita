@@ -70,9 +70,9 @@ export default function DocumentationStandards() {
       <section className="content-section" data-reveal>
         <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
-            <rect x="8" y="4" width="24" height="32" rx="2" stroke="#15324A" strokeWidth="1.5" />
-            <path d="M14 14h12M14 20h12M14 26h8" stroke="#15324A" strokeWidth="1.5" strokeLinecap="round" />
-            <path d="M26 4v8h8" stroke="#15324A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            <rect x="8" y="4" width="24" height="32" rx="2" stroke="#0f3d22" strokeWidth="1.5" />
+            <path d="M14 14h12M14 20h12M14 26h8" stroke="#0f3d22" strokeWidth="1.5" strokeLinecap="round" />
+            <path d="M26 4v8h8" stroke="#0f3d22" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
           <h2 style={{ margin: 0 }}>Standard Documentation</h2>
         </div>
@@ -105,9 +105,9 @@ export default function DocumentationStandards() {
       <section className="content-section" data-reveal style={rd(80)}>
         <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
-            <circle cx="20" cy="20" r="14" stroke="#15324A" strokeWidth="1.5" />
-            <ellipse cx="20" cy="20" rx="7" ry="14" stroke="#15324A" strokeWidth="1.5" />
-            <path d="M6 20h28M8 12h24M8 28h24" stroke="#15324A" strokeWidth="1.5" strokeLinecap="round" />
+            <circle cx="20" cy="20" r="14" stroke="#0f3d22" strokeWidth="1.5" />
+            <ellipse cx="20" cy="20" rx="7" ry="14" stroke="#0f3d22" strokeWidth="1.5" />
+            <path d="M6 20h28M8 12h24M8 28h24" stroke="#0f3d22" strokeWidth="1.5" strokeLinecap="round" />
           </svg>
           <h2 style={{ margin: 0 }}>Market-Specific Requirements</h2>
         </div>
@@ -144,9 +144,9 @@ export default function DocumentationStandards() {
       <section className="content-section" data-reveal style={rd(160)}>
         <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
-            <rect x="6" y="8" width="28" height="24" rx="2" stroke="#15324A" strokeWidth="1.5" />
-            <path d="M6 8l8-4h12l8 4" stroke="#15324A" strokeWidth="1.5" strokeLinejoin="round" />
-            <path d="M14 18h12M14 23h8" stroke="#15324A" strokeWidth="1.5" strokeLinecap="round" />
+            <rect x="6" y="8" width="28" height="24" rx="2" stroke="#0f3d22" strokeWidth="1.5" />
+            <path d="M6 8l8-4h12l8 4" stroke="#0f3d22" strokeWidth="1.5" strokeLinejoin="round" />
+            <path d="M14 18h12M14 23h8" stroke="#0f3d22" strokeWidth="1.5" strokeLinecap="round" />
           </svg>
           <h2 style={{ margin: 0 }}>Document Management</h2>
         </div>
@@ -179,8 +179,8 @@ export default function DocumentationStandards() {
       <section className="content-section" data-reveal style={rd(240)}>
         <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
-            <path d="M20 6l12 6v10c0 7-5 12-12 14C13 34 8 29 8 22V12l12-6z" stroke="#15324A" strokeWidth="1.5" strokeLinejoin="round" />
-            <path d="M15 20l4 4 7-8" stroke="#15324A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M20 6l12 6v10c0 7-5 12-12 14C13 34 8 29 8 22V12l12-6z" stroke="#0f3d22" strokeWidth="1.5" strokeLinejoin="round" />
+            <path d="M15 20l4 4 7-8" stroke="#0f3d22" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
           <h2 style={{ margin: 0 }}>Audit Readiness</h2>
         </div>

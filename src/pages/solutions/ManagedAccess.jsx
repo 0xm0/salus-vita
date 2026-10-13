@@ -41,10 +41,10 @@ export default function ManagedAccess() {
       <section className="content-section" data-reveal>
         <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" style={{ flexShrink: 0, marginTop: 4 }}>
-            <rect width="40" height="40" rx="8" fill="#E9F0F2" />
-            <path d="M12 14h16M12 20h16M12 26h10" stroke="#176E79" strokeWidth="2" strokeLinecap="round" />
-            <circle cx="28" cy="26" r="4" stroke="#15324A" strokeWidth="2" />
-            <path d="M31 29l2 2" stroke="#15324A" strokeWidth="2" strokeLinecap="round" />
+            <rect width="40" height="40" rx="8" fill="#f0f5f2" />
+            <path d="M12 14h16M12 20h16M12 26h10" stroke="#2d8a56" strokeWidth="2" strokeLinecap="round" />
+            <circle cx="28" cy="26" r="4" stroke="#0f3d22" strokeWidth="2" />
+            <path d="M31 29l2 2" stroke="#0f3d22" strokeWidth="2" strokeLinecap="round" />
           </svg>
           <h2 style={{ margin: 0 }}>Regulatory Pathways</h2>
         </div>
@@ -75,13 +75,13 @@ export default function ManagedAccess() {
       <section className="content-section" data-reveal>
         <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" style={{ flexShrink: 0, marginTop: 4 }}>
-            <rect width="40" height="40" rx="8" fill="#E9F0F2" />
-            <path d="M20 10v6l4 2" stroke="#176E79" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            <rect width="40" height="40" rx="8" fill="#f0f5f2" />
+            <path d="M20 10v6l4 2" stroke="#2d8a56" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             <circle cx="20" cy="10" r="0" />
-            <rect x="10" y="22" width="8" height="8" rx="2" stroke="#15324A" strokeWidth="2" />
-            <rect x="22" y="22" width="8" height="8" rx="2" stroke="#15324A" strokeWidth="2" />
-            <path d="M14 22v-4h12v4" stroke="#176E79" strokeWidth="2" />
-            <path d="M20 12v6" stroke="#176E79" strokeWidth="2" />
+            <rect x="10" y="22" width="8" height="8" rx="2" stroke="#0f3d22" strokeWidth="2" />
+            <rect x="22" y="22" width="8" height="8" rx="2" stroke="#0f3d22" strokeWidth="2" />
+            <path d="M14 22v-4h12v4" stroke="#2d8a56" strokeWidth="2" />
+            <path d="M20 12v6" stroke="#2d8a56" strokeWidth="2" />
           </svg>
           <h2 style={{ margin: 0 }}>Access Frameworks</h2>
         </div>
@@ -128,10 +128,10 @@ export default function ManagedAccess() {
       <section className="content-section" data-reveal>
         <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" style={{ flexShrink: 0, marginTop: 4 }}>
-            <rect width="40" height="40" rx="8" fill="#E9F0F2" />
-            <circle cx="20" cy="15" r="5" stroke="#15324A" strokeWidth="2" />
-            <path d="M11 30c0-5 4-9 9-9s9 4 9 9" stroke="#176E79" strokeWidth="2" strokeLinecap="round" />
-            <path d="M26 18l4-4M26 14l4 4" stroke="#15324A" strokeWidth="1.5" strokeLinecap="round" />
+            <rect width="40" height="40" rx="8" fill="#f0f5f2" />
+            <circle cx="20" cy="15" r="5" stroke="#0f3d22" strokeWidth="2" />
+            <path d="M11 30c0-5 4-9 9-9s9 4 9 9" stroke="#2d8a56" strokeWidth="2" strokeLinecap="round" />
+            <path d="M26 18l4-4M26 14l4 4" stroke="#0f3d22" strokeWidth="1.5" strokeLinecap="round" />
           </svg>
           <h2 style={{ margin: 0 }}>Patient Access Coordination</h2>
         </div>
@@ -162,10 +162,10 @@ export default function ManagedAccess() {
       <section className="content-section" data-reveal>
         <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" style={{ flexShrink: 0, marginTop: 4 }}>
-            <rect width="40" height="40" rx="8" fill="#E9F0F2" />
-            <path d="M14 10h12a2 2 0 012 2v16a2 2 0 01-2 2H14a2 2 0 01-2-2V12a2 2 0 012-2z" stroke="#15324A" strokeWidth="2" />
-            <path d="M17 17l2 2 4-4" stroke="#176E79" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-            <path d="M16 24h8M16 27h5" stroke="#176E79" strokeWidth="1.5" strokeLinecap="round" />
+            <rect width="40" height="40" rx="8" fill="#f0f5f2" />
+            <path d="M14 10h12a2 2 0 012 2v16a2 2 0 01-2 2H14a2 2 0 01-2-2V12a2 2 0 012-2z" stroke="#0f3d22" strokeWidth="2" />
+            <path d="M17 17l2 2 4-4" stroke="#2d8a56" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M16 24h8M16 27h5" stroke="#2d8a56" strokeWidth="1.5" strokeLinecap="round" />
           </svg>
           <h2 style={{ margin: 0 }}>Compliance and Documentation</h2>
         </div>
@@ -209,7 +209,7 @@ export default function ManagedAccess() {
 
       {/* Important Notice */}
       <section className="content-section" data-reveal>
-        <div className="card" style={{ borderLeft: "4px solid #176E79", background: "#F6F8F9" }}>
+        <div className="card" style={{ borderLeft: "4px solid #2d8a56", background: "#fafcfb" }}>
           <h3 style={{ color: "var(--navy)", marginTop: 0 }}>Important Notice</h3>
           <p style={{ fontSize: 14, lineHeight: 1.7, color: "#4A5568" }}>
             Salus Vita does not manufacture, distribute, or make representations regarding the safety,

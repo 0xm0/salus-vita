@@ -9,8 +9,8 @@ const PROCESS_STEPS = [
     desc: "Systematic evaluation of manufacturer capability, regulatory standing, and commercial viability to identify optimal API sources for each requirement.",
     icon: (
       <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="19" stroke="#176E79" strokeWidth="2" />
-        <path d="M12 20l4 4 12-12" stroke="#176E79" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+        <circle cx="20" cy="20" r="19" stroke="#2d8a56" strokeWidth="2" />
+        <path d="M12 20l4 4 12-12" stroke="#2d8a56" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
     ),
   },
@@ -19,10 +19,10 @@ const PROCESS_STEPS = [
     desc: "Detailed technical alignment between customer requirements and manufacturer capabilities, covering pharmacopoeial grade, purity profiles, and particle characteristics.",
     icon: (
       <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="8" y="6" width="24" height="28" rx="3" stroke="#176E79" strokeWidth="2" />
-        <line x1="14" y1="14" x2="26" y2="14" stroke="#176E79" strokeWidth="2" strokeLinecap="round" />
-        <line x1="14" y1="20" x2="26" y2="20" stroke="#176E79" strokeWidth="2" strokeLinecap="round" />
-        <line x1="14" y1="26" x2="22" y2="26" stroke="#176E79" strokeWidth="2" strokeLinecap="round" />
+        <rect x="8" y="6" width="24" height="28" rx="3" stroke="#2d8a56" strokeWidth="2" />
+        <line x1="14" y1="14" x2="26" y2="14" stroke="#2d8a56" strokeWidth="2" strokeLinecap="round" />
+        <line x1="14" y1="20" x2="26" y2="20" stroke="#2d8a56" strokeWidth="2" strokeLinecap="round" />
+        <line x1="14" y1="26" x2="22" y2="26" stroke="#2d8a56" strokeWidth="2" strokeLinecap="round" />
       </svg>
     ),
   },
@@ -31,8 +31,8 @@ const PROCESS_STEPS = [
     desc: "Coordination of complete regulatory documentation packages including Drug Master Files, Certificates of Suitability, stability data, and certificates of analysis.",
     icon: (
       <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M10 8h14l8 8v18a2 2 0 01-2 2H10a2 2 0 01-2-2V10a2 2 0 012-2z" stroke="#176E79" strokeWidth="2" />
-        <path d="M24 8v8h8" stroke="#176E79" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M10 8h14l8 8v18a2 2 0 01-2 2H10a2 2 0 01-2-2V10a2 2 0 012-2z" stroke="#2d8a56" strokeWidth="2" />
+        <path d="M24 8v8h8" stroke="#2d8a56" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
     ),
   },
@@ -41,8 +41,8 @@ const PROCESS_STEPS = [
     desc: "Ongoing assessment of manufacturing standards, batch consistency, and regulatory compliance across every API source in the Salus Vita network.",
     icon: (
       <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M20 4l4 2v8c0 7-8 12-8 12s-8-5-8-12V6l4-2h8z" stroke="#176E79" strokeWidth="2" strokeLinejoin="round" />
-        <path d="M16 18l3 3 6-6" stroke="#176E79" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M20 4l4 2v8c0 7-8 12-8 12s-8-5-8-12V6l4-2h8z" stroke="#2d8a56" strokeWidth="2" strokeLinejoin="round" />
+        <path d="M16 18l3 3 6-6" stroke="#2d8a56" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
     ),
   },

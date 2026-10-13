@@ -18,10 +18,10 @@ export default function RegulatoryFramework() {
       <section className="content-section" data-reveal>
         <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
-            <rect x="4" y="8" width="32" height="24" rx="3" stroke="#15324A" strokeWidth="2" fill="none" />
-            <path d="M4 14h32" stroke="#15324A" strokeWidth="2" />
-            <circle cx="20" cy="23" r="4" stroke="#15324A" strokeWidth="2" fill="none" />
-            <path d="M20 19v8M16 23h8" stroke="#15324A" strokeWidth="1.5" />
+            <rect x="4" y="8" width="32" height="24" rx="3" stroke="#0f3d22" strokeWidth="2" fill="none" />
+            <path d="M4 14h32" stroke="#0f3d22" strokeWidth="2" />
+            <circle cx="20" cy="23" r="4" stroke="#0f3d22" strokeWidth="2" fill="none" />
+            <path d="M20 19v8M16 23h8" stroke="#0f3d22" strokeWidth="1.5" />
           </svg>
           <h2 style={{ margin: 0 }}>Australian Framework (TGA)</h2>
         </div>
@@ -40,10 +40,10 @@ export default function RegulatoryFramework() {
       <section className="content-section" data-reveal style={rd(80)}>
         <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
-            <circle cx="20" cy="20" r="15" stroke="#15324A" strokeWidth="2" fill="none" />
-            <ellipse cx="20" cy="20" rx="7" ry="15" stroke="#15324A" strokeWidth="1.5" fill="none" />
-            <path d="M5 20h30" stroke="#15324A" strokeWidth="1.5" />
-            <path d="M8 12h24M8 28h24" stroke="#15324A" strokeWidth="1" />
+            <circle cx="20" cy="20" r="15" stroke="#0f3d22" strokeWidth="2" fill="none" />
+            <ellipse cx="20" cy="20" rx="7" ry="15" stroke="#0f3d22" strokeWidth="1.5" fill="none" />
+            <path d="M5 20h30" stroke="#0f3d22" strokeWidth="1.5" />
+            <path d="M8 12h24M8 28h24" stroke="#0f3d22" strokeWidth="1" />
           </svg>
           <h2 style={{ margin: 0 }}>International Standards</h2>
         </div>
@@ -62,11 +62,11 @@ export default function RegulatoryFramework() {
       <section className="content-section" data-reveal style={rd(160)}>
         <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
-            <rect x="6" y="6" width="12" height="12" rx="2" stroke="#15324A" strokeWidth="2" fill="none" />
-            <rect x="22" y="6" width="12" height="12" rx="2" stroke="#15324A" strokeWidth="2" fill="none" />
-            <rect x="6" y="22" width="12" height="12" rx="2" stroke="#15324A" strokeWidth="2" fill="none" />
-            <rect x="22" y="22" width="12" height="12" rx="2" stroke="#15324A" strokeWidth="2" fill="none" />
-            <path d="M12 10v4M10 12h4" stroke="#15324A" strokeWidth="1.5" />
+            <rect x="6" y="6" width="12" height="12" rx="2" stroke="#0f3d22" strokeWidth="2" fill="none" />
+            <rect x="22" y="6" width="12" height="12" rx="2" stroke="#0f3d22" strokeWidth="2" fill="none" />
+            <rect x="6" y="22" width="12" height="12" rx="2" stroke="#0f3d22" strokeWidth="2" fill="none" />
+            <rect x="22" y="22" width="12" height="12" rx="2" stroke="#0f3d22" strokeWidth="2" fill="none" />
+            <path d="M12 10v4M10 12h4" stroke="#0f3d22" strokeWidth="1.5" />
           </svg>
           <h2 style={{ margin: 0 }}>Product Classification</h2>
         </div>
@@ -85,8 +85,8 @@ export default function RegulatoryFramework() {
       <section className="content-section" data-reveal style={rd(240)}>
         <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
-            <path d="M20 4l14 7v10c0 8-6 14-14 17C12 35 6 29 6 21V11l14-7z" stroke="#15324A" strokeWidth="2" fill="none" />
-            <path d="M14 20l4 4 8-8" stroke="#15324A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M20 4l14 7v10c0 8-6 14-14 17C12 35 6 29 6 21V11l14-7z" stroke="#0f3d22" strokeWidth="2" fill="none" />
+            <path d="M14 20l4 4 8-8" stroke="#0f3d22" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
           <h2 style={{ margin: 0 }}>Compliance Monitoring</h2>
         </div>

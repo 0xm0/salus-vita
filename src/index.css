@@ -2,43 +2,43 @@
 
 @theme {
   --color-background: #ffffff;
-  --color-foreground: #15324A;
-  --color-muted-foreground: #4a6275;
-  --color-accent: #E9F0F2;
-  --color-accent-foreground: #15324A;
-  --color-border: rgba(21, 50, 74, 0.12);
-  --color-primary: #176E79;
+  --color-foreground: #0f3d22;
+  --color-muted-foreground: #5a7a68;
+  --color-accent: #f0f5f2;
+  --color-accent-foreground: #0f3d22;
+  --color-border: rgba(15, 61, 34, 0.12);
+  --color-primary: #2d8a56;
 }
 
 /* ============================================================
    Salus Vita - Pharmaceutical Supply Company
-   Brand palette: navy #15324A, teal #176E79, pale blue #E9F0F2, off-white #F6F8F9
+   Brand palette: dark green #0f3d22, mid green #2d8a56, light green #f0f5f2, off-white #fafcfb
    Based on the Ascend template with pharma-appropriate adaptations.
 ============================================================ */
 
 :root {
-  --bg: #F6F8F9;
-  --bg-2: #E9F0F2;
-  --ink: #15324A;
+  --bg: #fafcfb;
+  --bg-2: #f0f5f2;
+  --ink: #0f3d22;
   --ink-light: #fff;
-  --muted: #4a6275;
-  --muted-2: #5a7a8a;
-  --line: rgba(21, 50, 74, 0.10);
-  --line-strong: rgba(21, 50, 74, 0.18);
-  --accent: #176E79;
-  --accent-2: #1a8a97;
+  --muted: #5a7a68;
+  --muted-2: #5a7a68;
+  --line: rgba(15, 61, 34, 0.10);
+  --line-strong: rgba(15, 61, 34, 0.18);
+  --accent: #2d8a56;
+  --accent-2: #36a066;
   --accent-ink: #ffffff;
-  --navy: #15324A;
-  --teal: #176E79;
-  --pale-blue: #E9F0F2;
-  --off-white: #F6F8F9;
+  --navy: #0f3d22;
+  --teal: #2d8a56;
+  --pale-blue: #f0f5f2;
+  --off-white: #fafcfb;
   --glass: rgba(255, 255, 255, 0.75);
   --glass-2: rgba(255, 255, 255, 0.88);
   --radius: 12px;
   --radius-lg: 20px;
   --maxw: 1200px;
-  --shadow: 0 8px 32px -8px rgba(21, 50, 74, 0.12);
-  --shadow-lg: 0 20px 60px -20px rgba(21, 50, 74, 0.18);
+  --shadow: 0 8px 32px -8px rgba(15, 61, 34, 0.12);
+  --shadow-lg: 0 20px 60px -20px rgba(15, 61, 34, 0.18);
   --font: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
 }
 
@@ -139,11 +139,11 @@ html.lenis, html.lenis body { height: auto; }
 .btn-primary {
   color: var(--accent-ink);
   background: var(--teal);
-  box-shadow: 0 4px 14px -4px rgba(23, 110, 121, 0.4);
+  box-shadow: 0 4px 14px -4px rgba(45, 138, 86, 0.4);
 }
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px -4px rgba(23, 110, 121, 0.5);
+  box-shadow: 0 8px 24px -4px rgba(45, 138, 86, 0.5);
   background: var(--accent-2);
 }
 .btn-outline {
@@ -187,8 +187,8 @@ html.lenis, html.lenis body { height: auto; }
   height: 48px;
   border-radius: 10px;
   color: var(--teal);
-  background: rgba(23, 110, 121, 0.08);
-  border: 1px solid rgba(23, 110, 121, 0.15);
+  background: rgba(45, 138, 86, 0.08);
+  border: 1px solid rgba(45, 138, 86, 0.15);
   margin-bottom: 18px;
 }
 .card-icon svg { width: 22px; height: 22px; }
@@ -232,7 +232,7 @@ html.lenis, html.lenis body { height: auto; }
 
 /* ---------- page hero ---------- */
 .page-hero {
-  background: linear-gradient(135deg, var(--navy) 0%, #1e4a66 50%, var(--teal) 100%);
+  background: linear-gradient(135deg, var(--navy) 0%, #1a5c38 50%, var(--teal) 100%);
   color: #fff;
   padding: clamp(100px, 14vw, 160px) 24px clamp(60px, 8vw, 100px);
 }
@@ -488,7 +488,7 @@ html.lenis, html.lenis body { height: auto; }
   inset: 0;
   width: 100%;
   height: 100%;
-  background: rgba(23, 110, 121, 0.08);
+  background: rgba(45, 138, 86, 0.08);
   border-radius: 99px;
   z-index: -1;
 }
@@ -903,7 +903,7 @@ html.lenis, html.lenis body { height: auto; }
   text-align: center;
   padding: 0 24px;
   color: #fff;
-  background: linear-gradient(135deg, #15324A 0%, #1e4a66 50%, #176E79 100%);
+  background: linear-gradient(135deg, #0f3d22 0%, #1a5c38 50%, #2d8a56 100%);
   overflow: hidden;
 }
 .home-hero h1 {
@@ -953,7 +953,7 @@ html.lenis, html.lenis body { height: auto; }
 .home-section {
   position: relative;
   z-index: 1;
-  background: #F6F8F9;
+  background: #fafcfb;
   border-top: 1px solid var(--line);
   color: var(--ink);
 }
@@ -961,7 +961,7 @@ html.lenis, html.lenis body { height: auto; }
   background: #ffffff;
 }
 .home-section--pale {
-  background: #E9F0F2;
+  background: #f0f5f2;
 }
 
 .home-section .section-head h2,
@@ -1017,7 +1017,7 @@ html.lenis, html.lenis body { height: auto; }
   inset: -1px;
   border-radius: inherit;
   padding: 1px;
-  background: linear-gradient(160deg, rgba(23, 110, 121, 0.25), transparent 40%);
+  background: linear-gradient(160deg, rgba(45, 138, 86, 0.25), transparent 40%);
   -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
@@ -1037,7 +1037,7 @@ html.lenis, html.lenis body { height: auto; }
 .pill-dot {
   width: 7px; height: 7px; border-radius: 50%;
   background: var(--teal);
-  box-shadow: 0 0 0 4px rgba(23, 110, 121, 0.15);
+  box-shadow: 0 0 0 4px rgba(45, 138, 86, 0.15);
 }
 .dash-bars {
   display: flex;
@@ -1054,7 +1054,7 @@ html.lenis, html.lenis body { height: auto; }
   flex: 1;
   height: var(--h);
   border-radius: 6px 6px 3px 3px;
-  background: linear-gradient(180deg, var(--teal), rgba(23, 110, 121, 0.3));
+  background: linear-gradient(180deg, var(--teal), rgba(45, 138, 86, 0.3));
   transform-origin: bottom;
   animation: grow 1s var(--d) cubic-bezier(.2,.8,.2,1) both;
 }
@@ -1084,7 +1084,7 @@ html.lenis, html.lenis body { height: auto; }
 }
 @keyframes fill { from { width: 0; } to { width: var(--w); } }
 
-/* CTA card in home sections uses standard .cta-card styling (navy/teal gradient) */
+/* CTA card in home sections uses standard .cta-card styling (dark green/mid green gradient) */
 .home-section .cta-card {
   max-width: 760px;
   margin: 0 auto;

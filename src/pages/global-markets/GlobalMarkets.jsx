@@ -10,12 +10,12 @@ const REGIONS = [
     to: "/global-markets/australia-new-zealand",
     icon: (
       <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <circle cx="20" cy="20" r="18" stroke="#176E79" strokeWidth="1.5" fill="none" />
-        <path d="M14 22c1-2 3-3 5-2s3 2 5 1 3-3 4-2" stroke="#176E79" strokeWidth="1.5" strokeLinecap="round" />
-        <circle cx="18" cy="24" r="1.5" fill="#176E79" />
-        <circle cx="24" cy="20" r="1" fill="#176E79" />
-        <path d="M2 20h36M20 2v36" stroke="#176E79" strokeWidth="0.5" opacity="0.3" />
-        <ellipse cx="20" cy="20" rx="10" ry="18" stroke="#176E79" strokeWidth="0.5" opacity="0.3" />
+        <circle cx="20" cy="20" r="18" stroke="#2d8a56" strokeWidth="1.5" fill="none" />
+        <path d="M14 22c1-2 3-3 5-2s3 2 5 1 3-3 4-2" stroke="#2d8a56" strokeWidth="1.5" strokeLinecap="round" />
+        <circle cx="18" cy="24" r="1.5" fill="#2d8a56" />
+        <circle cx="24" cy="20" r="1" fill="#2d8a56" />
+        <path d="M2 20h36M20 2v36" stroke="#2d8a56" strokeWidth="0.5" opacity="0.3" />
+        <ellipse cx="20" cy="20" rx="10" ry="18" stroke="#2d8a56" strokeWidth="0.5" opacity="0.3" />
       </svg>
     ),
   },
@@ -25,12 +25,12 @@ const REGIONS = [
     to: "/global-markets/asia-pacific",
     icon: (
       <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <circle cx="20" cy="20" r="18" stroke="#176E79" strokeWidth="1.5" fill="none" />
-        <path d="M22 10c-1 2-1 4 1 5s4 0 5 2-1 4-3 5" stroke="#176E79" strokeWidth="1.5" strokeLinecap="round" />
-        <path d="M16 18c1 1 2 3 1 5s-2 3-1 4" stroke="#176E79" strokeWidth="1.5" strokeLinecap="round" />
-        <circle cx="26" cy="14" r="1" fill="#176E79" />
-        <path d="M2 20h36M20 2v36" stroke="#176E79" strokeWidth="0.5" opacity="0.3" />
-        <ellipse cx="20" cy="20" rx="10" ry="18" stroke="#176E79" strokeWidth="0.5" opacity="0.3" />
+        <circle cx="20" cy="20" r="18" stroke="#2d8a56" strokeWidth="1.5" fill="none" />
+        <path d="M22 10c-1 2-1 4 1 5s4 0 5 2-1 4-3 5" stroke="#2d8a56" strokeWidth="1.5" strokeLinecap="round" />
+        <path d="M16 18c1 1 2 3 1 5s-2 3-1 4" stroke="#2d8a56" strokeWidth="1.5" strokeLinecap="round" />
+        <circle cx="26" cy="14" r="1" fill="#2d8a56" />
+        <path d="M2 20h36M20 2v36" stroke="#2d8a56" strokeWidth="0.5" opacity="0.3" />
+        <ellipse cx="20" cy="20" rx="10" ry="18" stroke="#2d8a56" strokeWidth="0.5" opacity="0.3" />
       </svg>
     ),
   },
@@ -40,12 +40,12 @@ const REGIONS = [
     to: "/global-markets/europe",
     icon: (
       <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <circle cx="20" cy="20" r="18" stroke="#176E79" strokeWidth="1.5" fill="none" />
-        <path d="M16 10c0 2 1 4 3 5s2 3 1 5-3 2-3 4" stroke="#176E79" strokeWidth="1.5" strokeLinecap="round" />
-        <path d="M22 12c1 1 1 3 0 4" stroke="#176E79" strokeWidth="1.5" strokeLinecap="round" />
-        <circle cx="19" cy="16" r="1" fill="#176E79" />
-        <path d="M2 20h36M20 2v36" stroke="#176E79" strokeWidth="0.5" opacity="0.3" />
-        <ellipse cx="20" cy="20" rx="10" ry="18" stroke="#176E79" strokeWidth="0.5" opacity="0.3" />
+        <circle cx="20" cy="20" r="18" stroke="#2d8a56" strokeWidth="1.5" fill="none" />
+        <path d="M16 10c0 2 1 4 3 5s2 3 1 5-3 2-3 4" stroke="#2d8a56" strokeWidth="1.5" strokeLinecap="round" />
+        <path d="M22 12c1 1 1 3 0 4" stroke="#2d8a56" strokeWidth="1.5" strokeLinecap="round" />
+        <circle cx="19" cy="16" r="1" fill="#2d8a56" />
+        <path d="M2 20h36M20 2v36" stroke="#2d8a56" strokeWidth="0.5" opacity="0.3" />
+        <ellipse cx="20" cy="20" rx="10" ry="18" stroke="#2d8a56" strokeWidth="0.5" opacity="0.3" />
       </svg>
     ),
   },
@@ -55,12 +55,12 @@ const REGIONS = [
     to: "/global-markets/middle-east-africa",
     icon: (
       <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <circle cx="20" cy="20" r="18" stroke="#176E79" strokeWidth="1.5" fill="none" />
-        <path d="M17 12c1 3 0 6-1 8s0 5 2 7" stroke="#176E79" strokeWidth="1.5" strokeLinecap="round" />
-        <path d="M22 14c0 2 1 3 2 4" stroke="#176E79" strokeWidth="1.5" strokeLinecap="round" />
-        <circle cx="20" cy="18" r="1" fill="#176E79" />
-        <path d="M2 20h36M20 2v36" stroke="#176E79" strokeWidth="0.5" opacity="0.3" />
-        <ellipse cx="20" cy="20" rx="10" ry="18" stroke="#176E79" strokeWidth="0.5" opacity="0.3" />
+        <circle cx="20" cy="20" r="18" stroke="#2d8a56" strokeWidth="1.5" fill="none" />
+        <path d="M17 12c1 3 0 6-1 8s0 5 2 7" stroke="#2d8a56" strokeWidth="1.5" strokeLinecap="round" />
+        <path d="M22 14c0 2 1 3 2 4" stroke="#2d8a56" strokeWidth="1.5" strokeLinecap="round" />
+        <circle cx="20" cy="18" r="1" fill="#2d8a56" />
+        <path d="M2 20h36M20 2v36" stroke="#2d8a56" strokeWidth="0.5" opacity="0.3" />
+        <ellipse cx="20" cy="20" rx="10" ry="18" stroke="#2d8a56" strokeWidth="0.5" opacity="0.3" />
       </svg>
     ),
   },
@@ -178,8 +178,8 @@ export default function GlobalMarkets() {
                 display: "inline-block",
                 fontSize: 13,
                 fontWeight: 700,
-                color: "#176E79",
-                backgroundColor: "#E9F0F2",
+                color: "#2d8a56",
+                backgroundColor: "#f0f5f2",
                 borderRadius: 4,
                 padding: "3px 10px",
                 marginBottom: 16,

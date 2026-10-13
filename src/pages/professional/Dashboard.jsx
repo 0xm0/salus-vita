@@ -19,8 +19,8 @@ export default function Dashboard() {
           data-reveal
           style={{
             padding: "32px 28px",
-            background: "rgba(23, 110, 121, 0.06)",
-            border: "1px solid rgba(23, 110, 121, 0.15)",
+            background: "rgba(45, 138, 86, 0.06)",
+            border: "1px solid rgba(45, 138, 86, 0.15)",
             borderRadius: 12,
             textAlign: "center",
           }}
@@ -32,8 +32,8 @@ export default function Dashboard() {
               borderRadius: 999,
               fontSize: 13,
               fontWeight: 600,
-              background: "rgba(23, 110, 121, 0.12)",
-              color: "#176E79",
+              background: "rgba(45, 138, 86, 0.12)",
+              color: "#2d8a56",
               letterSpacing: "0.04em",
               marginBottom: 16,
             }}

@@ -19,10 +19,10 @@ export default function SupplyChainIntegrity() {
       <section className="content-section" data-reveal>
         <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
-            <path d="M8 12h24M8 20h24M8 28h24" stroke="#15324A" strokeWidth="2" strokeLinecap="round" />
-            <circle cx="14" cy="12" r="2" stroke="#15324A" strokeWidth="1.5" fill="none" />
-            <circle cx="26" cy="20" r="2" stroke="#15324A" strokeWidth="1.5" fill="none" />
-            <circle cx="18" cy="28" r="2" stroke="#15324A" strokeWidth="1.5" fill="none" />
+            <path d="M8 12h24M8 20h24M8 28h24" stroke="#0f3d22" strokeWidth="2" strokeLinecap="round" />
+            <circle cx="14" cy="12" r="2" stroke="#0f3d22" strokeWidth="1.5" fill="none" />
+            <circle cx="26" cy="20" r="2" stroke="#0f3d22" strokeWidth="1.5" fill="none" />
+            <circle cx="18" cy="28" r="2" stroke="#0f3d22" strokeWidth="1.5" fill="none" />
           </svg>
           <h2 style={{ margin: 0 }}>Traceability Systems</h2>
         </div>
@@ -55,9 +55,9 @@ export default function SupplyChainIntegrity() {
       <section className="content-section" data-reveal style={rd(80)}>
         <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
-            <rect x="6" y="8" width="28" height="24" rx="3" stroke="#15324A" strokeWidth="2" fill="none" />
-            <path d="M16 20l3 3 6-6" stroke="#15324A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-            <path d="M6 14h28" stroke="#15324A" strokeWidth="1.5" />
+            <rect x="6" y="8" width="28" height="24" rx="3" stroke="#0f3d22" strokeWidth="2" fill="none" />
+            <path d="M16 20l3 3 6-6" stroke="#0f3d22" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M6 14h28" stroke="#0f3d22" strokeWidth="1.5" />
           </svg>
           <h2 style={{ margin: 0 }}>Counterparty Verification</h2>
         </div>
@@ -91,9 +91,9 @@ export default function SupplyChainIntegrity() {
       <section className="content-section" data-reveal style={rd(160)}>
         <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
-            <path d="M20 6l14 24H6L20 6z" stroke="#15324A" strokeWidth="2" strokeLinejoin="round" fill="none" />
-            <path d="M20 16v6" stroke="#15324A" strokeWidth="2" strokeLinecap="round" />
-            <circle cx="20" cy="26" r="1.2" fill="#15324A" />
+            <path d="M20 6l14 24H6L20 6z" stroke="#0f3d22" strokeWidth="2" strokeLinejoin="round" fill="none" />
+            <path d="M20 16v6" stroke="#0f3d22" strokeWidth="2" strokeLinecap="round" />
+            <circle cx="20" cy="26" r="1.2" fill="#0f3d22" />
           </svg>
           <h2 style={{ margin: 0 }}>Recall Procedures</h2>
         </div>
@@ -127,10 +127,10 @@ export default function SupplyChainIntegrity() {
       <section className="content-section" data-reveal style={rd(240)}>
         <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
-            <rect x="8" y="6" width="24" height="28" rx="3" stroke="#15324A" strokeWidth="2" fill="none" />
-            <path d="M14 14h12M14 20h12M14 26h8" stroke="#15324A" strokeWidth="1.5" strokeLinecap="round" />
-            <circle cx="30" cy="28" r="5" stroke="#15324A" strokeWidth="1.5" fill="none" />
-            <path d="M30 25v4M30 31v0.5" stroke="#15324A" strokeWidth="1.5" strokeLinecap="round" />
+            <rect x="8" y="6" width="24" height="28" rx="3" stroke="#0f3d22" strokeWidth="2" fill="none" />
+            <path d="M14 14h12M14 20h12M14 26h8" stroke="#0f3d22" strokeWidth="1.5" strokeLinecap="round" />
+            <circle cx="30" cy="28" r="5" stroke="#0f3d22" strokeWidth="1.5" fill="none" />
+            <path d="M30 25v4M30 31v0.5" stroke="#0f3d22" strokeWidth="1.5" strokeLinecap="round" />
           </svg>
           <h2 style={{ margin: 0 }}>Adverse Event Handling</h2>
         </div>

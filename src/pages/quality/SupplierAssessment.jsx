@@ -49,8 +49,8 @@ export default function SupplierAssessment() {
       <section className="content-section" data-reveal>
         <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
-            <rect x="6" y="6" width="28" height="28" rx="4" stroke="#15324A" strokeWidth="2" />
-            <path d="M14 20l4 4 8-8" stroke="#15324A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            <rect x="6" y="6" width="28" height="28" rx="4" stroke="#0f3d22" strokeWidth="2" />
+            <path d="M14 20l4 4 8-8" stroke="#0f3d22" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
           <h2 style={{ margin: 0 }}>Evaluation Criteria</h2>
         </div>
@@ -74,9 +74,9 @@ export default function SupplierAssessment() {
       <section className="content-section" data-reveal style={rd(80)}>
         <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
-            <path d="M12 6h12l8 8v20a2 2 0 01-2 2H12a2 2 0 01-2-2V8a2 2 0 012-2z" stroke="#15324A" strokeWidth="2" strokeLinejoin="round" />
-            <path d="M24 6v8h8" stroke="#15324A" strokeWidth="2" strokeLinejoin="round" />
-            <path d="M16 22h8M16 27h5" stroke="#15324A" strokeWidth="2" strokeLinecap="round" />
+            <path d="M12 6h12l8 8v20a2 2 0 01-2 2H12a2 2 0 01-2-2V8a2 2 0 012-2z" stroke="#0f3d22" strokeWidth="2" strokeLinejoin="round" />
+            <path d="M24 6v8h8" stroke="#0f3d22" strokeWidth="2" strokeLinejoin="round" />
+            <path d="M16 22h8M16 27h5" stroke="#0f3d22" strokeWidth="2" strokeLinecap="round" />
           </svg>
           <h2 style={{ margin: 0 }}>Manufacturing Documentation</h2>
         </div>
@@ -90,8 +90,8 @@ export default function SupplierAssessment() {
           {DOCUMENTS.map((doc, i) => (
             <div key={doc} className="card" data-reveal style={{ ...rd(i * 50), display: "flex", alignItems: "center", gap: 12, padding: "14px 18px" }}>
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style={{ flexShrink: 0 }}>
-                <path d="M6 10h8M6 14h5" stroke="#176E79" strokeWidth="1.5" strokeLinecap="round" />
-                <rect x="3" y="2" width="14" height="16" rx="2" stroke="#176E79" strokeWidth="1.5" />
+                <path d="M6 10h8M6 14h5" stroke="#2d8a56" strokeWidth="1.5" strokeLinecap="round" />
+                <rect x="3" y="2" width="14" height="16" rx="2" stroke="#2d8a56" strokeWidth="1.5" />
               </svg>
               <span style={{ fontSize: "0.92rem", color: "var(--navy)" }}>{doc}</span>
             </div>
@@ -106,8 +106,8 @@ export default function SupplierAssessment() {
       <section className="content-section" data-reveal style={rd(160)}>
         <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
-            <circle cx="20" cy="20" r="14" stroke="#15324A" strokeWidth="2" />
-            <path d="M20 12v8l5 3" stroke="#15324A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            <circle cx="20" cy="20" r="14" stroke="#0f3d22" strokeWidth="2" />
+            <path d="M20 12v8l5 3" stroke="#0f3d22" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
           <h2 style={{ margin: 0 }}>Ongoing Monitoring</h2>
         </div>
@@ -134,9 +134,9 @@ export default function SupplierAssessment() {
       <section className="content-section" data-reveal style={rd(240)}>
         <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginBottom: 16 }}>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
-            <path d="M20 6L34 32H6L20 6z" stroke="#15324A" strokeWidth="2" strokeLinejoin="round" />
-            <path d="M20 17v7" stroke="#15324A" strokeWidth="2" strokeLinecap="round" />
-            <circle cx="20" cy="28" r="1" fill="#15324A" />
+            <path d="M20 6L34 32H6L20 6z" stroke="#0f3d22" strokeWidth="2" strokeLinejoin="round" />
+            <path d="M20 17v7" stroke="#0f3d22" strokeWidth="2" strokeLinecap="round" />
+            <circle cx="20" cy="28" r="1" fill="#0f3d22" />
           </svg>
           <h2 style={{ margin: 0 }}>Risk Assessment</h2>
         </div>
@@ -148,7 +148,7 @@ export default function SupplierAssessment() {
         </p>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))", gap: 16, marginTop: 24 }}>
           {[
-            { tier: "Standard", colour: "#176E79", items: ["Annual performance review", "Routine documentation updates", "Standard re-qualification cycle"] },
+            { tier: "Standard", colour: "#2d8a56", items: ["Annual performance review", "Routine documentation updates", "Standard re-qualification cycle"] },
             { tier: "Elevated", colour: "#B8860B", items: ["Bi-annual performance review", "Enhanced documentation monitoring", "Accelerated re-qualification cycle", "Contingency source identification"] },
             { tier: "Critical", colour: "#A0522D", items: ["Quarterly performance review", "Active contingency source qualification", "Intensive regulatory monitoring", "Executive escalation pathway", "Supply continuity planning"] },
           ].map((t, i) => (

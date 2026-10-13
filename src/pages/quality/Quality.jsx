@@ -10,12 +10,12 @@ const PILLARS = [
     to: "/quality/supplier-assessment",
     icon: (
       <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="4" y="6" width="32" height="28" rx="3" stroke="#176E79" strokeWidth="2" fill="none" />
-        <path d="M12 18l4 4 8-8" stroke="#176E79" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-        <line x1="4" y1="14" x2="36" y2="14" stroke="#176E79" strokeWidth="2" />
-        <circle cx="10" cy="10" r="1.5" fill="#176E79" />
-        <circle cx="15" cy="10" r="1.5" fill="#176E79" />
-        <circle cx="20" cy="10" r="1.5" fill="#176E79" />
+        <rect x="4" y="6" width="32" height="28" rx="3" stroke="#2d8a56" strokeWidth="2" fill="none" />
+        <path d="M12 18l4 4 8-8" stroke="#2d8a56" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+        <line x1="4" y1="14" x2="36" y2="14" stroke="#2d8a56" strokeWidth="2" />
+        <circle cx="10" cy="10" r="1.5" fill="#2d8a56" />
+        <circle cx="15" cy="10" r="1.5" fill="#2d8a56" />
+        <circle cx="20" cy="10" r="1.5" fill="#2d8a56" />
       </svg>
     ),
   },
@@ -25,8 +25,8 @@ const PILLARS = [
     to: "/quality/regulatory-framework",
     icon: (
       <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M20 4L6 10v12c0 8 6 13 14 16 8-3 14-8 14-16V10L20 4z" stroke="#176E79" strokeWidth="2" fill="none" />
-        <path d="M15 20l3 3 7-7" stroke="#176E79" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M20 4L6 10v12c0 8 6 13 14 16 8-3 14-8 14-16V10L20 4z" stroke="#2d8a56" strokeWidth="2" fill="none" />
+        <path d="M15 20l3 3 7-7" stroke="#2d8a56" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
     ),
   },
@@ -36,14 +36,14 @@ const PILLARS = [
     to: "/quality/supply-chain-integrity",
     icon: (
       <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="8" cy="20" r="4" stroke="#176E79" strokeWidth="2" fill="none" />
-        <circle cx="20" cy="10" r="4" stroke="#176E79" strokeWidth="2" fill="none" />
-        <circle cx="20" cy="30" r="4" stroke="#176E79" strokeWidth="2" fill="none" />
-        <circle cx="32" cy="20" r="4" stroke="#176E79" strokeWidth="2" fill="none" />
-        <line x1="12" y1="18" x2="16" y2="12" stroke="#176E79" strokeWidth="1.5" />
-        <line x1="12" y1="22" x2="16" y2="28" stroke="#176E79" strokeWidth="1.5" />
-        <line x1="24" y1="12" x2="28" y2="18" stroke="#176E79" strokeWidth="1.5" />
-        <line x1="24" y1="28" x2="28" y2="22" stroke="#176E79" strokeWidth="1.5" />
+        <circle cx="8" cy="20" r="4" stroke="#2d8a56" strokeWidth="2" fill="none" />
+        <circle cx="20" cy="10" r="4" stroke="#2d8a56" strokeWidth="2" fill="none" />
+        <circle cx="20" cy="30" r="4" stroke="#2d8a56" strokeWidth="2" fill="none" />
+        <circle cx="32" cy="20" r="4" stroke="#2d8a56" strokeWidth="2" fill="none" />
+        <line x1="12" y1="18" x2="16" y2="12" stroke="#2d8a56" strokeWidth="1.5" />
+        <line x1="12" y1="22" x2="16" y2="28" stroke="#2d8a56" strokeWidth="1.5" />
+        <line x1="24" y1="12" x2="28" y2="18" stroke="#2d8a56" strokeWidth="1.5" />
+        <line x1="24" y1="28" x2="28" y2="22" stroke="#2d8a56" strokeWidth="1.5" />
       </svg>
     ),
   },
@@ -53,11 +53,11 @@ const PILLARS = [
     to: "/quality/documentation-standards",
     icon: (
       <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="8" y="4" width="24" height="32" rx="2" stroke="#176E79" strokeWidth="2" fill="none" />
-        <line x1="13" y1="12" x2="27" y2="12" stroke="#176E79" strokeWidth="1.5" strokeLinecap="round" />
-        <line x1="13" y1="18" x2="27" y2="18" stroke="#176E79" strokeWidth="1.5" strokeLinecap="round" />
-        <line x1="13" y1="24" x2="22" y2="24" stroke="#176E79" strokeWidth="1.5" strokeLinecap="round" />
-        <path d="M24 28l2 2 4-4" stroke="#176E79" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        <rect x="8" y="4" width="24" height="32" rx="2" stroke="#2d8a56" strokeWidth="2" fill="none" />
+        <line x1="13" y1="12" x2="27" y2="12" stroke="#2d8a56" strokeWidth="1.5" strokeLinecap="round" />
+        <line x1="13" y1="18" x2="27" y2="18" stroke="#2d8a56" strokeWidth="1.5" strokeLinecap="round" />
+        <line x1="13" y1="24" x2="22" y2="24" stroke="#2d8a56" strokeWidth="1.5" strokeLinecap="round" />
+        <path d="M24 28l2 2 4-4" stroke="#2d8a56" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
     ),
   },
@@ -136,7 +136,7 @@ export default function Quality() {
               <div style={{ marginBottom: 16 }}>{p.icon}</div>
               <h3>{p.title}</h3>
               <p>{p.desc}</p>
-              <span style={{ color: "var(--teal, #176E79)", fontWeight: 600, fontSize: 14, marginTop: 8, display: "inline-block" }}>
+              <span style={{ color: "var(--teal, #2d8a56)", fontWeight: 600, fontSize: 14, marginTop: 8, display: "inline-block" }}>
                 Learn more &rarr;
               </span>
             </Link>
@@ -144,7 +144,7 @@ export default function Quality() {
         </div>
       </section>
 
-      <section className="content-section" data-reveal style={{ background: "var(--pale-blue, #E9F0F2)", ...rd(160) }}>
+      <section className="content-section" data-reveal style={{ background: "var(--pale-blue, #f0f5f2)", ...rd(160) }}>
         <h2>Clearly Defined Responsibilities</h2>
         <p style={{ maxWidth: 760 }}>
           Salus Vita does not claim certifications, licences, or manufacturing credentials that belong
@@ -156,13 +156,13 @@ export default function Quality() {
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: 24 }}>
           {RESPONSIBILITIES.map((col, ci) => (
             <div key={ci} className="card" data-reveal style={rd(ci * 100)}>
-              <h3 style={{ color: "var(--navy, #15324A)" }}>{col.heading}</h3>
+              <h3 style={{ color: "var(--navy, #0f3d22)" }}>{col.heading}</h3>
               <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
                 {col.items.map((item, ii) => (
                   <li key={ii} style={{ display: "flex", alignItems: "flex-start", gap: 10, marginBottom: 8 }}>
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style={{ flexShrink: 0, marginTop: 2 }}>
-                      <circle cx="10" cy="10" r="9" stroke="#176E79" strokeWidth="1.5" fill="none" />
-                      <path d="M6 10l3 3 5-5" stroke="#176E79" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                      <circle cx="10" cy="10" r="9" stroke="#2d8a56" strokeWidth="1.5" fill="none" />
+                      <path d="M6 10l3 3 5-5" stroke="#2d8a56" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                     <span>{item}</span>
                   </li>
@@ -214,7 +214,7 @@ export default function Quality() {
             { standard: "GDP Guidelines", context: "Distribution and logistics oversight" },
           ].map((s, i) => (
             <div key={s.standard} className="card" data-reveal style={rd(i * 60)}>
-              <p style={{ fontWeight: 600, color: "var(--navy, #15324A)", marginBottom: 4 }}>{s.standard}</p>
+              <p style={{ fontWeight: 600, color: "var(--navy, #0f3d22)", marginBottom: 4 }}>{s.standard}</p>
               <p style={{ fontSize: 14, color: "#555", margin: 0 }}>{s.context}</p>
             </div>
           ))}
