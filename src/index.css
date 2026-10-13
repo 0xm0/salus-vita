@@ -630,7 +630,7 @@ html.lenis, html.lenis body { height: auto; }
   right: 0;
   bottom: 0;
   background: #fff;
-  z-index: 99;
+  z-index: 200;
   overflow-y: auto;
   display: flex;
   flex-direction: column;

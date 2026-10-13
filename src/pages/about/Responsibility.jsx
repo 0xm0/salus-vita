@@ -42,8 +42,8 @@ const ESG_PILLARS = [
     items: [
       "Maintaining transparent commercial practices across all manufacturer and buyer relationships",
       "Operating under a formal Code of Conduct that applies to all personnel and partners",
-      "Regular compliance training and ongoing monitoring of governance effectiveness",
-      "Board-level oversight of ethical standards, risk management, and corporate responsibility",
+      "Building a culture of compliance awareness and ongoing review of governance practices",
+      "Leadership-level oversight of ethical standards, risk management, and corporate responsibility",
     ],
   },
 ]
@@ -101,42 +101,40 @@ export default function Responsibility() {
         </div>
       </section>
 
-      {/* Modern Slavery Statement */}
+      {/* Ethical Supply Chain Practices */}
       <section className="content-section" data-reveal style={rd(100)}>
-        <h2>Modern Slavery Statement</h2>
+        <h2>Ethical Supply Chain Practices</h2>
         <div className="two-col">
           <div>
             <p>
               Salus Vita is committed to preventing modern slavery, forced labour, human
               trafficking, and exploitative labour practices within its operations and
-              across its supply chain. This commitment is aligned with the requirements
-              of the Australian Modern Slavery Act 2018 and reflects our broader obligation
-              to ensure that the pharmaceutical products we help source and coordinate are
-              manufactured under lawful, safe, and ethical conditions.
+              across its supply chain. We are building our compliance framework with
+              reference to the Australian Modern Slavery Act 2018, and we are committed
+              to meeting modern slavery reporting obligations as the company grows.
             </p>
             <p>
               As a company that coordinates transactions between overseas pharmaceutical
               manufacturers and international buyers, we recognise that our supply chain
               carries inherent risks related to labour practices in manufacturing
-              jurisdictions. We take these risks seriously and address them through
-              structured due diligence, contractual requirements, and ongoing engagement
-              with our manufacturer partners.
+              jurisdictions. We take these risks seriously and are developing structured
+              due diligence processes, contractual requirements, and ongoing engagement
+              practices with our manufacturer partners.
             </p>
           </div>
           <div>
             <p>
-              Our due diligence processes include assessing manufacturer labour practices
-              as part of our supplier qualification framework, requiring adherence to our
-              Supplier Code of Conduct, and monitoring for indicators of forced or
-              exploitative labour. Where concerns arise, we engage directly with the
-              manufacturer and, where necessary, suspend the relationship pending
-              investigation.
+              Our approach includes assessing manufacturer labour practices as part of
+              our supplier qualification framework, requiring adherence to ethical
+              sourcing standards, and monitoring for indicators of forced or exploitative
+              labour. Where concerns arise, we engage directly with the manufacturer
+              and, where necessary, suspend the relationship pending investigation.
             </p>
             <p>
-              Salus Vita reports on its modern slavery due diligence in accordance with
-              Australian legislative requirements. All personnel receive training on
-              modern slavery risks relevant to international pharmaceutical supply chains,
-              including how to identify and report concerns through established channels.
+              As Salus Vita grows, we intend to formalise and expand these practices
+              in line with Australian legislative requirements. Personnel receive
+              guidance on modern slavery risks relevant to international pharmaceutical
+              supply chains, including how to identify and escalate concerns.
             </p>
           </div>
         </div>

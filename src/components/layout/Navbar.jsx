@@ -34,6 +34,7 @@ export default function Navbar() {
   }, [])
 
   return (
+    <>
     <nav className="sv-navbar" role="navigation" aria-label="Main navigation">
       <div className="sv-navbar-inner">
         {/* Brand */}
@@ -152,69 +153,70 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile menu overlay */}
-      <AnimatePresence>
-        {mobileOpen && (
-          <motion.div
-            className="sv-mobile-menu"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.25 }}
-            aria-hidden={!mobileOpen}
-          >
-            <div className="sv-mobile-menu-body">
-              {navigation.map((item) => (
-                <div key={item.id} className="sv-mobile-section">
-                  <button
-                    type="button"
-                    className={`sv-mobile-accordion-btn${mobileAccordion === item.label ? " open" : ""}`}
-                    onClick={() => toggleAccordion(item.label)}
-                  >
-                    {item.label}
-                    <ChevronDown
-                      size={14}
-                      className={`transition-transform duration-250 ${mobileAccordion === item.label ? "rotate-180" : ""}`}
-                    />
-                  </button>
-                  <div className={`sv-mobile-accordion-panel${mobileAccordion === item.label ? " open" : ""}`}>
-                    {item.subMenus && item.subMenus.map((sub) => (
-                      <div key={sub.title} className="sv-mobile-group">
-                        {item.subMenus.length > 1 && (
-                          <span className="sv-mobile-group-heading">{sub.title}</span>
-                        )}
-                        {sub.items.map((link) => (
-                          <Link
-                            key={link.path}
-                            to={link.path}
-                            className="sv-mobile-link"
-                            onClick={() => setMobileOpen(false)}
-                          >
-                            {link.label}
-                          </Link>
-                        ))}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <div className="sv-mobile-cta">
-              {utilityNav.map((item) => (
-                <Link
-                  key={item.path}
-                  to={item.path}
-                  className={item.isPrimary ? "btn btn-primary sv-mobile-cta-btn" : "btn btn-outline sv-mobile-cta-btn"}
-                  onClick={() => setMobileOpen(false)}
+    </nav>
+    {/* Mobile menu overlay - rendered outside nav to avoid stacking context from backdrop-filter */}
+    <AnimatePresence>
+      {mobileOpen && (
+        <motion.div
+          className="sv-mobile-menu"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.25 }}
+          aria-hidden={!mobileOpen}
+        >
+          <div className="sv-mobile-menu-body">
+            {navigation.map((item) => (
+              <div key={item.id} className="sv-mobile-section">
+                <button
+                  type="button"
+                  className={`sv-mobile-accordion-btn${mobileAccordion === item.label ? " open" : ""}`}
+                  onClick={() => toggleAccordion(item.label)}
                 >
                   {item.label}
-                </Link>
-              ))}
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </nav>
+                  <ChevronDown
+                    size={14}
+                    className={`transition-transform duration-250 ${mobileAccordion === item.label ? "rotate-180" : ""}`}
+                  />
+                </button>
+                <div className={`sv-mobile-accordion-panel${mobileAccordion === item.label ? " open" : ""}`}>
+                  {item.subMenus && item.subMenus.map((sub) => (
+                    <div key={sub.title} className="sv-mobile-group">
+                      {item.subMenus.length > 1 && (
+                        <span className="sv-mobile-group-heading">{sub.title}</span>
+                      )}
+                      {sub.items.map((link) => (
+                        <Link
+                          key={link.path}
+                          to={link.path}
+                          className="sv-mobile-link"
+                          onClick={() => setMobileOpen(false)}
+                        >
+                          {link.label}
+                        </Link>
+                      ))}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="sv-mobile-cta">
+            {utilityNav.map((item) => (
+              <Link
+                key={item.path}
+                to={item.path}
+                className={item.isPrimary ? "btn btn-primary sv-mobile-cta-btn" : "btn btn-outline sv-mobile-cta-btn"}
+                onClick={() => setMobileOpen(false)}
+              >
+                {item.label}
+              </Link>
+            ))}
+          </div>
+        </motion.div>
+      )}
+    </AnimatePresence>
+    </>
   )
 }

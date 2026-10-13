@@ -22,30 +22,22 @@ const WORKPLACE_VALUES = [
   },
 ]
 
-const OPENINGS = [
+const ROLE_CATEGORIES = [
   {
-    title: "Pharmaceutical Sourcing Coordinator",
-    location: "Melbourne, Australia",
-    type: "Full-time",
-    desc: "Coordinate sourcing engagements with international pharmaceutical manufacturers, managing supplier communication and procurement timelines.",
+    title: "Procurement and Sourcing",
+    desc: "Coordinating sourcing engagements with international pharmaceutical manufacturers, managing supplier relationships and procurement timelines.",
   },
   {
-    title: "Regulatory Documentation Specialist",
-    location: "Melbourne / Remote",
-    type: "Full-time",
-    desc: "Facilitate the collation, review, and coordination of technical documentation packages for cross-border pharmaceutical transactions.",
+    title: "Quality and Regulatory",
+    desc: "Supporting the collation, review, and coordination of technical documentation packages and regulatory requirements for cross-border pharmaceutical transactions.",
   },
   {
-    title: "Business Development Manager (Asia-Pacific)",
-    location: "Melbourne, Australia",
-    type: "Full-time",
-    desc: "Develop manufacturer and buyer relationships across Asia-Pacific markets, identifying sourcing and procurement opportunities.",
+    title: "Operations and Logistics",
+    desc: "Coordinating logistics activities through vetted partners, supporting product integrity and compliance across international shipments.",
   },
   {
-    title: "Supply Chain Coordinator",
-    location: "Melbourne, Australia",
-    type: "Full-time",
-    desc: "Coordinate logistics and freight activities through vetted partners, ensuring product integrity and compliance across international shipments.",
+    title: "Commercial Development",
+    desc: "Building manufacturer and buyer relationships across target markets, identifying sourcing and procurement opportunities.",
   },
 ]
 
@@ -57,7 +49,7 @@ export default function Careers() {
         title="Careers at Salus Vita"
         description="Pharmaceutical professionals coordinating quality-assured supply across international markets."
         breadcrumbs={[{ label: "About", path: "/about" }, { label: "Careers" }]}
-        primaryCTA={{ label: "View Openings", to: "#openings" }}
+        primaryCTA={{ label: "Get in Touch", to: "/contact" }}
         secondaryCTA={{ label: "About Us", to: "/about" }}
       />
 
@@ -88,9 +80,10 @@ export default function Careers() {
             </p>
             <p>
               Based in Melbourne with an international outlook, Salus Vita offers the
-              stability and structure of an established company combined with the agility
-              and direct impact of a specialist organisation. We invest in our people
-              because our business depends on the quality of their expertise and judgement.
+              focus and professionalism of a growing specialist team combined with the
+              agility and direct impact that comes from working in a lean organisation.
+              We invest in our people because our business depends on the quality of
+              their expertise and judgement.
             </p>
           </div>
         </div>
@@ -113,41 +106,26 @@ export default function Careers() {
         </div>
       </section>
 
-      {/* Current Openings */}
+      {/* Role Categories */}
       <section className="content-section" data-reveal style={rd(200)} id="openings">
-        <h2>Current Openings</h2>
-        <p>We are currently recruiting for the following positions:</p>
-        <div style={{ display: "flex", flexDirection: "column", gap: 16, marginTop: 24 }}>
-          {OPENINGS.map((job, i) => (
-            <div
-              key={job.title}
-              className="card"
-              data-reveal
-              style={{
-                ...rd(i * 70),
-                display: "flex",
-                justifyContent: "space-between",
-                alignItems: "center",
-                flexWrap: "wrap",
-                gap: 16,
-              }}
-            >
-              <div>
-                <h3>{job.title}</h3>
-                <p style={{ marginBottom: 0 }}>{job.desc}</p>
-              </div>
-              <div style={{ textAlign: "right", minWidth: 160 }}>
-                <p style={{ fontSize: 13, color: "var(--teal)", fontWeight: 600, marginBottom: 4 }}>{job.location}</p>
-                <p style={{ fontSize: 13, color: "var(--muted-2)", marginBottom: 0 }}>{job.type}</p>
-              </div>
+        <h2>Roles We Recruit For</h2>
+        <p>
+          We periodically recruit for roles across the following areas. If you have
+          relevant experience and are interested in joining our team, we welcome
+          expressions of interest at any time.
+        </p>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: 24, marginTop: 24 }}>
+          {ROLE_CATEGORIES.map((role, i) => (
+            <div key={role.title} className="card" data-reveal style={rd(i * 80)}>
+              <h3>{role.title}</h3>
+              <p>{role.desc}</p>
             </div>
           ))}
         </div>
         <p style={{ marginTop: 24, fontSize: 15, color: "var(--muted)" }}>
-          If you do not see a role that matches your background, we welcome expressions of
-          interest from experienced pharmaceutical professionals. Please{" "}
+          To register your interest or enquire about current opportunities, please{" "}
           <Link to="/contact" style={{ color: "var(--teal)", fontWeight: 600 }}>contact us</Link>{" "}
-          with your CV and a brief outline of your areas of expertise and interest.
+          with your CV and a brief outline of your areas of expertise.
         </p>
       </section>
 

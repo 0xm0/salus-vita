@@ -5,8 +5,9 @@ export const company = {
   legalName: "Salus Vita Pty Ltd",
   tagline: "Connecting Pharmaceutical Manufacturers with Markets Worldwide",
   description: "Australian-headquartered international pharmaceutical supply company specialising in the sourcing, procurement, and distribution of APIs and finished dosage forms.",
-  founded: "2009",
-  headquarters: "Melbourne, Australia",
+  founded: "2023",
+  abn: "92 668 370 518",
+  headquarters: "Australia",
 }
 
 export const brand = {

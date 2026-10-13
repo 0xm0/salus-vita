@@ -61,10 +61,10 @@ export default function Governance() {
               between overseas manufacturers and buyers across multiple jurisdictions.
             </p>
             <p>
-              The Board of Directors sets the strategic direction of the company and maintains
-              oversight of management performance, risk management, and compliance. Day-to-day
-              operations are conducted by the executive team within a clearly defined framework
-              of delegated authority and accountability.
+              The company's directors set the strategic direction and maintain oversight of
+              operational performance, risk management, and compliance. Day-to-day operations
+              are conducted within a clear framework of accountability appropriate to the
+              company's size and scope.
             </p>
           </div>
           <div>
@@ -77,9 +77,9 @@ export default function Governance() {
               documentation that accompanies every transaction.
             </p>
             <p>
-              Key governance documents - including the Board Charter, Code of Conduct,
-              Whistleblower Policy, and Anti-Bribery Policy - are reviewed regularly to
-              ensure they reflect current regulatory expectations and industry best practice.
+              Key governance documents - including the Code of Conduct, Whistleblower
+              Policy, and Anti-Bribery Policy - are reviewed regularly to ensure they
+              reflect current regulatory expectations and industry best practice.
             </p>
           </div>
         </div>
@@ -106,11 +106,11 @@ export default function Governance() {
       <section className="content-section" data-reveal style={rd(200)}>
         <h2>Compliance Culture</h2>
         <p>
-          Compliance at Salus Vita is not a function confined to a single team. It is embedded
+          Compliance at Salus Vita is not treated as a separate function. It is embedded
           in the way every engagement is structured, every manufacturer is assessed, and every
-          transaction is documented. All personnel receive regular training on their compliance
-          obligations, and the executive team reports to the Board on compliance performance
-          at regular intervals.
+          transaction is documented. All personnel are expected to understand their compliance
+          obligations, and compliance performance is reviewed regularly by the company's
+          directors.
         </p>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 24, marginTop: 24 }}>
           {COMPLIANCE_AREAS.map((c, i) => (

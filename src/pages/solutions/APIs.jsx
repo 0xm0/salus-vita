@@ -79,7 +79,7 @@ export default function APIs() {
       <PageHero
         eyebrow="PHARMACEUTICAL SOLUTIONS"
         title="Active Pharmaceutical Ingredients"
-        description="Quality-assured API supply from assessed manufacturers worldwide for manufacturing, research, and institutional buyers."
+        description="Compliant API supply from assessed manufacturers worldwide for manufacturing, research, and institutional buyers."
         breadcrumbs={[{ label: "Solutions", path: "/solutions" }, { label: "Active Pharmaceutical Ingredients" }]}
         primaryCTA={{ label: "Request API Sourcing", to: "/contact/sourcing-enquiry" }}
         secondaryCTA={{ label: "View All Solutions", to: "/solutions" }}
@@ -297,8 +297,8 @@ export default function APIs() {
         <div className="cta-card">
           <h2>Discuss Your API Requirements</h2>
           <p>
-            Whether you are seeking a single-source API for a new registration or building a diversified supply
-            strategy across multiple markets, our sourcing team is ready to assist.
+            From single-source API procurement to multi-market supply diversification, our sourcing
+            team can help structure the right approach for your requirements.
           </p>
           <div className="hero-actions" style={{ justifyContent: "center" }}>
             <Link to="/contact/sourcing-enquiry" className="btn btn-primary">Submit Enquiry</Link>

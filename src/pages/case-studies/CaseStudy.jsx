@@ -9,7 +9,7 @@ const CASE_STUDIES = {
     category: "API Sourcing",
     challenge: [
       "A mid-size pharmaceutical manufacturer operating across three Asia-Pacific markets was experiencing significant supply disruptions with its existing active pharmaceutical ingredient (API) suppliers. Lead times had become unpredictable, quality documentation was inconsistent across suppliers, and the manufacturer's production planning was suffering as a result.",
-      "The manufacturer required a stable, quality-assured supply of four high-volume APIs used in its cardiovascular and metabolic product lines. Each target market had distinct regulatory requirements for API documentation, including specific formats for Drug Master Files, GMP certificates, and Certificates of Analysis. The manufacturer needed a supply partner capable of navigating these regulatory differences while maintaining consistent supply across all three markets.",
+      "The manufacturer required a stable, GMP-compliant supply of four high-volume APIs used in its cardiovascular and metabolic product lines. Each target market had distinct regulatory requirements for API documentation, including specific formats for Drug Master Files, GMP certificates, and Certificates of Analysis. The manufacturer needed a supply partner capable of navigating these regulatory differences while maintaining consistent supply across all three markets.",
       "Compounding the challenge, the manufacturer's existing procurement arrangements were fragmented across multiple intermediaries, each with limited visibility into upstream supply chains. This made it difficult to verify the provenance and quality credentials of incoming materials with the rigour expected by regulators in the region.",
     ],
     approach: [

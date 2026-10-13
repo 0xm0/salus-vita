@@ -7,7 +7,7 @@ const CASE_STUDIES = [
     title: "Cross-Border API Sourcing for APAC Manufacturer",
     client: "Regional Pharmaceutical Manufacturer",
     region: "Asia-Pacific",
-    summary: "A mid-size pharmaceutical manufacturer required a reliable, quality-assured supply of multiple active pharmaceutical ingredients to support its growing generics portfolio across three Asia-Pacific markets. Salus Vita identified and qualified alternative suppliers, reducing lead times and ensuring uninterrupted supply.",
+    summary: "A mid-size pharmaceutical manufacturer required a reliable, compliant supply of multiple active pharmaceutical ingredients to support its growing generics portfolio across three Asia-Pacific markets. Salus Vita identified and qualified alternative suppliers, reducing lead times and ensuring uninterrupted supply.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="12" cy="12" r="10" /><path d="M2 12h20" /><path d="M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20Z" />

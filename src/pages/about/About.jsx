@@ -56,7 +56,7 @@ const ABOUT_LINKS = [
   },
   {
     title: "Careers",
-    desc: "Join a team of pharmaceutical professionals working across international markets to coordinate quality-assured pharmaceutical supply.",
+    desc: "Join a team of pharmaceutical professionals working across international markets to coordinate compliant pharmaceutical supply.",
     to: "/about/careers",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
@@ -91,7 +91,7 @@ export default function About() {
       <PageHero
         eyebrow="WHO WE ARE"
         title="About Salus Vita"
-        description="Australian-headquartered pharmaceutical sourcing and supply company. We connect quality-assured manufacturers with buyers across global markets."
+        description="Australian-headquartered pharmaceutical sourcing and supply company. We connect vetted manufacturers with buyers across global markets."
         primaryCTA={{ label: "Discuss Your Requirements", to: "/contact/sourcing-enquiry" }}
         secondaryCTA={{ label: "Our Story", to: "/about/our-story" }}
       />
@@ -103,10 +103,10 @@ export default function About() {
           <div>
             <p>
               Salus Vita is a specialist pharmaceutical sourcing, procurement, and supply
-              coordination company headquartered in Melbourne, Australia. Founded in 2009,
+              coordination company headquartered in Australia. Founded in 2023,
               the company facilitates the movement of active pharmaceutical ingredients (APIs)
               and finished dosage forms between overseas manufacturers and buyers in
-              Australia, Asia-Pacific, Europe, the Middle East, and Africa.
+              Australia and Asia-Pacific, with growing reach into European and Middle Eastern markets.
             </p>
             <p>
               We do not manufacture pharmaceutical products, operate warehousing facilities,
@@ -205,9 +205,9 @@ export default function About() {
           <span className="eyebrow" style={{ color: "rgba(255,255,255,0.6)" }}>Get in Touch</span>
           <h2>Discuss Your Pharmaceutical Sourcing Requirements</h2>
           <p>
-            Whether you are a manufacturer seeking market access or a buyer seeking
-            quality-assured pharmaceutical products, our team is ready to coordinate
-            a solution tailored to your needs.
+            Our team is ready to coordinate a sourcing solution tailored to your
+            requirements. Get in touch to discuss how Salus Vita can support your
+            next procurement engagement.
           </p>
           <div className="hero-actions" style={{ justifyContent: "center" }}>
             <Link to="/contact/sourcing-enquiry" className="btn btn-primary">Submit an Enquiry</Link>

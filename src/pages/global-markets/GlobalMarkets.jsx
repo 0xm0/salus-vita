@@ -6,7 +6,7 @@ const rd = (ms) => ({ "--rd": `${ms}ms` })
 const REGIONS = [
   {
     title: "Australia & New Zealand",
-    desc: "Our home market and operational headquarters. Deep expertise in TGA and Medsafe regulatory frameworks, established distribution relationships, and direct coordination with local prescribers and hospital networks.",
+    desc: "Our home market and operational headquarters. Strong familiarity with TGA and Medsafe regulatory frameworks, growing distribution relationships, and coordination with local healthcare providers.",
     to: "/global-markets/australia-new-zealand",
     icon: (
       <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -21,7 +21,7 @@ const REGIONS = [
   },
   {
     title: "Asia Pacific",
-    desc: "The world's fastest-growing pharmaceutical region. Salus Vita facilitates access across ASEAN, Japan, South Korea, and Greater China through established local partnerships and regulatory intelligence.",
+    desc: "A fast-growing pharmaceutical region. Salus Vita is building sourcing relationships across ASEAN and the broader Asia-Pacific through developing local partnerships and regulatory awareness.",
     to: "/global-markets/asia-pacific",
     icon: (
       <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -51,7 +51,7 @@ const REGIONS = [
   },
   {
     title: "Middle East & Africa",
-    desc: "High-growth markets with expanding healthcare infrastructure. Salus Vita facilitates market entry across the GCC states, North Africa, and Sub-Saharan Africa through tailored regulatory and distribution strategies.",
+    desc: "Growing markets with expanding healthcare infrastructure. Salus Vita is exploring sourcing opportunities across select GCC states and North African markets through targeted regulatory and distribution research.",
     to: "/global-markets/middle-east-africa",
     icon: (
       <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -86,7 +86,7 @@ const PATHWAYS = [
 
 const STATS = [
   { value: "4", label: "Operating Regions" },
-  { value: "30+", label: "Active Market Jurisdictions" },
+  { value: "12+", label: "Market Jurisdictions" },
   { value: "3", label: "Transaction Pathway Models" },
   { value: "100%", label: "Counterparty Assessed" },
 ]
@@ -96,7 +96,7 @@ export default function GlobalMarkets() {
     <>
       <PageHero
         eyebrow="GLOBAL REACH"
-        title="International Pharmaceutical Supply Without Geographic Boundaries"
+        title="Pharmaceutical Supply Coordination Across Key Markets"
         description="Australian-headquartered pharmaceutical supply coordination spanning Asia-Pacific, Europe, the Middle East, and Africa."
         primaryCTA={{ label: "Discuss Market Entry", to: "/contact/sourcing-enquiry" }}
         secondaryCTA={{ label: "Our Capabilities", to: "/capabilities" }}
@@ -196,9 +196,9 @@ export default function GlobalMarkets() {
 
       {/* Stats */}
       <section className="content-section" data-reveal>
-        <h2>International Coordination at Scale</h2>
+        <h2>International Coordination</h2>
         <p>
-          Our operational footprint reflects the breadth of markets and counterparties we coordinate across. Every
+          Our growing operational footprint reflects the markets and counterparties we coordinate across. Every
           manufacturer, distributor, and regulatory pathway is individually assessed before any transaction proceeds.
         </p>
         <div className="stats">

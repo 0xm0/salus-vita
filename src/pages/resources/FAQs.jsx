@@ -12,7 +12,7 @@ const FAQ_CATEGORIES = [
       },
       {
         q: "Where is Salus Vita headquartered and where does it operate?",
-        a: "Our head office is located in Melbourne, Australia, with additional offices in Singapore and the United Kingdom. We operate supply corridors spanning the Asia-Pacific, Europe, the Middle East, and Africa, serving clients in more than 40 countries. Our regional presence allows us to maintain close relationships with both regulatory authorities and supply chain partners in each market.",
+        a: "Salus Vita is headquartered in Australia and operates across international markets, with a focus on the Asia-Pacific, Europe, the Middle East, and Africa. Our team coordinates directly with regulatory authorities and supply chain partners in each target market to ensure compliance and reliability.",
       },
       {
         q: "Does Salus Vita hold a manufacturing licence or GMP certification?",
@@ -20,11 +20,11 @@ const FAQ_CATEGORIES = [
       },
       {
         q: "What types of organisations does Salus Vita work with?",
-        a: "We work with a broad range of pharmaceutical industry stakeholders, including generic and innovator manufacturers seeking market access, hospital networks and health systems requiring managed access products, wholesale distributors expanding their portfolios, compounding pharmacies sourcing specialist ingredients, and government procurement bodies. Each engagement is tailored to the specific requirements of the partner and the regulatory context of the target market.",
+        a: "We work with a range of pharmaceutical industry stakeholders, including generic and innovator manufacturers seeking market access, hospital networks and health systems requiring managed access products, wholesale distributors expanding their portfolios, compounding pharmacies sourcing specialist ingredients, and government procurement bodies. Each engagement is tailored to the specific requirements of the partner and the regulatory context of the target market.",
       },
       {
         q: "How long has Salus Vita been operating?",
-        a: "Salus Vita has more than 15 years of experience in international pharmaceutical supply. Over that period, we have built an extensive network of manufacturer relationships, developed deep regulatory expertise across multiple jurisdictions, and established supply corridors that deliver reliable, quality-assured pharmaceutical products to markets worldwide.",
+        a: "Salus Vita was founded in May 2023. Our team brings prior industry experience in pharmaceutical sourcing, regulatory affairs, and international logistics. Since launch, we have built a growing network of qualified manufacturer relationships and established supply corridors across multiple regions. We are focused on delivering reliable, quality-assured pharmaceutical products through transparent and compliant processes.",
       },
     ],
   },
@@ -41,7 +41,7 @@ const FAQ_CATEGORIES = [
       },
       {
         q: "Can Salus Vita source products that are not registered in my market?",
-        a: "Yes. We have extensive experience facilitating managed access and special access pathways, which allow healthcare providers to obtain products that are not yet registered in their jurisdiction. This includes the Australian Special Access Scheme (SAS), Section 19A provisions under New Zealand legislation, and analogous frameworks in other markets. We manage the regulatory documentation and importation logistics on behalf of our clients.",
+        a: "Yes. We facilitate managed access and special access pathways, which allow healthcare providers to obtain products that are not yet registered in their jurisdiction. This includes the Australian Special Access Scheme (SAS), Section 19A provisions under New Zealand legislation, and analogous frameworks in other markets. We coordinate the regulatory documentation and importation logistics on behalf of our clients.",
       },
       {
         q: "What information should I include in a sourcing enquiry?",
@@ -49,7 +49,7 @@ const FAQ_CATEGORIES = [
       },
       {
         q: "Does Salus Vita handle small-volume or one-off requirements?",
-        a: "Yes. While we support large-scale procurement programmes, we also specialise in low-volume and bespoke sourcing engagements. This includes sourcing rare or niche APIs for compounding pharmacies, supplying small quantities for clinical trials or pilot programmes, and facilitating one-off managed access imports for individual patient needs.",
+        a: "Yes. While we support large-scale procurement programmes, we also work with low-volume and bespoke sourcing engagements. This includes sourcing rare or niche APIs for compounding pharmacies, coordinating small quantities for clinical trials or pilot programmes, and facilitating one-off managed access imports for individual patient needs.",
       },
     ],
   },

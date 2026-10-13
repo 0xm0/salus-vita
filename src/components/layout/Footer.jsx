@@ -43,7 +43,7 @@ export default function Footer() {
         </div>
 
         <div className="sv-footer-bottom">
-          <span>&copy; {new Date().getFullYear()} Salus Vita Pty Ltd. All rights reserved.</span>
+          <span>&copy; {new Date().getFullYear()} Salus Vita Pty Ltd (ABN 92 668 370 518). All rights reserved.</span>
           <nav className="sv-footer-legal" aria-label="Legal links">
             {legalLinks.map((link) => (
               <Link key={link.path} to={link.path}>

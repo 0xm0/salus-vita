@@ -47,7 +47,7 @@ const CAPABILITIES = [
   {
     icon: Icon.globe,
     title: "Global Sourcing",
-    body: "Identifying and assessing pharmaceutical manufacturers worldwide, connecting buyers with quality-assured production facilities across established and emerging markets.",
+    body: "Identifying and assessing pharmaceutical manufacturers across key international markets, connecting buyers with quality-assured production facilities.",
     to: "/capabilities/global-sourcing",
   },
   {
@@ -83,10 +83,10 @@ const CAPABILITIES = [
 ]
 
 const STATS = [
-  { value: "15+", label: "Countries Sourced" },
-  { value: "200+", label: "Manufacturer Relationships" },
+  { value: "8+", label: "Countries Sourced" },
+  { value: "30+", label: "Manufacturer Contacts" },
   { value: "3", label: "Transaction Pathways" },
-  { value: "24/7", label: "Supply Coordination" },
+  { value: "Dedicated", label: "Supply Coordination" },
 ]
 
 const PATHWAYS = [

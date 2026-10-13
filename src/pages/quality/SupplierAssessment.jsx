@@ -190,7 +190,7 @@ export default function SupplierAssessment() {
         <div className="cta-card">
           <h2>Discuss Supplier Qualification Requirements</h2>
           <p>
-            Whether you are a manufacturer seeking qualification or a buyer with specific quality requirements, our team is ready to discuss how Salus Vita's assessment process supports your needs.
+            Have questions about our supplier qualification process? Our team can walk you through how Salus Vita's assessment framework applies to your specific requirements.
           </p>
           <div className="hero-actions" style={{ justifyContent: "center" }}>
             <Link to="/contact/sourcing-enquiry" className="btn btn-primary">Start a Conversation</Link>

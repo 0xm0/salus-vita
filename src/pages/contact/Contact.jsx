@@ -36,21 +36,9 @@ const ENQUIRY_TYPES = [
 const OFFICES = [
   {
     name: "Australia (Head Office)",
-    address: ["Level 12, 100 Collins Street", "Melbourne VIC 3000", "Australia"],
+    address: ["Melbourne, Victoria", "Australia"],
     phone: "+61 3 9000 0000",
     email: "info@salusvita.net",
-  },
-  {
-    name: "Singapore (Asia-Pacific)",
-    address: ["1 Raffles Place, #20-01", "Singapore 048616"],
-    phone: "+65 6000 0000",
-    email: "apac@salusvita.net",
-  },
-  {
-    name: "United Kingdom (Europe)",
-    address: ["30 St Mary Axe", "London EC3A 8BF", "United Kingdom"],
-    phone: "+44 20 7000 0000",
-    email: "europe@salusvita.net",
   },
 ]
 
@@ -268,9 +256,9 @@ export default function Contact() {
 
           {/* Office Details Column */}
           <div>
-            <h2 data-reveal>Our Offices</h2>
+            <h2 data-reveal>Our Office</h2>
             <p data-reveal style={{ marginBottom: 24 }}>
-              Salus Vita operates from offices in Australia, Singapore, and the United Kingdom, enabling us to support clients and supply partners across the Asia-Pacific, Europe, and beyond.
+              Salus Vita is headquartered in Australia and operates across international markets, supporting clients and supply partners in the Asia-Pacific, Europe, and beyond.
             </p>
 
             {OFFICES.map((office, i) => (
@@ -385,7 +373,7 @@ export default function Contact() {
             <path d="M2 12h20" />
             <path d="M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20Z" />
           </svg>
-          Interactive map integration - Melbourne, Singapore, London
+          Interactive map integration - Melbourne
         </div>
       </section>
 
