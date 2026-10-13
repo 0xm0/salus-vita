@@ -406,13 +406,15 @@ html.lenis, html.lenis body { height: auto; }
     linear-gradient(135deg, var(--navy) 0%, var(--teal) 100%);
   color: #fff;
 }
-.cta-card h2 {
+.cta-card h2,
+.home-section .cta-card h2 {
   font-size: clamp(26px, 3.5vw, 40px);
   font-weight: 800;
   margin-bottom: 16px;
   color: #ffffff;
 }
-.cta-card p {
+.cta-card p,
+.home-section .cta-card p {
   color: rgba(255, 255, 255, 0.9);
   font-size: 17px;
   line-height: 1.6;

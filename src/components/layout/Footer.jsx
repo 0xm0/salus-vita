@@ -45,9 +45,9 @@ export default function Footer() {
     <footer className="sv-footer">
       <div className="sv-footer-inner">
         {/* Centered fang mark above everything */}
-        <div style={{ textAlign: "center", marginBottom: 32 }}>
+        <div style={{ display: "flex", flexDirection: "column", alignItems: "center", marginBottom: 32 }}>
           <FangMark size={48} strokeColor="rgba(255,255,255,0.6)" dotColor="rgba(255,255,255,0.4)" />
-          <div style={{ width: 60, height: 1, background: "rgba(255,255,255,0.15)", margin: "20px auto 0" }} />
+          <div style={{ width: 60, height: 1, background: "rgba(255,255,255,0.15)", marginTop: 20 }} />
         </div>
 
         <div className="sv-footer-top">
