@@ -40,6 +40,14 @@ const OFFICES = [
     address: ["2 Queen Street", "Melbourne VIC 3000, Australia"],
     phone: "1300 692 468",
     email: "info@salusvita.net",
+    mapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.96715931531888!3d-37.81627997975159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642b4e7b28dad%3A0x6e3b4b7b0f9a2d0!2s2%20Queen%20St%2C%20Melbourne%20VIC%203000!5e0!3m2!1sen!2sau!4v1697000000000!5m2!1sen!2sau",
+  },
+  {
+    name: "UAE (Middle East)",
+    address: ["Gate Village, Building 3", "DIFC, Dubai, UAE"],
+    phone: null,
+    email: "mena@salusvita.net",
+    mapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.941!2d55.2780!3d25.2130!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f4296e7e7e7e7%3A0x3e5f4296e7e7e7e7!2sGate%20Village%20Building%203%2C%20DIFC%2C%20Dubai!5e0!3m2!1sen!2sae!4v1697000000000!5m2!1sen!2sae",
   },
 ]
 
@@ -55,6 +63,7 @@ export default function Contact() {
   const [submitted, setSubmitted] = useState(false)
   const [submitting, setSubmitting] = useState(false)
   const [error, setError] = useState("")
+  const [activeMap, setActiveMap] = useState(0)
 
   const update = (field) => (e) =>
     setForm((prev) => ({ ...prev, [field]: e.target.value }))
@@ -284,9 +293,9 @@ export default function Contact() {
 
           {/* Office Details Column */}
           <div>
-            <h2 data-reveal>Our Office</h2>
+            <h2 data-reveal>Our Offices</h2>
             <p data-reveal style={{ marginBottom: 24 }}>
-              Salus Vita is headquartered at 2 Queen Street, Melbourne, and operates across international markets, supporting clients and supply partners in the Asia-Pacific, Europe, and beyond.
+              Salus Vita is headquartered in Melbourne, Australia, with a regional presence in the UAE to support clients across the Middle East, Asia-Pacific, Europe, and beyond.
             </p>
 
             {OFFICES.map((office, i) => (
@@ -357,9 +366,9 @@ export default function Contact() {
                 Business Hours
               </h3>
               <p style={{ color: "var(--muted)", fontSize: 14, lineHeight: 1.7, margin: 0 }}>
-                Monday to Friday: 9:00 AM - 5:30 PM (local office time)
+                <strong style={{ color: "var(--navy)" }}>Melbourne:</strong> Mon-Fri, 9:00 AM - 5:30 PM AEST
                 <br />
-                Weekend and public holidays: Closed
+                <strong style={{ color: "var(--navy)" }}>Dubai:</strong> Sun-Thu, 9:00 AM - 6:00 PM GST
               </p>
               <p style={{ color: "var(--muted-2)", fontSize: 13, marginTop: 8, marginBottom: 0 }}>
                 For urgent supply matters outside business hours, please email your regional office and include "URGENT" in the subject line.
@@ -371,18 +380,44 @@ export default function Contact() {
 
       {/* Google Maps Embed */}
       <section className="content-section">
-        <h2 data-reveal>Our Location</h2>
+        <h2 data-reveal>Our Locations</h2>
+        <div data-reveal style={{ display: "flex", gap: 8, marginBottom: 20 }}>
+          {OFFICES.map((office, i) => (
+            <button
+              key={office.name}
+              type="button"
+              onClick={() => setActiveMap(i)}
+              style={{
+                padding: "10px 20px",
+                fontSize: 14,
+                fontWeight: 600,
+                fontFamily: "inherit",
+                border: activeMap === i ? "2px solid var(--teal)" : "1px solid var(--line)",
+                borderRadius: 8,
+                background: activeMap === i ? "var(--pale-blue)" : "#fff",
+                color: activeMap === i ? "var(--teal)" : "var(--muted)",
+                cursor: "pointer",
+                transition: "all 0.2s",
+              }}
+            >
+              {office.name}
+            </button>
+          ))}
+        </div>
         <div data-reveal>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.96715931531888!3d-37.81627997975159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642b4e7b28dad%3A0x6e3b4b7b0f9a2d0!2s2%20Queen%20St%2C%20Melbourne%20VIC%203000!5e0!3m2!1sen!2sau!4v1697000000000!5m2!1sen!2sau"
+            src={OFFICES[activeMap].mapSrc}
             width="100%"
-            height="300"
+            height="350"
             style={{ border: 0, borderRadius: 12 }}
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Salus Vita Office Location"
+            title={`${OFFICES[activeMap].name} Office Location`}
           ></iframe>
+          <p style={{ fontSize: 13, color: "var(--muted)", marginTop: 12, textAlign: "center" }}>
+            {OFFICES[activeMap].address.join(", ")}
+          </p>
         </div>
       </section>
 

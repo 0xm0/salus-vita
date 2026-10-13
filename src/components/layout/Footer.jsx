@@ -9,16 +9,16 @@ const FOOTER_COLUMNS = [
       { label: "About", path: "/about" },
       { label: "Our Story", path: "/about/our-story" },
       { label: "Leadership", path: "/about/leadership" },
-      { label: "Careers", path: "/careers" },
+      { label: "Careers", path: "/about/careers" },
     ],
   },
   {
     heading: "Services",
     items: [
-      { label: "Global Sourcing", path: "/solutions/global-sourcing" },
-      { label: "International Procurement", path: "/solutions/international-procurement" },
-      { label: "Australian Importation", path: "/solutions/australian-importation" },
-      { label: "Cross-Border Supply", path: "/solutions/cross-border-supply" },
+      { label: "Global Sourcing", path: "/capabilities/global-sourcing" },
+      { label: "International Procurement", path: "/capabilities/international-procurement" },
+      { label: "Australian Importation", path: "/capabilities/australian-importation" },
+      { label: "Cross-Border Supply", path: "/capabilities/cross-border-supply" },
     ],
   },
   {
@@ -32,8 +32,8 @@ const FOOTER_COLUMNS = [
   {
     heading: "Resources",
     items: [
-      { label: "Blog & Insights", path: "/resources/blog" },
-      { label: "Case Studies", path: "/resources/case-studies" },
+      { label: "Blog & Insights", path: "/resources" },
+      { label: "Case Studies", path: "/case-studies" },
       { label: "FAQs", path: "/resources/faqs" },
       { label: "Glossary", path: "/resources/glossary" },
     ],
@@ -56,10 +56,12 @@ export default function Footer() {
               Australian-headquartered international pharmaceutical supply.
             </p>
             <p style={{ fontSize: 13, color: "var(--muted)", lineHeight: 1.6, margin: "8px 0 0" }}>
-              2 Queen Street<br />
-              Melbourne VIC 3000, Australia
+              Melbourne, Australia | Dubai, UAE
             </p>
-            <p style={{ fontSize: 13, margin: "8px 0 0" }}>
+            <p style={{ fontSize: 13, margin: "4px 0 0" }}>
+              <a href="tel:1300692468" style={{ color: "var(--teal)", textDecoration: "none" }}>1300 692 468</a>
+            </p>
+            <p style={{ fontSize: 13, margin: "4px 0 0" }}>
               <a
                 href="https://salusvita.net"
                 style={{ color: "var(--teal)", textDecoration: "none" }}
